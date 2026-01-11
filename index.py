@@ -1,10 +1,10 @@
 
-from scripts.player import show
 import pyautogui
 import json
+import time
+from scripts.items import check_item
 
-show("34534", "543543")
-
+account_name = "nash"
 steam_wallet = 20.06
 
 # Abrir itens
@@ -14,9 +14,12 @@ items = data["items"]
 
 # Minimizar VS Code
 pyautogui.moveTo(1780, 20)
-#pyautogui.click()
+pyautogui.click()
+time.sleep(0.1)
 
 new_items = []
 
 for item in items:
-    print(item)
+    check_item(item, account_name)
+
+    exit()
