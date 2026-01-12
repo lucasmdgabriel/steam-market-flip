@@ -1,9 +1,12 @@
 import pyautogui
 import pyperclip
 import time
+import random
 
 def buy_action(value):
-    # Minimizar VS Code
+    time.sleep(0.25)
+
+    # CLICAR EM COMPRAR
     pyautogui.moveTo(720, 160)
     pyautogui.click()
     time.sleep(0.25)
@@ -35,5 +38,51 @@ def buy_action(value):
     pyautogui.click()
     time.sleep(2)
 
-def sell_action(value):
-    print(f"oi {value}")
+def sell_action(value, name):
+    time.sleep(0.25)
+
+    # CLICAR EM VENDER
+    pyautogui.moveTo(1160, 180)
+    pyautogui.click()
+    time.sleep(2)
+
+    # TEXTO DE TITULO
+    pyautogui.moveTo(755, 510)
+    pyautogui.click()
+    time.sleep(0.2)
+
+    pyperclip.copy(name)
+    pyautogui.hotkey("ctrl", "v")
+
+    # CLICAR NO ITEM
+    pyautogui.moveTo(565, 595)
+    pyautogui.click()
+    time.sleep(0.2)
+
+    pyautogui.scroll(-1500 - random.randrange(500))
+
+    # CLICAR EM VENDER
+    pyautogui.moveTo(1090, 970)
+    pyautogui.click()
+    time.sleep(0.5)
+
+    pyautogui.press('tab')
+    time.sleep(0.5)
+
+    pyperclip.copy(value)
+    pyautogui.hotkey("ctrl", "v")
+
+    # ACEITR TERMOS
+    pyautogui.moveTo(540, 800)
+    pyautogui.click()
+    time.sleep(0.5)
+
+    # CONFIRMAR COMPRA
+    pyautogui.moveTo(1300, 830)
+    pyautogui.click()
+    time.sleep(0.5)
+
+    # CONFIRMAR COMPRA (2)
+    pyautogui.moveTo(1330, 720)
+    pyautogui.click()
+    time.sleep(0.5)

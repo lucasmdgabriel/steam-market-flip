@@ -5,7 +5,7 @@ import time
 from datetime import datetime
 from decimal import Decimal, ROUND_DOWN
 from scripts.items import get_item_data, check_item_market_data
-from scripts.buy import buy_action
+from scripts.buy import buy_action, sell_action
 from scripts.cancel import cancel_action_buy, cancel_action_sell
 
 now = datetime.now()
@@ -188,9 +188,9 @@ for item in items:
             item["sale_tries"] = 0
 
             cancel_sell(item["status"])
-            item["sale_value"] = buy_price
+            item["sale_value"] = new_buy_price
 
-            print(f"AGORA VENDE O ITEM POR {buy_price}")
+            sell_action(new_buy_price, item["name"])
 
     print(item)
 

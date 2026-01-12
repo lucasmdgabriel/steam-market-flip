@@ -14,7 +14,7 @@ def get_item_data(item):
     time.sleep(0.1)
 
     pyautogui.press("enter")
-    time.sleep(2)
+    time.sleep(2.5)
 
     # Obter dados do item
     pyautogui.hotkey("ctrl", "a")
