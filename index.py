@@ -97,7 +97,7 @@ for item in items:
 
     tax = new_buy_price * Decimal("0.15")
     if tax < 0.1:
-        tax -= Decimal("0.1")
+        tax = Decimal("0.1")
 
     print(f"tax: {tax}")
 
