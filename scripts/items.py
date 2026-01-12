@@ -20,6 +20,11 @@ def get_item_data(item):
     pyautogui.hotkey("ctrl", "a")
     pyautogui.hotkey("ctrl", "c")
     item_str = pyperclip.paste()
+    time.sleep(0.2)
+
+    pyautogui.moveTo(1400, 500) # REMOVER MARCAÇÃO AZUL
+    pyautogui.click()
+    time.sleep(0.2)
 
     return item_str
 
