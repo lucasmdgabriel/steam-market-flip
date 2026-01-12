@@ -2,10 +2,11 @@ import pyautogui
 import pyperclip
 import json
 import time
-from scripts.items import get_item_data, check_item_market_data
-from scripts.buy import buy_action
 from datetime import datetime
 from decimal import Decimal, ROUND_DOWN
+from scripts.items import get_item_data, check_item_market_data
+from scripts.buy import buy_action
+from scripts.cancel import cancel_action_buy
 
 now = datetime.now()
 year   = now.year
@@ -13,7 +14,6 @@ month  = now.month
 day    = now.day
 hour   = now.hour
 minute = now.minute
-
 
 
 account_name = "nash"
@@ -51,16 +51,11 @@ new_items = []
 
 
 def cancel_buy(item_status):
-    if "buying" in item_status and "selling" in item_status:
-        print("cancelando compra em baixo...")
-    elif "buying" in item_status:
-        print("cancelando compra em cima...")
-    else:
-        print("ignorando cancelamento de compra")
-
+    if item_status == "buying":
+        cancel_action_buy()
+    
 
 for item in items:
-    item_status = item["status"]
 
     item_str = get_item_data(item)
 
@@ -89,40 +84,35 @@ for item in items:
     print(f"tax: {tax}")
 
 
-    if "buying" in item_status or "buying_countdown" not in item_status:
+    if item["status"] == "buying" or item["status"] == "":
         profit = (new_buy_price - tax) - sell_price
         profit_rate = profit/sell_price
 
-        if item_market_data["buy_count"] < 1 and "buying" in item_status:
-            item_status.remove("buying")
-            item_status.append("buying_countdown")
+        item["buy_value"] = Decimal(str(item["buy_value"])).quantize(Decimal("0.00"))
+
+        if item_market_data["buy_count"] < 1 and item["status"] == "buying":
+            item["status"] = "buying_countdown"
+            
             item["buying_countdown"] = {
                 "day": (day + 7, month, year),
                 "hour": (hour, minute)
             }
 
-        elif profit < 0.1 or profit_rate < 0.15:
-            if "buying" in item_status:
-                item_status.remove("buying")
-
-            cancel_buy(item_status)
+        elif (profit < 0.1 or profit_rate < 0.15) and item["status"] == "buying":
+            cancel_buy(item["status"])
+            item["status"] = ""
             item["buy_value"] = 0.0
 
         elif sell_price != item["buy_value"]:
-            if "buying" not in item_status:
-                item_status.append("buying")
+            item["status"] = "buying"
 
-            cancel_buy(item_status)
+            cancel_buy(item["status"])
             buy_action(new_sell_price)
             item["buy_value"] = sell_price
 
         print(f"profit: {profit}")
         print(f"profit_rate: {profit_rate}")
 
-        worth_it = False
-
-    print(item_status)
-    item["status"] = item_status
     print(item)
 
 

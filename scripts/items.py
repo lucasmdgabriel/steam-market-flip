@@ -22,9 +22,13 @@ def get_item_data(item):
     item_str = pyperclip.paste()
     time.sleep(0.2)
 
-    pyautogui.moveTo(1400, 500) # REMOVER MARCAÇÃO AZUL
+    # REMOVER MARCAÇÃO AZUL
+    pyautogui.moveTo(1400, 500)
     pyautogui.click()
     time.sleep(0.2)
+
+    # Sroll
+    pyautogui.scroll(-1500)
 
     return item_str
 

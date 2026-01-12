@@ -3,10 +3,26 @@
         {
             "name": "Blue Sparks",
             "url": "https://steamcommunity.com/market/listings/753/508900-Blue%20Sparks",
-            "buy_value": 1,
+            "buy_value": 8.35,
             "sell_value": 0.0,
             "buyed_value": [],
-            "status": ["buying"]
+            "status": "buying"
+        },
+        {
+            "name": "New beginning",
+            "url": "https://steamcommunity.com/market/listings/753/400740-New%20beginning",
+            "buy_value": 0.0,
+            "sell_value": 0.0,
+            "buyed_value": [],
+            "status": ""
+        },
+        {
+            "name": "Title",
+            "url": "https://steamcommunity.com/market/listings/753/344770-Title",
+            "buy_value": 0.0,
+            "sell_value": 2.44,
+            "buyed_value": [],
+            "status": "selling"
         },
         {
             "name": "Plane of Skulls",
@@ -14,23 +30,7 @@
             "buy_value": 0.67,
             "sell_value": 0.0,
             "buyed_value": [],
-            "status": ["buying"]
-        },
-        {
-            "name": "New beginning",
-            "url": "https://steamcommunity.com/market/listings/753/400740-New%20beginning",
-            "buy_value": 2.85,
-            "sell_value": 0.0,
-            "buyed_value": [],
-            "status": []
-        },
-        {
-            "name": "Title",
-            "url": "https://steamcommunity.com/market/listings/753/344770-Title",
-            "buy_value": 0.6,
-            "sell_value": 2.44,
-            "buyed_value": [],
-            "status": ["buying", "selling"]
+            "status": "buying"
         },
         {
             "name": "Cherry Blossom",
@@ -38,7 +38,7 @@
             "buy_value": 6.25,
             "sell_value": 0.0,
             "buyed_value": [],
-            "status": ["buying"]
+            "status": "buying"
         },
         {
             "name": "Brothers",
@@ -46,7 +46,7 @@
             "buy_value": 6.0,
             "sell_value": 0.0,
             "buyed_value": [],
-            "status": ["buying"]
+            "status": "buying"
         }
     ]
 }
