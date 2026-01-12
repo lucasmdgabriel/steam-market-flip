@@ -1,52 +1,80 @@
 {
     "items": [
         {
+            "name": "Title",
+            "url": "https://steamcommunity.com/market/listings/753/344770-Title",
+            "buy_value": 0.0,
+            "sale_value": 2.44,
+            "buyed_value": 10.01,
+            "status": "waiting_sale_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 6
+        },
+        {
+            "name": "Clasroom",
+            "url": "https://steamcommunity.com/market/listings/753/963690-Classroom",
+            "buy_value": 0.0,
+            "sale_value": 100,
+            "buyed_value": 0.01,
+            "status": "selling",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Cherry Blossom",
+            "url": "https://steamcommunity.com/market/listings/753/1153410-Cherry%20Blossom",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 6.25,
+            "status": "buying_countdown",
+            "buying_countdown": {
+                "day": 17,
+                "month": 1,
+                "year": 2026,
+                "hour": 5,
+                "minute": 0
+            },
+            "sale_tries": 0
+        },
+        {
             "name": "Blue Sparks",
             "url": "https://steamcommunity.com/market/listings/753/508900-Blue%20Sparks",
             "buy_value": 8.35,
-            "sell_value": 0.0,
-            "buyed_value": [],
-            "status": "buying"
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
         },
         {
             "name": "New beginning",
             "url": "https://steamcommunity.com/market/listings/753/400740-New%20beginning",
             "buy_value": 0.0,
-            "sell_value": 0.0,
-            "buyed_value": [],
-            "status": ""
-        },
-        {
-            "name": "Title",
-            "url": "https://steamcommunity.com/market/listings/753/344770-Title",
-            "buy_value": 0.0,
-            "sell_value": 2.44,
-            "buyed_value": [],
-            "status": "selling"
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "",
+            "buying_countdown": {},
+            "sale_tries": 0
         },
         {
             "name": "Plane of Skulls",
             "url": "https://steamcommunity.com/market/listings/753/2218750-Plane%20of%20Skulls",
             "buy_value": 0.67,
-            "sell_value": 0.0,
-            "buyed_value": [],
-            "status": "buying"
-        },
-        {
-            "name": "Cherry Blossom",
-            "url": "https://steamcommunity.com/market/listings/753/1153410-Cherry%20Blossom",
-            "buy_value": 6.25,
-            "sell_value": 0.0,
-            "buyed_value": [],
-            "status": "buying"
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
         },
         {
             "name": "Brothers",
             "url": "https://steamcommunity.com/market/listings/753/3932890-Brothers",
             "buy_value": 6.0,
-            "sell_value": 0.0,
-            "buyed_value": [],
-            "status": "buying"
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
         }
     ]
 }

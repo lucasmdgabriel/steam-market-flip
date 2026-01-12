@@ -34,3 +34,6 @@ def buy_action(value):
     pyautogui.moveTo(1400, 500)
     pyautogui.click()
     time.sleep(2)
+
+def sell_action(value):
+    print(f"oi {value}")

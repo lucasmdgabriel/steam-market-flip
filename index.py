@@ -6,7 +6,7 @@ from datetime import datetime
 from decimal import Decimal, ROUND_DOWN
 from scripts.items import get_item_data, check_item_market_data
 from scripts.buy import buy_action
-from scripts.cancel import cancel_action_buy
+from scripts.cancel import cancel_action_buy, cancel_action_sell
 
 now = datetime.now()
 year   = now.year
@@ -18,6 +18,7 @@ minute = now.minute
 
 account_name = "nash"
 steam_wallet = 20.06
+sales_tries_before_take_a_loss = 6
 
 # Abrir itens
 with open('data.json', 'r', encoding='utf-8') as f:
@@ -49,10 +50,44 @@ time.sleep(0.1)
 
 new_items = []
 
-
 def cancel_buy(item_status):
     if item_status == "buying":
         cancel_action_buy()
+
+def cancel_sell(item_status):
+    if item_status == "selling":
+        cancel_action_sell()
+
+def check_countdown(buying_countdown):
+    print(buying_countdown)
+    if (buying_countdown["year"] < year):
+        return False
+    elif (buying_countdown["year"] > year):
+        return True
+    
+    if (buying_countdown["month"] < month):
+        return False
+    elif (buying_countdown["month"] > month):
+        return True
+    
+    if (buying_countdown["day"] < day):
+        return False
+    elif (buying_countdown["day"] > day):
+        return True
+    
+    if (buying_countdown["hour"] < hour):
+        return False
+    elif (buying_countdown["hour"] > hour):
+        return True
+    
+    if (buying_countdown["minute"] < minute):
+        return False
+    elif (buying_countdown["minute"] > minute):
+        return True
+    
+    return True
+
+
     
 
 for item in items:
@@ -85,17 +120,25 @@ for item in items:
 
 
     if item["status"] == "buying" or item["status"] == "":
-        profit = (new_buy_price - tax) - sell_price
-        profit_rate = profit/sell_price
+        profit = (new_sell_price - tax) - new_buy_price
+        profit_rate = profit/new_sell_price
+
+        print(f"profit: {profit}")
+        print(f"profit_rate: {profit_rate}")
 
         item["buy_value"] = Decimal(str(item["buy_value"])).quantize(Decimal("0.00"))
 
         if item_market_data["buy_count"] < 1 and item["status"] == "buying":
             item["status"] = "buying_countdown"
+            item["buyed_value"] = item["buy_value"]
+            item["buy_value"] = 0.0
             
             item["buying_countdown"] = {
-                "day": (day + 7, month, year),
-                "hour": (hour, minute)
+                "day": day,
+                "month": month,
+                "year": year,
+                "hour": hour,
+                "minute": minute
             }
 
         elif (profit < 0.1 or profit_rate < 0.15) and item["status"] == "buying":
@@ -110,8 +153,44 @@ for item in items:
             buy_action(new_sell_price)
             item["buy_value"] = sell_price
 
+    elif item["status"] == "buying_countdown":
+        in_countdown = check_countdown(item["buying_countdown"])
+
+        if not in_countdown:
+            item["status"] = "selling"
+            item["buying_countdown"] = {}
+            item["sale_tries"] = 0
+
+    if item["status"] in ["selling", "waiting_sale_oportunity"]:
+        profit = new_buy_price - Decimal(item["buyed_value"])
+        
+        profit_rate = profit/Decimal(item["buyed_value"])
+
+        print(f"buyed_value: {item["buyed_value"]}")
         print(f"profit: {profit}")
         print(f"profit_rate: {profit_rate}")
+
+        if item_market_data["sales_count"] < 1 and item["status"] == "selling":
+            print("VENDEU!")
+
+            item["status"] = ""
+            item["buyed_value"] = "0.0"
+            item["sale_value"] = "0.0"
+
+        elif (profit < -0.03 or profit_rate < -0.05) and item["sale_tries"] < sales_tries_before_take_a_loss:
+            cancel_sell(item["status"])
+            item["status"] = "waiting_sale_oportunity"
+            item["sale_value"] = 0.0
+            item["sale_tries"] += 1
+
+        elif Decimal(str(buy_price)) != Decimal(str(item["sale_value"])):
+            item["status"] = "selling"
+            item["sale_tries"] = 0
+
+            cancel_sell(item["status"])
+            item["sale_value"] = buy_price
+
+            print(f"AGORA VENDE O ITEM POR {buy_price}")
 
     print(item)
 
