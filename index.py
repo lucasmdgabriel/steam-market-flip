@@ -31,23 +31,6 @@ pyautogui.moveTo(1805, 15) # PC
 pyautogui.click()
 time.sleep(0.1)
 
-# # Clicar na url
-# pyautogui.moveTo(1410, 70) # NOTEBOOK
-# pyautogui.moveTo(1570, 50) # PC
-# pyautogui.click()
-
-# # Cola link da steam
-# pyperclip.copy("https://steamcommunity.com/")
-# pyautogui.hotkey("ctrl", "v")
-# time.sleep(0.1)
-
-# pyautogui.press("enter")
-# time.sleep(2)
-
-# for i in range(7):
-#     pyautogui.hotkey("ctrl", "-")
-#     time.sleep(0.1)
-
 new_items = []
 
 def cancel_buy(item_status):
@@ -114,7 +97,7 @@ for item in items:
 
     tax = new_buy_price * Decimal("0.15")
     if tax < 0.1:
-        tax -= 0.1
+        tax -= Decimal("0.1")
 
     print(f"tax: {tax}")
 

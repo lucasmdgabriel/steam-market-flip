@@ -38,8 +38,8 @@ def check_item_market_data(item_text):
     sales_count, buy_orders_count = extract_orders_and_sales(item_text)
 
     return {
-        "buy": extract_prices(item_text, "Comprar"),
-        "sell": extract_prices(item_text, "Vender"),
+        "buy": extract_prices(item_text, "Comprar", "buy"),
+        "sell": extract_prices(item_text, "Vender", "sell"),
         "sales_count": sales_count,
         "buy_count": buy_orders_count
     }
@@ -49,31 +49,52 @@ def check_item_market_data(item_text):
 
 
 
-def extract_prices(item_text, section_type):
+def extract_prices(item_text, section_type, mode):
+    """
+    mode:
+      - "buy"  -> completa com preços altos
+      - "sell" -> completa com preços baixos
+    """
+
     pattern = (
         rf"{section_type}.*?\r?\n"
         rf"Preço\s+Quantidade\r?\n"
-        rf"((?:R\$\s*[0-9]+,[0-9]{{2}}\s+\d+\r?\n){{5}})"
+        rf"((?:R\$\s*[0-9]+,[0-9]{{2}}\s+\d+\r?\n){{1,5}})"
     )
 
     match = re.search(pattern, item_text, re.DOTALL)
-    if not match:
-        return []
+    values = []
 
-    section_block = match.group(1)
+    if match:
+        section_block = match.group(1)
+        values = re.findall(
+            r"R\$\s*([0-9]+,[0-9]{2})\s+(\d+)",
+            section_block
+        )
 
-    values = re.findall(
-        r"R\$\s*([0-9]+,[0-9]{2})\s+(\d+)",
-        section_block
-    )
-
-    return [
+    result = [
         {
-            "price": float(price.replace(',', '.')),
+            "price": float(price.replace(",", ".")),
             "quantity": int(quantity)
         }
         for price, quantity in values
     ]
+
+    missing = 5 - len(result)
+
+    if missing > 0:
+        if mode == "buy":
+            filler_prices = [150000 - i * 10000 for i in range(missing)]
+        else:
+            filler_prices = [0.10 + i * 0.01 for i in range(missing)]
+
+        for p in filler_prices:
+            result.append({
+                "price": p,
+                "quantity": 0
+            })
+
+    return result
 
 
 def extract_orders_and_sales(item_text):
