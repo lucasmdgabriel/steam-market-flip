@@ -89,7 +89,7 @@ def check_countdown(buying_countdown):
 
 
     
-
+new_items = []
 for item in items:
 
     item_str = get_item_data(item)
@@ -120,7 +120,7 @@ for item in items:
 
 
     if item["status"] == "buying" or item["status"] == "":
-        profit = (new_sell_price - tax) - new_buy_price
+        profit = (new_buy_price - tax) - new_sell_price
         profit_rate = profit/new_sell_price
 
         print(f"profit: {profit}")
@@ -141,12 +141,13 @@ for item in items:
                 "minute": minute
             }
 
-        elif (profit < 0.1 or profit_rate < 0.15) and item["status"] == "buying":
+        elif (profit < 0.1 or profit_rate < 0.15):
             cancel_buy(item["status"])
             item["status"] = ""
             item["buy_value"] = 0.0
 
         elif sell_price != item["buy_value"]:
+            print("aq")
             item["status"] = "buying"
 
             cancel_buy(item["status"])
@@ -157,7 +158,7 @@ for item in items:
         in_countdown = check_countdown(item["buying_countdown"])
 
         if not in_countdown:
-            item["status"] = "selling"
+            item["status"] = "waiting_sale_oportunity"
             item["buying_countdown"] = {}
             item["sale_tries"] = 0
 
@@ -192,8 +193,11 @@ for item in items:
 
             sell_action(new_buy_price, item["name"])
 
-    print(item)
+    item["buy_value"] = float(item["buy_value"])
+    item["sale_value"] = float(item["sale_value"])
+    new_items.append(item)
+    print(new_items)
+    print("")
 
-
-
-    exit()
+with open("data.json", "w", encoding="utf-8") as f:
+    json.dump({"items": new_items}, f, ensure_ascii=False, indent=4)
