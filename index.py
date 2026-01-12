@@ -20,10 +20,27 @@ time.sleep(0.1)
 new_items = []
 
 for item in items:
+    item_status = item["status"]
+
     item_str = get_item_data(item)
 
-    heh = check_item_market_data(item_str)
+    item_market_data = check_item_market_data(item_str)
 
-    print(heh)
+    print(item_market_data)
+    print(item)
+
+    sell_price = item_market_data["buy"][0]["price"] - 0.01
+    buy_price = item_market_data["sell"][0]["price"] - 0.01
+
+    print(sell_price)
+    print(buy_price)
+
+    if "buying" in item_status or item_status == []:
+        profit = (sell_price * 0.85) - buy_price
+
+        print(profit)
+
+        worth_it = False
+
 
     exit()

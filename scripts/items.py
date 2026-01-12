@@ -31,10 +31,8 @@ def check_item_market_data(item_text):
     return {
         "buy": extract_prices(item_text, "Comprar"),
         "sell": extract_prices(item_text, "Vender"),
-        "status": {
-            "sales_count": sales_count,
-            "buy_count": buy_orders_count
-        }
+        "sales_count": sales_count,
+        "buy_count": buy_orders_count
     }
 
 
