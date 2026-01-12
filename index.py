@@ -69,9 +69,6 @@ for item in items:
     print(f"item_market_data: {item_market_data}")
     print(f"item: {item}")
 
-    # buy_price = item_market_data["buy"][0]["price"]
-    # sell_price = item_market_data["sell"][0]["price"]
-
     buy_price = Decimal(str(item_market_data["buy"][0]["price"]))
     sell_price = Decimal(str(item_market_data["sell"][0]["price"]))
 
@@ -116,7 +113,7 @@ for item in items:
                 item_status.append("buying")
 
             cancel_buy(item_status)
-            buy_action(sell_price)
+            buy_action(new_sell_price)
             item["buy_value"] = sell_price
 
         print(f"profit: {profit}")

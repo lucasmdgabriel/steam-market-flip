@@ -1,17 +1,17 @@
 {
     "items": [
         {
-            "name": "Plane of Skulls",
-            "url": "https://steamcommunity.com/market/listings/753/2218750-Plane%20of%20Skulls",
-            "buy_value": 0.67,
+            "name": "Blue Sparks",
+            "url": "https://steamcommunity.com/market/listings/753/508900-Blue%20Sparks",
+            "buy_value": 1,
             "sell_value": 0.0,
             "buyed_value": [],
             "status": ["buying"]
         },
         {
-            "name": "Blue Sparks",
-            "url": "https://steamcommunity.com/market/listings/753/508900-Blue%20Sparks",
-            "buy_value": 8.07,
+            "name": "Plane of Skulls",
+            "url": "https://steamcommunity.com/market/listings/753/2218750-Plane%20of%20Skulls",
+            "buy_value": 0.67,
             "sell_value": 0.0,
             "buyed_value": [],
             "status": ["buying"]
