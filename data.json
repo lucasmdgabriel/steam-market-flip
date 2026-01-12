@@ -1,12 +1,42 @@
 {
     "items": [
         {
+            "name": "Plane of Skulls",
+            "url": "https://steamcommunity.com/market/listings/753/2218750-Plane%20of%20Skulls",
+            "buy_value": 0.68,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Stealth",
+            "url": "https://steamcommunity.com/market/listings/753/4760-Stealth",
+            "buy_value": 0.0,
+            "sale_value": 0.87,
+            "buyed_value": 0.01,
+            "status": "selling",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Bolsonaryo (Carta Colecionável)",
+            "url": "https://steamcommunity.com/market/listings/753/1395560-Bolsonaryo%20%28Trading%20Card%29",
+            "buy_value": 0.0,
+            "sale_value": 0.83,
+            "buyed_value": 0.01,
+            "status": "selling",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
             "name": "YELLOW SERGEANT",
             "url": "https://steamcommunity.com/market/listings/753/366250-YELLOW%20SERGEANT",
             "buy_value": 0.0,
-            "sale_value": 0.0,
+            "sale_value": 0.19,
             "buyed_value": 0.01,
-            "status": "waiting_sale_oportunity",
+            "status": "selling",
             "buying_countdown": {
                 "year": 2018,
                 "month": 1,
@@ -40,9 +70,9 @@
             "name": "Title",
             "url": "https://steamcommunity.com/market/listings/753/344770-Title",
             "buy_value": 0.0,
-            "sale_value": 0.0,
+            "sale_value": 2.44,
             "buyed_value": 0.01,
-            "status": "waiting_sale_oportunity",
+            "status": "selling",
             "buying_countdown": {
                 "year": 2018,
                 "month": 1,
@@ -85,26 +115,6 @@
             "sale_tries": 0
         },
         {
-            "name": "Stealth",
-            "url": "https://steamcommunity.com/market/listings/753/4760-Stealth",
-            "buy_value": 0.0,
-            "sale_value": 0.99,
-            "buyed_value": 0.01,
-            "status": "selling",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Bolsonaryo (Carta Colecionável)",
-            "url": "https://steamcommunity.com/market/listings/753/1395560-Bolsonaryo%20%28Trading%20Card%29",
-            "buy_value": 0.0,
-            "sale_value": 0.9,
-            "buyed_value": 0.01,
-            "status": "selling",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
             "name": "Haruna (Plano de Fundo de Perfil)",
             "url": "https://steamcommunity.com/market/listings/753/386970-Haruna%20%28Profile%20Background%29",
             "buy_value": 0.0,
@@ -127,19 +137,19 @@
         {
             "name": "Splat",
             "url": "https://steamcommunity.com/market/listings/753/282010-Splat",
-            "buy_value": 5.0,
+            "buy_value": 0.0,
             "sale_value": 0.0,
-            "buyed_value": 0.00,
-            "status": "buying",
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
             "name": "The Angry Planet",
             "url": "https://steamcommunity.com/market/listings/753/323060-The%20Angry%20Planet",
-            "buy_value": 7.87,
+            "buy_value": 8.32,
             "sale_value": 0.0,
-            "buyed_value": 0.00,
+            "buyed_value": 0.0,
             "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
@@ -147,9 +157,9 @@
         {
             "name": "White Stars",
             "url": "https://steamcommunity.com/market/listings/753/463180-White%20Stars",
-            "buy_value": 6.5,
+            "buy_value": 6.7,
             "sale_value": 0.0,
-            "buyed_value": 0.00,
+            "buyed_value": 0.0,
             "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
@@ -157,9 +167,9 @@
         {
             "name": "Volátil",
             "url": "https://steamcommunity.com/market/listings/753/534380-Volatile%20%28Foil%20Trading%20Card%29",
-            "buy_value": 6.51,
+            "buy_value": 6.71,
             "sale_value": 0.0,
-            "buyed_value": 0.00,
+            "buyed_value": 0.0,
             "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
@@ -167,9 +177,9 @@
         {
             "name": "Yui (Carta Colecionável)",
             "url": "https://steamcommunity.com/market/listings/753/367020-Yui%20%28Trading%20Card%29",
-            "buy_value": 1.4,
+            "buy_value": 2.91,
             "sale_value": 0.0,
-            "buyed_value": 0.00,
+            "buyed_value": 0.0,
             "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
@@ -177,50 +187,40 @@
         {
             "name": "Stellar Vista",
             "url": "https://steamcommunity.com/market/listings/753/360600-Stellar%20Vista",
-            "buy_value": 5.6,
+            "buy_value": 0.0,
             "sale_value": 0.0,
-            "buyed_value": 0.00,
-            "status": "buying",
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
             "name": "Katakana",
             "url": "https://steamcommunity.com/market/listings/753/585690-Katakana",
-            "buy_value": 1.97,
+            "buy_value": 0.0,
             "sale_value": 0.0,
-            "buyed_value": 0.00,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Plane of Skulls",
-            "url": "https://steamcommunity.com/market/listings/753/2218750-Plane%20of%20Skulls",
-            "buy_value": 0.66,
-            "sale_value": 0.0,
-            "buyed_value": 0.00,
-            "status": "buying",
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
             "name": "Blue Sparks",
             "url": "https://steamcommunity.com/market/listings/753/508900-Blue%20Sparks",
-            "buy_value": 8.36,
+            "buy_value": 0.0,
             "sale_value": 0.0,
-            "buyed_value": 0.00,
-            "status": "buying",
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
             "name": "Planet 4546B Postcard",
             "url": "https://steamcommunity.com/market/listings/264710/Planet%204546B%20Postcard",
-            "buy_value": 0.15,
-            "sale_value": 0.0,
-            "buyed_value": 0.00,
-            "status": "buying",
+            "buy_value": 0.0,
+            "sale_value": 0.66,
+            "buyed_value": 0.15,
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         }

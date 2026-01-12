@@ -24,6 +24,13 @@ def cancel_action_sell():
     time.sleep(0.25)
 
     # CONFIRMAR CANCELAMENTO
-    pyautogui.moveTo(1104, 602)
-    pyautogui.click()
+    try:
+        pos_cancel = pyautogui.locateOnScreen(
+            "assets/Button_remove_off.png",
+        )
+    except pyautogui.ImageNotFoundException:
+        pyautogui.moveTo(1104, 602)
+        
+    pyautogui.click(pos_cancel)
+    
     time.sleep(0.75)

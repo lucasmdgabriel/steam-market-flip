@@ -39,7 +39,6 @@ def buy_action(value):
     time.sleep(2)
 
 
-
 def sell_action(value, name):
     time.sleep(0.25)
 
@@ -67,10 +66,6 @@ def sell_action(value, name):
     pyautogui.moveTo(1090, 970)
     pyautogui.click()
     time.sleep(0.5)
-
-    pos_cancel = pyautogui.locateOnScreen("assets/Button_remove_off.png")
-    pyautogui.moveTo(pos_cancel.left, pos_cancel.top)
-    pyautogui.click()
 
     pyautogui.press('tab')
     time.sleep(0.5)
