@@ -2,7 +2,7 @@
 import pyautogui
 import json
 import time
-from scripts.items import check_item
+from scripts.items import get_item_data, check_item_market_data
 
 account_name = "nash"
 steam_wallet = 20.06
@@ -20,6 +20,10 @@ time.sleep(0.1)
 new_items = []
 
 for item in items:
-    check_item(item, account_name)
+    item_str = get_item_data(item)
+
+    heh = check_item_market_data(item_str)
+
+    print(heh)
 
     exit()
