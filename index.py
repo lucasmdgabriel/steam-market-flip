@@ -119,7 +119,7 @@ for item in items:
     print(f"tax: {tax}")
 
 
-    if item["status"] == "buying" or item["status"] == "":
+    if item["status"] == "buying" or item["status"] == "waiting_buy_oportunity":
         profit = (new_buy_price - tax) - new_sell_price
         profit_rate = profit/new_sell_price
 
@@ -143,7 +143,7 @@ for item in items:
 
         elif (profit < 0.1 or profit_rate < 0.15):
             cancel_buy(item["status"])
-            item["status"] = ""
+            item["status"] = "waiting_buy_oportunity"
             item["buy_value"] = 0.0
 
         elif sell_price != item["buy_value"]:
@@ -174,7 +174,7 @@ for item in items:
         if item_market_data["sales_count"] < 1 and item["status"] == "selling":
             print("VENDEU!")
 
-            item["status"] = ""
+            item["status"] = "waiting_buy_oportunity"
             item["buyed_value"] = "0.0"
             item["sale_value"] = "0.0"
 
@@ -197,7 +197,7 @@ for item in items:
     item["sale_value"] = float(item["sale_value"])
     new_items.append(item)
     print(new_items)
-    print("")
+    print("=====================")
 
 with open("data.json", "w", encoding="utf-8") as f:
     json.dump({"items": new_items}, f, ensure_ascii=False, indent=4)
