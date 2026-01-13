@@ -167,6 +167,7 @@ for item in items:
             buy_and_sell.append(sold_item)
 
             item["status"] = "waiting_buy_oportunity"
+            item["buy_value"] = "0.0"
             item["buyed_value"] = "0.0"
             item["sale_value"] = "0.0"
 
