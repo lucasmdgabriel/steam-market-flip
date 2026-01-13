@@ -24,14 +24,13 @@ sales_tries_before_take_a_loss = 6
 with open('data.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 items = data["items"]
+buy_and_sell = data["buy_and_sell"]
 
 # Minimizar VS Code
 pyautogui.moveTo(1780, 20) # NOTEBOOK
 pyautogui.moveTo(1805, 15) # PC
 pyautogui.click()
 time.sleep(0.1)
-
-new_items = []
 
 def cancel_buy(item_status):
     if item_status == "buying":
@@ -117,7 +116,7 @@ for item in items:
             item["buy_value"] = 0.0
             
             item["buying_countdown"] = {
-                "day": day,
+                "day": day + 7,
                 "month": month,
                 "year": year,
                 "hour": hour,
@@ -130,7 +129,6 @@ for item in items:
             item["buy_value"] = 0.0
 
         elif sell_price != item["buy_value"]:
-            print("aq")
             item["status"] = "buying"
 
             cancel_buy(item["status"])
@@ -155,7 +153,15 @@ for item in items:
         print(f"profit_rate: {profit_rate}")
 
         if item_market_data["sales_count"] < 1 and item["status"] == "selling":
-            print("VENDEU!")
+            sold_item = {
+                "Name": item["name"],
+                "url": item["url"],
+                "buy_price": item["buyed_value"],
+                "sell_price": item["sale_value"],
+                "profit": item["sale_value"] - item["buyed_value"]
+            }
+
+            buy_and_sell.append(sold_item)
 
             item["status"] = "waiting_buy_oportunity"
             item["buyed_value"] = "0.0"
@@ -178,6 +184,7 @@ for item in items:
 
     item["buy_value"] = float(item["buy_value"])
     item["sale_value"] = float(item["sale_value"])
+    item["buyed_value"] = float(item["buyed_value"])
     new_items.append(item)
     print(new_items)
     print("=====================")

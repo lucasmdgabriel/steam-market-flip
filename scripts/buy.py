@@ -12,7 +12,6 @@ def buy_action(value):
     time.sleep(0.25)
 
     pos_cada = pyautogui.locateOnScreen("assets/Word_cada.png")
-    pos_aceito = pyautogui.locateOnScreen("assets/Button.png")
 
     # MUDAR VALOR
     pyautogui.moveTo(pos_cada.left - 39, pos_cada.top + 8)
@@ -23,6 +22,7 @@ def buy_action(value):
     pyperclip.copy(value)
     pyautogui.hotkey("ctrl", "v")
 
+    pos_aceito = pyautogui.locateOnScreen("assets/Button.png")
     # CONCORDAR COM TERMOS
     pyautogui.moveTo(pos_aceito.left - 13, pos_aceito.top + 5)
     pyautogui.click()
