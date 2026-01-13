@@ -146,7 +146,10 @@ for item in items:
     if item["status"] in ["selling", "waiting_sale_oportunity"]:
         profit = new_buy_price - Decimal(item["buyed_value"])
         
-        profit_rate = profit/Decimal(item["buyed_value"])
+        profit_rate = 0
+
+        if item["buyed_value"] != 0:
+            profit_rate = profit/Decimal(item["buyed_value"])
 
         print(f"buyed_value: {item["buyed_value"]}")
         print(f"profit: {profit}")
