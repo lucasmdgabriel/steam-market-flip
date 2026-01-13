@@ -338,5 +338,6 @@
             "buying_countdown": {},
             "sale_tries": 0
         }
-    ]
+    ],
+    "buy_and_sell": []
 }

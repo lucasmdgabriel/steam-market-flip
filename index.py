@@ -190,4 +190,4 @@ for item in items:
     print("=====================")
 
 with open("data.json", "w", encoding="utf-8") as f:
-    json.dump({"items": new_items}, f, ensure_ascii=False, indent=4)
+    json.dump({"items": new_items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
