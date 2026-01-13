@@ -156,9 +156,9 @@ for item in items:
             sold_item = {
                 "Name": item["name"],
                 "url": item["url"],
-                "buy_price": item["buyed_value"],
-                "sell_price": item["sale_value"],
-                "profit": Decimal(item["sale_value"]) - Decimal(item["buyed_value"])
+                "buy_price": float(item["buyed_value"]),
+                "sell_price": float(item["sale_value"]),
+                "profit": float(Decimal(item["sale_value"]) - Decimal(item["buyed_value"]))
             }
 
             buy_and_sell.append(sold_item)
