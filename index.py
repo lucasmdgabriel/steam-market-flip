@@ -133,7 +133,7 @@ for item in items:
 
             cancel_buy(item["status"])
             buy_action(new_sell_price)
-            item["buy_value"] = sell_price
+            item["buy_value"] = new_sell_price
 
     elif item["status"] == "buying_countdown":
         in_countdown = check_countdown(item["buying_countdown"])
@@ -158,7 +158,7 @@ for item in items:
                 "url": item["url"],
                 "buy_price": item["buyed_value"],
                 "sell_price": item["sale_value"],
-                "profit": item["sale_value"] - item["buyed_value"]
+                "profit": Decimal(item["sale_value"]) - Decimal(item["buyed_value"])
             }
 
             buy_and_sell.append(sold_item)

@@ -1,9 +1,19 @@
 {
     "items": [
         {
+            "name": "YELLOW SERGEANT",
+            "url": "https://steamcommunity.com/market/listings/753/366250-YELLOW%20SERGEANT",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
             "name": "Splat",
             "url": "https://steamcommunity.com/market/listings/753/282010-Splat",
-            "buy_value": 8.18,
+            "buy_value": 8.2,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -34,19 +44,9 @@
             "name": "Bolsonaryo (Carta Colecionável)",
             "url": "https://steamcommunity.com/market/listings/753/1395560-Bolsonaryo%20%28Trading%20Card%29",
             "buy_value": 0.0,
-            "sale_value": 0.83,
-            "buyed_value": 0.01,
-            "status": "selling",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "YELLOW SERGEANT",
-            "url": "https://steamcommunity.com/market/listings/753/366250-YELLOW%20SERGEANT",
-            "buy_value": 0.0,
             "sale_value": 0.0,
-            "buyed_value": "0.0",
-            "status": "selling",
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -78,11 +78,11 @@
             "buyed_value": 0.01,
             "status": "selling",
             "buying_countdown": {
-            "year": 2018,
-            "month": 1,
-            "day": 1,
-            "hour": 12,
-            "minute": 0
+                "year": 2018,
+                "month": 1,
+                "day": 1,
+                "hour": 12,
+                "minute": 0
             },
             "sale_tries": 0
         },
@@ -94,11 +94,11 @@
             "buyed_value": 6.25,
             "status": "buying_countdown",
             "buying_countdown": {
-            "year": 2026,
-            "month": 1,
-            "day": 17,
-            "hour": 5,
-            "minute": 0
+                "year": 2026,
+                "month": 1,
+                "day": 17,
+                "hour": 5,
+                "minute": 0
             },
             "sale_tries": 0
         },
@@ -145,7 +145,7 @@
         {
             "name": "White Stars",
             "url": "https://steamcommunity.com/market/listings/753/463180-White%20Stars",
-            "buy_value": 6.72,
+            "buy_value": 6.74,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -155,7 +155,7 @@
         {
             "name": "Volátil",
             "url": "https://steamcommunity.com/market/listings/753/534380-Volatile%20%28Foil%20Trading%20Card%29",
-            "buy_value": 6.73,
+            "buy_value": 6.71,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -175,7 +175,7 @@
         {
             "name": "Stellar Vista",
             "url": "https://steamcommunity.com/market/listings/753/360600-Stellar%20Vista",
-            "buy_value": 5.65,
+            "buy_value": 5.66,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -185,10 +185,10 @@
         {
             "name": "Katakana",
             "url": "https://steamcommunity.com/market/listings/753/585690-Katakana",
-            "buy_value": 0.0,
+            "buy_value": 2.01,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -221,7 +221,7 @@
         {
             "name": "Glitch Sansui-zu (Estático)",
             "url": "https://steamcommunity.com/market/listings/753/1465680-Glitch%20Sansui-zu%20%28still%29",
-            "buy_value": 0.86,
+            "buy_value": 0.87,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -241,7 +241,7 @@
         {
             "name": "Seek Girl - Month",
             "url": "https://steamcommunity.com/market/listings/753/998930-Seek%20Girl%20-%20Month",
-            "buy_value": 0.5,
+            "buy_value": 0.51,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -271,7 +271,7 @@
         {
             "name": "Half Life 3 Confirmed?",
             "url": "https://steamcommunity.com/market/listings/753/403740-Half%20Life%203%20Confirmed%3F",
-            "buy_value": 1.17,
+            "buy_value": 1.18,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -281,7 +281,7 @@
         {
             "name": "Castle Blackburn",
             "url": "https://steamcommunity.com/market/listings/753/246420-Castle%20Blackburn",
-            "buy_value": 0.87,
+            "buy_value": 0.88,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -311,7 +311,7 @@
         {
             "name": "Snowman",
             "url": "https://steamcommunity.com/market/listings/753/335590-Snowman",
-            "buy_value": 0.67,
+            "buy_value": 0.68,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -331,15 +331,12 @@
         {
             "name": "Destroyed City",
             "url": "https://steamcommunity.com/market/listings/753/528230-Destroyed%20City",
-            "buy_value": 0.75,
+            "buy_value": 0.76,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         }
-    ],
-    "buy_and_sell": [
-
     ]
 }
