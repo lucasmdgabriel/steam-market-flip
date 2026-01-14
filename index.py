@@ -17,7 +17,7 @@ minute = now.minute
 
 
 account_name = "nash"
-steam_wallet = 20.06
+steam_wallet = float(input("Digite o valor atual da carteira: "))
 sales_tries_before_take_a_loss = 6
 
 # Abrir itens
@@ -119,8 +119,8 @@ for item in items:
                 "day": day + 7,
                 "month": month,
                 "year": year,
-                "hour": hour,
-                "minute": minute
+                "hour": 5,
+                "minute": 0
             }
 
         elif (profit < 0.1 or profit_rate < 0.15):
@@ -132,8 +132,12 @@ for item in items:
             item["status"] = "buying"
 
             cancel_buy(item["status"])
-            buy_action(new_sell_price)
+            is_buy = buy_action(new_sell_price, steam_wallet)
             item["buy_value"] = new_sell_price
+
+            if is_buy == False:
+               item["status"] = "waiting_buy_oportunity"
+               item["buy_value"] = 0.0
 
     elif item["status"] == "buying_countdown":
         in_countdown = check_countdown(item["buying_countdown"])
