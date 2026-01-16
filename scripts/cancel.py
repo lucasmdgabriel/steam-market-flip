@@ -1,16 +1,19 @@
 import pyautogui
 import time
+from decimal import Decimal
 
-def cancel_action_buy():
+def cancel_action_buy(value, total_buying):
     try:
         pos_cancel = pyautogui.locateOnScreen(
             "assets/Button_cancelar.png",
         )
     except pyautogui.ImageNotFoundException:
-        return
+        return total_buying
 
     pyautogui.click(pos_cancel)
     time.sleep(1)
+
+    return total_buying - float(value)
 
 def cancel_action_sell():
     try:

@@ -3,7 +3,7 @@ import pyperclip
 import json
 import time
 from datetime import datetime
-from decimal import Decimal, ROUND_DOWN
+from decimal import Decimal
 from scripts.items import get_item_data, check_item_market_data
 from scripts.buy import buy_action, sell_action
 from scripts.cancel import cancel_action_buy, cancel_action_sell
@@ -18,7 +18,10 @@ minute = now.minute
 
 account_name = "nash"
 steam_wallet = float(input("Digite o valor atual da carteira: "))
+buy_limit = steam_wallet * 10
 sales_tries_before_take_a_loss = 6
+
+print(f"Limite de compra: {buy_limit}")
 
 # Abrir itens
 with open('data.json', 'r', encoding='utf-8') as f:
@@ -26,15 +29,23 @@ with open('data.json', 'r', encoding='utf-8') as f:
 items = data["items"]
 buy_and_sell = data["buy_and_sell"]
 
+total_buying = 0
+for item in items:
+    if item["status"] == "buying":
+        total_buying += item["buy_value"]
+print(f"Compras totais: {total_buying}")
+exit()
+
 # Minimizar VS Code
-pyautogui.moveTo(1780, 20) # NOTEBOOK
-pyautogui.moveTo(1805, 15) # PC
+pyautogui.moveTo(1805, 15)
 pyautogui.click()
 time.sleep(0.1)
 
-def cancel_buy(item_status):
+def cancel_buy(item_status, value, total_buying):
     if item_status == "buying":
-        cancel_action_buy()
+        total_buying = cancel_action_buy(value, total_buying)
+
+    return total_buying
 
 def cancel_sell(item_status):
     if item_status == "selling":
@@ -87,6 +98,9 @@ for item in items:
     new_buy_price = buy_price - Decimal("0.01")
     new_sell_price = sell_price + Decimal("0.01")
 
+    if new_sell_price < 0.15:
+        new_sell_price = Decimal(0.15)
+
     print(f"buy_price: {buy_price}")
     print(f"sell_price: {sell_price}")
     print(f"new_buy_price: {new_buy_price}")
@@ -124,15 +138,16 @@ for item in items:
             }
 
         elif (profit < 0.1 or profit_rate < 0.15):
-            cancel_buy(item["status"])
+            total_buying = cancel_buy(item["status"], item["buy_value"], total_buying)
             item["status"] = "waiting_buy_oportunity"
             item["buy_value"] = 0.0
 
         elif sell_price != item["buy_value"]:
             item["status"] = "buying"
 
-            cancel_buy(item["status"])
-            is_buy = buy_action(new_sell_price, steam_wallet)
+            total_buying = cancel_buy(item["status"], item["buy_value"], total_buying)
+
+            is_buy, total_buying = buy_action(new_sell_price, steam_wallet, buy_limit, total_buying)
             item["buy_value"] = new_sell_price
 
             if is_buy == False:
@@ -194,7 +209,6 @@ for item in items:
     item["sale_value"] = float(item["sale_value"])
     item["buyed_value"] = float(item["buyed_value"])
     new_items.append(item)
-    print(new_items)
     print("=====================")
 
 with open("data.json", "w", encoding="utf-8") as f:

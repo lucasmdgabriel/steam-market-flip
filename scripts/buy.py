@@ -3,10 +3,15 @@ import pyperclip
 import time
 import random
 
-def buy_action(value, steam_wallet):
+def buy_action(value, steam_wallet, buy_limit, total_buying):
+    print(buy_limit, total_buying)
     if value > steam_wallet:
         print("Saldo insuficiente. Ignorando.")
-        return False
+        return False, total_buying
+    
+    if buy_limit < (float(value) + total_buying):
+        print("Limite alcançado.")
+        return False, total_buying
 
     time.sleep(0.25)
 
@@ -41,6 +46,8 @@ def buy_action(value, steam_wallet):
     pyautogui.moveTo(1400, 500)
     pyautogui.click()
     time.sleep(2)
+
+    return True, ( total_buying + float(value) )
 
 
 def sell_action(value, name):
