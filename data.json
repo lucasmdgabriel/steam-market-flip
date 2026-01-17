@@ -13,10 +13,10 @@
         {
             "name": "Dead Pixel",
             "url": "https://steamcommunity.com/market/listings/753/1911800-Dead%20Pixel",
-            "buy_value": 0.32,
+            "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "buying",
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -43,10 +43,10 @@
         {
             "name": "Plane of Skulls",
             "url": "https://steamcommunity.com/market/listings/753/2218750-Plane%20of%20Skulls",
-            "buy_value": 0.68,
+            "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "buying",
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -97,29 +97,17 @@
             "sale_value": 2.44,
             "buyed_value": 0.0,
             "status": "selling",
-            "buying_countdown": {
-                "year": 2018,
-                "month": 1,
-                "day": 1,
-                "hour": 12,
-                "minute": 0
-            },
+            "buying_countdown": {},
             "sale_tries": 0
         },
         {
             "name": "Cherry Blossom",
             "url": "https://steamcommunity.com/market/listings/753/1153410-Cherry%20Blossom",
             "buy_value": 0.0,
-            "sale_value": 0.0,
+            "sale_value": 13.82,
             "buyed_value": 6.25,
-            "status": "buying_countdown",
-            "buying_countdown": {
-                "year": 2026,
-                "month": 1,
-                "day": 17,
-                "hour": 5,
-                "minute": 0
-            },
+            "status": "selling",
+            "buying_countdown": {},
             "sale_tries": 0
         },
         {
@@ -181,10 +169,10 @@
         {
             "name": "Yui (Carta Colecionável)",
             "url": "https://steamcommunity.com/market/listings/753/367020-Yui%20%28Trading%20Card%29",
-            "buy_value": 3.25,
+            "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "buying",
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -223,10 +211,10 @@
         {
             "name": "Planet 4546B Postcard",
             "url": "https://steamcommunity.com/market/listings/264710/Planet%204546B%20Postcard",
-            "buy_value": 0.48,
+            "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "buying",
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -305,7 +293,7 @@
         {
             "name": "Castle Blackburn",
             "url": "https://steamcommunity.com/market/listings/753/246420-Castle%20Blackburn",
-            "buy_value": 1.01,
+            "buy_value": 1.14,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -341,20 +329,20 @@
         {
             "name": "Snowman",
             "url": "https://steamcommunity.com/market/listings/753/335590-Snowman",
-            "buy_value": 0.0,
+            "buy_value": 0.7,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
             "name": "Slingshot",
             "url": "https://steamcommunity.com/market/listings/753/542340-Slingshot",
-            "buy_value": 0.0,
+            "buy_value": 1.85,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -401,10 +389,10 @@
         {
             "name": "Holiday Lights",
             "url": "https://steamcommunity.com/market/listings/753/335590-Holiday%20Lights",
-            "buy_value": 2.47,
+            "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "buying",
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -437,10 +425,10 @@
         {
             "name": "The girl next door",
             "url": "https://steamcommunity.com/market/listings/753/1716170-The%20girl%20next%20door",
-            "buy_value": 2.03,
+            "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "buying",
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -457,10 +445,10 @@
         {
             "name": "Distant Galaxy",
             "url": "https://steamcommunity.com/market/listings/753/2206560-Distant%20Galaxy%20%28Profile%20Background%29",
-            "buy_value": 2.2,
+            "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "buying",
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -477,20 +465,20 @@
         {
             "name": "Guzhou",
             "url": "https://steamcommunity.com/market/listings/753/455000-Guzhou",
-            "buy_value": 0.0,
+            "buy_value": 1.41,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
             "name": "SWAT",
             "url": "https://steamcommunity.com/market/listings/753/541230-SWAT",
-            "buy_value": 0.0,
+            "buy_value": 1.88,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -537,50 +525,50 @@
         {
             "name": "Violet space!",
             "url": "https://steamcommunity.com/market/listings/753/683830-Violet%20space%21",
-            "buy_value": 0.0,
+            "buy_value": 0.66,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
             "name": "The shine through darkness",
             "url": "https://steamcommunity.com/market/listings/753/444410-The%20shine%20through%20darkness",
-            "buy_value": 0.0,
+            "buy_value": 0.5,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
             "name": "Holiday Sale 2013 - Dota2",
             "url": "https://steamcommunity.com/market/listings/753/267420-Holiday%20Sale%202013%20-%20Dota2",
-            "buy_value": 0.0,
+            "buy_value": 0.61,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
             "name": "Deadbreed® Cinder",
             "url": "https://steamcommunity.com/market/listings/753/277950-Deadbreed%C2%AE%20Cinder",
-            "buy_value": 0.0,
+            "buy_value": 0.37,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
             "name": "Vermelha",
             "url": "https://steamcommunity.com/market/listings/753/1030300-Red",
-            "buy_value": 0.0,
+            "buy_value": 0.27,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         }

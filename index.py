@@ -34,7 +34,6 @@ for item in items:
     if item["status"] == "buying":
         total_buying += item["buy_value"]
 print(f"Compras totais: {total_buying}")
-exit()
 
 # Minimizar VS Code
 pyautogui.moveTo(1805, 15)

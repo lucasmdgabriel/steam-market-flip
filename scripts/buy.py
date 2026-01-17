@@ -1,10 +1,10 @@
+from decimal import Decimal
 import pyautogui
 import pyperclip
 import time
 import random
 
 def buy_action(value, steam_wallet, buy_limit, total_buying):
-    print(buy_limit, total_buying)
     if value > steam_wallet:
         print("Saldo insuficiente. Ignorando.")
         return False, total_buying
@@ -21,15 +21,28 @@ def buy_action(value, steam_wallet, buy_limit, total_buying):
     time.sleep(0.25)
 
     pos_cada = pyautogui.locateOnScreen("assets/Word_cada.png")
+    max_value = Decimal("0.0")
+    value -= Decimal("0.01")
 
-    # MUDAR VALOR
-    pyautogui.moveTo(pos_cada.left - 39, pos_cada.top + 8)
-    for i in range(3):
-        pyautogui.click()
-        time.sleep(0.1)
+    while float(max_value) != float(value):
+        value += Decimal("0.01")
 
-    pyperclip.copy(value)
-    pyautogui.hotkey("ctrl", "v")
+        # MUDAR VALOR
+        pyautogui.moveTo(pos_cada.left - 39, pos_cada.top + 8)
+        for i in range(3):
+            pyautogui.click()
+            time.sleep(0.1)
+
+        pyperclip.copy(value)
+        pyautogui.hotkey("ctrl", "v")
+
+        pyautogui.moveTo(pos_cada.left - 39, pos_cada.top + 8 + 75)
+        for i in range(2):
+            pyautogui.click()
+            time.sleep(0.1)
+
+        pyautogui.hotkey("ctrl", "c")
+        max_value = pyperclip.paste().replace(",", ".")
 
     pos_aceito = pyautogui.locateOnScreen("assets/Button.png")
     # CONCORDAR COM TERMOS
