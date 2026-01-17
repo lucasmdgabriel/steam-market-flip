@@ -1,9 +1,9 @@
 {
     "items": [
         {
-            "name": "Firewatch: Thorofare Dawn",
-            "url": "https://steamcommunity.com/market/listings/753/383870-Firewatch%3A%20Thorofare%20Dawn",
-            "buy_value": 1.01,
+            "name": "Markus (Carta Colecionável Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/1222140-Markus%20(Foil%20Trading%20Card)",
+            "buy_value": 0.87,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -11,12 +11,12 @@
             "sale_tries": 0
         },
         {
-            "name": "Dead Pixel",
-            "url": "https://steamcommunity.com/market/listings/753/1911800-Dead%20Pixel",
-            "buy_value": 0.38,
+            "name": "Firewatch: Thorofare Dawn",
+            "url": "https://steamcommunity.com/market/listings/753/383870-Firewatch%3A%20Thorofare%20Dawn",
+            "buy_value": 1.01,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -559,9 +559,29 @@
             "sale_tries": 0
         },
         {
-            "name": "Deadbreed® Cinder",
-            "url": "https://steamcommunity.com/market/listings/753/277950-Deadbreed%C2%AE%20Cinder",
-            "buy_value": 0.37,
+            "name": "Vermelha",
+            "url": "https://steamcommunity.com/market/listings/753/1030300-Red",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Wrath of the Lamb",
+            "url": "https://steamcommunity.com/market/listings/753/113200-Wrath%20of%20the%20Lamb",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Alisa (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/1421250-Alisa%20%28Profile%20Background%29",
+            "buy_value": 0.38,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -569,8 +589,28 @@
             "sale_tries": 0
         },
         {
-            "name": "Vermelha",
-            "url": "https://steamcommunity.com/market/listings/753/1030300-Red",
+            "name": "Fim de Semana da Distribuidora Wargaming 2023 (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/2306810-Wargaming%20Publisher%20Weekend%202023%20%28Profile%20Background%29",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Moon",
+            "url": "https://steamcommunity.com/market/listings/753/208600-Moon",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Dumping Blood",
+            "url": "https://steamcommunity.com/market/listings/753/388490-Dumping%20Blood",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
