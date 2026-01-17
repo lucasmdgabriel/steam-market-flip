@@ -7,11 +7,11 @@ import random
 def buy_action(value, steam_wallet, buy_limit, total_buying):
     if value > steam_wallet:
         print("Saldo insuficiente. Ignorando.")
-        return False, total_buying
+        return False, total_buying, value
     
     if buy_limit < (float(value) + total_buying):
         print("Limite alcançado.")
-        return False, total_buying
+        return False, total_buying, value
 
     time.sleep(0.25)
 
@@ -60,7 +60,7 @@ def buy_action(value, steam_wallet, buy_limit, total_buying):
     pyautogui.click()
     time.sleep(2)
 
-    return True, ( total_buying + float(value) )
+    return True, ( total_buying + float(value) ), value
 
 
 def sell_action(value, name):

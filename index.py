@@ -146,7 +146,7 @@ for item in items:
 
             total_buying = cancel_buy(item["status"], item["buy_value"], total_buying)
 
-            is_buy, total_buying = buy_action(new_sell_price, steam_wallet, buy_limit, total_buying)
+            is_buy, total_buying, value = buy_action(new_sell_price, steam_wallet, buy_limit, total_buying)
             item["buy_value"] = new_sell_price
 
             if is_buy == False:
