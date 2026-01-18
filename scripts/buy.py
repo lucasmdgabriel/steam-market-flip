@@ -53,12 +53,16 @@ def buy_action(value, steam_wallet, buy_limit, total_buying):
     # COMPRAR
     pyautogui.moveTo(pos_aceito.left + 585, pos_aceito.top -20)
     pyautogui.click()
-    time.sleep(15)
+    
+    image_found = False
 
-    # CLIQUE FORA
-    pyautogui.moveTo(1400, 500)
-    pyautogui.click()
-    time.sleep(2)
+    while image_found == False:
+        image_found = True
+
+        try:
+            pyautogui.locateOnScreen("assets/Word_sucesso.png")
+        except pyautogui.ImageNotFoundException:
+            image_found = False
 
     return True, ( total_buying + float(value) ), value
 

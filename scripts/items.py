@@ -30,6 +30,8 @@ def get_item_data(item):
     # Sroll
     pyautogui.scroll(-1500)
 
+    time.sleep(0.3)
+
     return item_str
 
 import re
