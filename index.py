@@ -36,8 +36,6 @@ for item in items:
 print(f"Compras totais: {total_buying}")
 print(f"Número de itens: {len(items)}")
 
-exit()
-
 # Minimizar VS Code
 pyautogui.moveTo(1805, 15)
 pyautogui.click()
@@ -139,7 +137,7 @@ for item in items:
                 "minute": 0
             }
 
-        elif (profit < 0.1 or profit_rate < 0.15):
+        elif (profit < 0.1 or profit_rate < 0.10):
             total_buying = cancel_buy(item["status"], item["buy_value"], total_buying)
             item["status"] = "waiting_buy_oportunity"
             item["buy_value"] = 0.0
