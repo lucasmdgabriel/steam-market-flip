@@ -180,7 +180,8 @@ for item in items:
                 "url": item["url"],
                 "buy_price": float(item["buyed_value"]),
                 "sell_price": float(item["sale_value"]),
-                "profit": float(Decimal(item["sale_value"]) - Decimal(item["buyed_value"]))
+                "tax": float(item["sale_value"]) * 0.15,
+                "profit": float(Decimal(item["sale_value"]) - Decimal(item["buyed_value"])) - float(item["sale_value"]) * 0.15,
             }
 
             buy_and_sell.append(sold_item)
