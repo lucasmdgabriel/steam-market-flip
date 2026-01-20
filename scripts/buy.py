@@ -20,7 +20,14 @@ def buy_action(value, steam_wallet, buy_limit, total_buying):
     pyautogui.click()
     time.sleep(0.25)
 
-    pos_cada = pyautogui.locateOnScreen("assets/Word_cada.png")
+    find_pos = False
+    while find_pos == False:
+        find_pos = True
+        try:
+            pos_cada = pyautogui.locateOnScreen("assets/Word_cada.png")
+        except pyautogui.ImageNotFoundException:
+            input("Erro ao encontra rpos_cada")
+            find_pos = True
     max_value = Decimal("0.0")
     value -= Decimal("0.01")
 
@@ -44,7 +51,15 @@ def buy_action(value, steam_wallet, buy_limit, total_buying):
         pyautogui.hotkey("ctrl", "c")
         max_value = pyperclip.paste().replace(",", ".")
 
-    pos_aceito = pyautogui.locateOnScreen("assets/Button.png")
+
+    find_pos = False
+    while find_pos == False:
+        find_pos = True
+        try:
+            pos_aceito = pyautogui.locateOnScreen("assets/Button.png")
+        except pyautogui.ImageNotFoundException:
+            input("Erro ao encontra pos_aceito")
+            find_pos = True
     # CONCORDAR COM TERMOS
     pyautogui.moveTo(pos_aceito.left - 13, pos_aceito.top + 5)
     pyautogui.click()

@@ -7,6 +7,7 @@ from decimal import Decimal
 from scripts.items import get_item_data, check_item_market_data
 from scripts.buy import buy_action, sell_action
 from scripts.cancel import cancel_action_buy, cancel_action_sell
+import random
 
 now = datetime.now()
 year   = now.year
@@ -29,12 +30,15 @@ with open('data.json', 'r', encoding='utf-8') as f:
 items = data["items"]
 buy_and_sell = data["buy_and_sell"]
 
+random.shuffle(items)
+
 total_buying = 0
 for item in items:
     if item["status"] == "buying":
         total_buying += item["buy_value"]
 print(f"Compras totais: {total_buying}")
 print(f"Número de itens: {len(items)}")
+input("")
 
 # Minimizar VS Code
 pyautogui.moveTo(1805, 15)
@@ -83,7 +87,9 @@ def check_countdown(buying_countdown):
 
     
 new_items = []
+index = -1
 for item in items:
+    index += 1
 
     item_str = get_item_data(item)
 
@@ -137,7 +143,7 @@ for item in items:
                 "minute": 0
             }
 
-        elif (profit < 0.1 or profit_rate < 0.05):
+        elif (profit < 0.1 or profit_rate < 0.10):
             total_buying = cancel_buy(item["status"], item["buy_value"], total_buying)
             item["status"] = "waiting_buy_oportunity"
             item["buy_value"] = 0.0
@@ -212,5 +218,13 @@ for item in items:
     new_items.append(item)
     print("=====================")
 
-with open("data.json", "w", encoding="utf-8") as f:
-    json.dump({"items": new_items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
+    combined = new_items + items[index+1:]
+    with open("data.json", "w", encoding="utf-8") as f:
+        json.dump({"items": combined, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
+
+end = datetime.now()
+tempo_execucao = end - now
+
+print(f"Tempo de execução: {tempo_execucao}")
+print(f"Compras totais: {total_buying}")
+print(f"Número de itens: {len(items)}")

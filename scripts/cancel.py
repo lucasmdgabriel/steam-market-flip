@@ -24,7 +24,7 @@ def cancel_action_sell():
         return
 
     pyautogui.click(pos_cancel)
-    time.sleep(0.25)
+    time.sleep(0.50)
 
     # CONFIRMAR CANCELAMENTO
     try:
@@ -33,6 +33,8 @@ def cancel_action_sell():
         )
     except pyautogui.ImageNotFoundException:
         pyautogui.moveTo(1104, 602)
+        print("aff")
+        exit()
         
     pyautogui.click(pos_cancel)
     

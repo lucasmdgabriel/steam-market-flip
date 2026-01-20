@@ -5,7 +5,7 @@ import re
 
 def get_item_data(item):
     # Clicar na url
-    pyautogui.moveTo(1410, 70)
+    pyautogui.moveTo(1497, 53)
     pyautogui.click()
 
     # Cola link do item

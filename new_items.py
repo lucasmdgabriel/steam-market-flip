@@ -4,9 +4,7 @@ import time
 import pyautogui
 import pyperclip
 
-with open('new_items.json', 'r', encoding='utf-8') as f:
-    data = json.load(f)
-new_items = data["new_items"]
+new_items = []
 
 with open('data.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
@@ -27,9 +25,6 @@ while new != "s":
     elif new != "s":
         new_items.append(new)
 
-with open("new_items.json", "w", encoding="utf-8") as f:
-    json.dump({"new_items": new_items}, f, ensure_ascii=False, indent=4)
-
 # Minimizar VS Code
 pyautogui.moveTo(1805, 15)
 pyautogui.click()
@@ -37,7 +32,7 @@ time.sleep(0.1)
 
 for new_item in new_items:
     # Clicar na url
-    pyautogui.moveTo(1410, 70)
+    pyautogui.moveTo(1497, 53)
     pyautogui.click()
 
     # Cola link do item

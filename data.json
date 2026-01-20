@@ -1,9 +1,9 @@
 {
     "items": [
         {
-            "name": "Stellar Vista",
-            "url": "https://steamcommunity.com/market/listings/753/360600-Stellar%20Vista",
-            "buy_value": 5.79,
+            "name": "Shovelware Queens",
+            "url": "https://steamcommunity.com/market/listings/753/292630-Shovelware%20Queens",
+            "buy_value": 5.94,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -11,9 +11,9 @@
             "sale_tries": 0
         },
         {
-            "name": "Splat",
-            "url": "https://steamcommunity.com/market/listings/753/282010-Splat",
-            "buy_value": 5.11,
+            "name": "Twilight Forest",
+            "url": "https://steamcommunity.com/market/listings/753/359940-Twilight%20Forest",
+            "buy_value": 9.71,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -21,9 +21,9 @@
             "sale_tries": 0
         },
         {
-            "name": "Markus (Carta Colecionável Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/1222140-Markus%20(Foil%20Trading%20Card)",
-            "buy_value": 0.96,
+            "name": "Microhard Development Environment",
+            "url": "https://steamcommunity.com/market/listings/753/576030-Microhard%20Development%20Environment",
+            "buy_value": 14.68,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -31,9 +31,9 @@
             "sale_tries": 0
         },
         {
-            "name": "Firewatch: Thorofare Dawn",
-            "url": "https://steamcommunity.com/market/listings/753/383870-Firewatch%3A%20Thorofare%20Dawn",
-            "buy_value": 1.01,
+            "name": "Sunset",
+            "url": "https://steamcommunity.com/market/listings/753/645090-Sunset",
+            "buy_value": 5.03,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -41,8 +41,8 @@
             "sale_tries": 0
         },
         {
-            "name": "Plane of Skulls",
-            "url": "https://steamcommunity.com/market/listings/753/2218750-Plane%20of%20Skulls",
+            "name": "Grey thunder",
+            "url": "https://steamcommunity.com/market/listings/753/806140-Grey%20thunder",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
@@ -51,8 +51,8 @@
             "sale_tries": 0
         },
         {
-            "name": "Stealth",
-            "url": "https://steamcommunity.com/market/listings/753/4760-Stealth",
+            "name": "Broken Shell (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/367520-Broken%20Shell%20%28Foil%29",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
@@ -61,49 +61,9 @@
             "sale_tries": 0
         },
         {
-            "name": "Bolsonaryo (Carta Colecionável)",
-            "url": "https://steamcommunity.com/market/listings/753/1395560-Bolsonaryo%20%28Trading%20Card%29",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "New beginning",
-            "url": "https://steamcommunity.com/market/listings/753/400740-New%20beginning",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Classroom",
-            "url": "https://steamcommunity.com/market/listings/753/963690-Classroom",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Title",
-            "url": "https://steamcommunity.com/market/listings/753/344770-Title",
-            "buy_value": 0.0,
-            "sale_value": 2.44,
-            "buyed_value": 0.0,
-            "status": "selling",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Cherry Blossom",
-            "url": "https://steamcommunity.com/market/listings/753/1153410-Cherry%20Blossom",
-            "buy_value": 7.11,
+            "name": "Astolfo",
+            "url": "https://steamcommunity.com/market/listings/753/622220-Astolfo",
+            "buy_value": 17.85,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -111,29 +71,151 @@
             "sale_tries": 0
         },
         {
-            "name": "Haruna (Plano de Fundo de Perfil)",
-            "url": "https://steamcommunity.com/market/listings/753/386970-Haruna%20%28Profile%20Background%29",
+            "name": "Funeral flowers",
+            "url": "https://steamcommunity.com/market/listings/753/400740-Funeral%20flowers",
             "buy_value": 0.0,
-            "sale_value": 0.33,
-            "buyed_value": 0.01,
-            "status": "selling",
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
-            "name": "Beta Wall",
-            "url": "https://steamcommunity.com/market/listings/753/603190-Beta%20Wall",
-            "buy_value": 0.0,
-            "sale_value": 0.53,
-            "buyed_value": 0.01,
-            "status": "selling",
+            "name": "Universe (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/2160470-Universe%20%28Profile%20Background%29",
+            "buy_value": 2.72,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
         {
-            "name": "The Angry Planet",
-            "url": "https://steamcommunity.com/market/listings/753/323060-The%20Angry%20Planet",
-            "buy_value": 8.43,
+            "name": "Aoi (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/1101450-Aoi%20%28Foil%29",
+            "buy_value": 10.9,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Gustave (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/1903340-Gustave%20%28Foil%29",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 12.33,
+            "status": "buying_countdown",
+            "buying_countdown": {
+                "day": 26,
+                "month": 1,
+                "year": 2026,
+                "hour": 5,
+                "minute": 0
+            },
+            "sale_tries": 0
+        },
+        {
+            "name": "Scout (Carta Colecionável Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/440-SCOUT%20%28Foil%20Trading%20Card%29",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Ellie (Carta Colecionável Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/2531310-Ellie%20(Foil%20Trading%20Card)",
+            "buy_value": 10.97,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Seana Event",
+            "url": "https://steamcommunity.com/market/listings/753/400910-Seana%20Event",
+            "buy_value": 5.45,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "The Stacks",
+            "url": "https://steamcommunity.com/market/listings/753/746850-The%20Stacks",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "https://steamcommunity.com/market/listings/753/2531310-Boat",
+            "url": "https://steamcommunity.com/market/listings/753/2531310-Boat",
+            "buy_value": 0.76,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Maple and sea",
+            "url": "https://steamcommunity.com/market/listings/753/495990-Maple%20and%20sea",
+            "buy_value": 20.26,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Old song",
+            "url": "https://steamcommunity.com/market/listings/753/400740-Old%20song",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 9.41,
+            "status": "buying_countdown",
+            "buying_countdown": {
+                "day": 26,
+                "month": 1,
+                "year": 2026,
+                "hour": 5,
+                "minute": 0
+            },
+            "sale_tries": 0
+        },
+        {
+            "name": "Lunacy",
+            "url": "https://steamcommunity.com/market/listings/753/340880-Lunacy",
+            "buy_value": 21.58,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Holiday Lights",
+            "url": "https://steamcommunity.com/market/listings/753/335590-Holiday%20Lights",
+            "buy_value": 2.53,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Moon",
+            "url": "https://steamcommunity.com/market/listings/753/208600-Moon",
+            "buy_value": 0.32,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -144,35 +226,9 @@
             "name": "White Stars",
             "url": "https://steamcommunity.com/market/listings/753/463180-White%20Stars",
             "buy_value": 0.0,
-            "sale_value": 0.0,
+            "sale_value": 9.58,
             "buyed_value": 6.7,
-            "status": "buying_countdown",
-            "buying_countdown": {
-                "day": 20,
-                "month": 1,
-                "year": 2026,
-                "hour": 5,
-                "minute": 0
-            },
-            "sale_tries": 0
-        },
-        {
-            "name": "Volátil",
-            "url": "https://steamcommunity.com/market/listings/753/534380-Volatile%20%28Foil%20Trading%20Card%29",
-            "buy_value": 7.19,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Yui (Carta Colecionável)",
-            "url": "https://steamcommunity.com/market/listings/753/367020-Yui%20%28Trading%20Card%29",
-            "buy_value": 3.29,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
+            "status": "selling",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -193,19 +249,113 @@
             "sale_tries": 0
         },
         {
-            "name": "Blue Sparks",
-            "url": "https://steamcommunity.com/market/listings/753/508900-Blue%20Sparks",
+            "name": "Storytime (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/237850-Storytime%20%28Profile%20Background%29",
+            "buy_value": 7.03,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "The Angry Planet",
+            "url": "https://steamcommunity.com/market/listings/753/323060-The%20Angry%20Planet",
+            "buy_value": 8.56,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Cherry Blossom",
+            "url": "https://steamcommunity.com/market/listings/753/1153410-Cherry%20Blossom",
+            "buy_value": 7.91,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Synthwave",
+            "url": "https://steamcommunity.com/market/listings/753/1098340-Synthwave",
+            "buy_value": 1.49,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Grindle (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/1030300-Grindle%20%28Foil%29",
             "buy_value": 0.0,
             "sale_value": 0.0,
-            "buyed_value": 8.44,
-            "status": "buying_countdown",
-            "buying_countdown": {
-                "day": 20,
-                "month": 1,
-                "year": 2026,
-                "hour": 5,
-                "minute": 0
-            },
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Classroom",
+            "url": "https://steamcommunity.com/market/listings/753/963690-Classroom",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Plane of Skulls",
+            "url": "https://steamcommunity.com/market/listings/753/2218750-Plane%20of%20Skulls",
+            "buy_value": 1.44,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Frozen Trees",
+            "url": "https://steamcommunity.com/market/listings/753/460920-Frozen%20Trees",
+            "buy_value": 2.43,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Distant Galaxy",
+            "url": "https://steamcommunity.com/market/listings/753/2206560-Distant%20Galaxy%20%28Profile%20Background%29",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Stellar Vista",
+            "url": "https://steamcommunity.com/market/listings/753/360600-Stellar%20Vista",
+            "buy_value": 5.89,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Red Sparks",
+            "url": "https://steamcommunity.com/market/listings/753/508900-Red%20Sparks",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
             "sale_tries": 0
         },
         {
@@ -219,25 +369,9 @@
             "sale_tries": 0
         },
         {
-            "name": "Glitch Sansui-zu (Estático)",
-            "url": "https://steamcommunity.com/market/listings/753/1465680-Glitch%20Sansui-zu%20%28still%29",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 1.02,
-            "status": "buying_countdown",
-            "buying_countdown": {
-                "day": 22,
-                "month": 1,
-                "year": 2026,
-                "hour": 5,
-                "minute": 0
-            },
-            "sale_tries": 0
-        },
-        {
-            "name": "Fields by Night",
-            "url": "https://steamcommunity.com/market/listings/753/230820-Fields%20by%20Night",
-            "buy_value": 1.54,
+            "name": "Destroyed City",
+            "url": "https://steamcommunity.com/market/listings/753/528230-Destroyed%20City",
+            "buy_value": 0.76,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -245,24 +379,8 @@
             "sale_tries": 0
         },
         {
-            "name": "Seek Girl - Month",
-            "url": "https://steamcommunity.com/market/listings/753/998930-Seek%20Girl%20-%20Month",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.51,
-            "status": "buying_countdown",
-            "buying_countdown": {
-                "day": 22,
-                "month": 1,
-                "year": 2026,
-                "hour": 5,
-                "minute": 0
-            },
-            "sale_tries": 0
-        },
-        {
-            "name": "Drawn clouds",
-            "url": "https://steamcommunity.com/market/listings/753/617670-Drawn%20clouds",
+            "name": "Night Forest",
+            "url": "https://steamcommunity.com/market/listings/753/573210-Night%20Forest",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
@@ -271,8 +389,214 @@
             "sale_tries": 0
         },
         {
-            "name": "Synthwave",
-            "url": "https://steamcommunity.com/market/listings/753/1098340-Synthwave",
+            "name": "Disassembly",
+            "url": "https://steamcommunity.com/market/listings/753/562260-Disassembly",
+            "buy_value": 3.89,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Nebula X (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/504400-Nebula%20X%20%28Profile%20Background%29",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Yui (Carta Colecionável)",
+            "url": "https://steamcommunity.com/market/listings/753/367020-Yui%20%28Trading%20Card%29",
+            "buy_value": 3.4,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Beta Wall",
+            "url": "https://steamcommunity.com/market/listings/753/603190-Beta%20Wall",
+            "buy_value": 0.0,
+            "sale_value": 0.53,
+            "buyed_value": 0.01,
+            "status": "selling",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Snowman",
+            "url": "https://steamcommunity.com/market/listings/753/335590-Snowman",
+            "buy_value": 0.72,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Vermelha",
+            "url": "https://steamcommunity.com/market/listings/753/1030300-Red",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.3,
+            "status": "buying_countdown",
+            "buying_countdown": {
+                "day": 27,
+                "month": 1,
+                "year": 2026,
+                "hour": 5,
+                "minute": 0
+            },
+            "sale_tries": 0
+        },
+        {
+            "name": "Alisa (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/1421250-Alisa%20%28Profile%20Background%29",
+            "buy_value": 0.4,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Darkness (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/602910-Darkness%20%28Profile%20Background%29",
+            "buy_value": 4.04,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Splat",
+            "url": "https://steamcommunity.com/market/listings/753/282010-Splat",
+            "buy_value": 5.44,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "KNUCKLES (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/2486820-KNUCKLES%20%28Foil%29",
+            "buy_value": 11.7,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Path in the Woods",
+            "url": "https://steamcommunity.com/market/listings/753/307050-Path%20in%20the%20Woods",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Seek Girl - Month",
+            "url": "https://steamcommunity.com/market/listings/753/998930-Seek%20Girl%20-%20Month",
+            "buy_value": 0.67,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Chinatown",
+            "url": "https://steamcommunity.com/market/listings/753/746850-Chinatown",
+            "buy_value": 23.02,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Flower",
+            "url": "https://steamcommunity.com/market/listings/753/2475490-Flower",
+            "buy_value": 1.74,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Black Hole (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/2206560-Black%20Hole%20%28Profile%20Background%29",
+            "buy_value": 4.58,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Sawai Natsuha",
+            "url": "https://steamcommunity.com/market/listings/753/831660-Sawai%20Natsuha",
+            "buy_value": 22.12,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Castle Blackburn",
+            "url": "https://steamcommunity.com/market/listings/753/246420-Castle%20Blackburn",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Slingshot",
+            "url": "https://steamcommunity.com/market/listings/753/542340-Slingshot",
+            "buy_value": 2.03,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Title",
+            "url": "https://steamcommunity.com/market/listings/753/344770-Title",
+            "buy_value": 0.0,
+            "sale_value": 2.49,
+            "buyed_value": 0.0,
+            "status": "selling",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Can't Quit Now",
+            "url": "https://steamcommunity.com/market/listings/753/396530-Can%27t%20Quit%20Now",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Purple night",
+            "url": "https://steamcommunity.com/market/listings/753/655100-Purple%20night",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
@@ -291,8 +615,8 @@
             "sale_tries": 0
         },
         {
-            "name": "Castle Blackburn",
-            "url": "https://steamcommunity.com/market/listings/753/246420-Castle%20Blackburn",
+            "name": "Another llaB (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/601220-Another%20llaB%20%28Profile%20Background%29",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
@@ -301,12 +625,22 @@
             "sale_tries": 0
         },
         {
-            "name": "Grey thunder",
-            "url": "https://steamcommunity.com/market/listings/753/806140-Grey%20thunder",
-            "buy_value": 0.0,
+            "name": "Tachy (Carta Colecionável Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/3489700-Tachy%20%28Foil%20Trading%20Card%29",
+            "buy_value": 19.46,
             "sale_value": 0.0,
             "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Tropican Beach",
+            "url": "https://steamcommunity.com/market/listings/753/245620-Tropican%20Beach",
+            "buy_value": 4.72,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
             "buying_countdown": {},
             "sale_tries": 0
         },
@@ -327,25 +661,9 @@
             "sale_tries": 0
         },
         {
-            "name": "Snowman",
-            "url": "https://steamcommunity.com/market/listings/753/335590-Snowman",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.7,
-            "status": "buying_countdown",
-            "buying_countdown": {
-                "day": 24,
-                "month": 1,
-                "year": 2026,
-                "hour": 5,
-                "minute": 0
-            },
-            "sale_tries": 0
-        },
-        {
-            "name": "Slingshot",
-            "url": "https://steamcommunity.com/market/listings/753/542340-Slingshot",
-            "buy_value": 1.86,
+            "name": "Nebula Y (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/504400-Nebula%20Y%20%28Profile%20Background%29",
+            "buy_value": 7.4,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -353,28 +671,8 @@
             "sale_tries": 0
         },
         {
-            "name": "Destroyed City",
-            "url": "https://steamcommunity.com/market/listings/753/528230-Destroyed%20City",
-            "buy_value": 0.76,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Football Manager 2013",
-            "url": "https://steamcommunity.com/market/listings/753/245070-Football%20Manager%202013",
-            "buy_value": 3.3,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Ashley",
-            "url": "https://steamcommunity.com/market/listings/753/2378900-Ashley",
+            "name": "Sherma (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/1030300-Sherma%20%28Foil%29",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
@@ -383,8 +681,8 @@
             "sale_tries": 0
         },
         {
-            "name": "Skyrim",
-            "url": "https://steamcommunity.com/market/listings/753/245070-Skyrim",
+            "name": "Cloudy Moonlit Night",
+            "url": "https://steamcommunity.com/market/listings/753/325120-Cloudy%20Moonlit%20Night",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
@@ -393,9 +691,9 @@
             "sale_tries": 0
         },
         {
-            "name": "Holiday Lights",
-            "url": "https://steamcommunity.com/market/listings/753/335590-Holiday%20Lights",
-            "buy_value": 2.49,
+            "name": "Marauder",
+            "url": "https://steamcommunity.com/market/listings/753/782330-Marauder%20%28Foil%20Trading%20Card%29",
+            "buy_value": 12.03,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -403,8 +701,108 @@
             "sale_tries": 0
         },
         {
-            "name": "Frozen Trees",
-            "url": "https://steamcommunity.com/market/listings/753/460920-Frozen%20Trees",
+            "name": "Iridescent cloud",
+            "url": "https://steamcommunity.com/market/listings/753/1004240-Iridescent%20cloud",
+            "buy_value": 3.04,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Hécate",
+            "url": "https://steamcommunity.com/market/listings/753/1145350-Hecate%20%28Foil%20Trading%20Card%29",
+            "buy_value": 14.43,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "You died in Vinland",
+            "url": "https://steamcommunity.com/market/listings/753/573120-You%20died%20in%20Vinland",
+            "buy_value": 3.29,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "The Astral Academy",
+            "url": "https://steamcommunity.com/market/listings/753/319910-The%20Astral%20Academy",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "SWAT",
+            "url": "https://steamcommunity.com/market/listings/753/541230-SWAT",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Guzhou",
+            "url": "https://steamcommunity.com/market/listings/753/455000-Guzhou",
+            "buy_value": 1.73,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Arctic Temple Background",
+            "url": "https://steamcommunity.com/market/listings/753/231330-Arctic%20Temple%20Background",
+            "buy_value": 23.27,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Trobbio (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/1030300-Trobbio%20%28Foil%29",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "The girl next door",
+            "url": "https://steamcommunity.com/market/listings/753/1716170-The%20girl%20next%20door",
+            "buy_value": 2.09,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Blue Sparks",
+            "url": "https://steamcommunity.com/market/listings/753/508900-Blue%20Sparks",
+            "buy_value": 0.0,
+            "sale_value": 13.19,
+            "buyed_value": 8.44,
+            "status": "selling",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Hornet (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/367520-Hornet%20%28Foil%29",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
@@ -429,59 +827,9 @@
             "sale_tries": 0
         },
         {
-            "name": "The girl next door",
-            "url": "https://steamcommunity.com/market/listings/753/1716170-The%20girl%20next%20door",
-            "buy_value": 2.09,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Pentagrams",
-            "url": "https://steamcommunity.com/market/listings/753/227100-Pentagrams",
-            "buy_value": 1.49,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Distant Galaxy",
-            "url": "https://steamcommunity.com/market/listings/753/2206560-Distant%20Galaxy%20%28Profile%20Background%29",
-            "buy_value": 2.28,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Nebula X (Plano de Fundo de Perfil)",
-            "url": "https://steamcommunity.com/market/listings/753/504400-Nebula%20X%20%28Profile%20Background%29",
-            "buy_value": 2.42,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Guzhou",
-            "url": "https://steamcommunity.com/market/listings/753/455000-Guzhou",
-            "buy_value": 1.43,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "SWAT",
-            "url": "https://steamcommunity.com/market/listings/753/541230-SWAT",
-            "buy_value": 1.88,
+            "name": "Ancients of Fasaria Rare Wings",
+            "url": "https://steamcommunity.com/market/listings/753/339860-Ancients%20of%20Fasaria%20Rare%20Wings",
+            "buy_value": 39.8,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -499,8 +847,8 @@
             "sale_tries": 0
         },
         {
-            "name": "Wrath of the Lamb",
-            "url": "https://steamcommunity.com/market/listings/753/113200-Wrath%20of%20the%20Lamb",
+            "name": "Drawn clouds",
+            "url": "https://steamcommunity.com/market/listings/753/617670-Drawn%20clouds",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
@@ -509,18 +857,8 @@
             "sale_tries": 0
         },
         {
-            "name": "Polina (Plano de Fundo de Perfil)",
-            "url": "https://steamcommunity.com/market/listings/753/1421250-Polina%20%28Profile%20Background%29",
-            "buy_value": 0.28,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Hollow",
-            "url": "https://steamcommunity.com/market/listings/753/48000-Hollow",
+            "name": "Blood Stain",
+            "url": "https://steamcommunity.com/market/listings/753/491620-Blood%20Stain",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
@@ -529,159 +867,9 @@
             "sale_tries": 0
         },
         {
-            "name": "Violet space!",
-            "url": "https://steamcommunity.com/market/listings/753/683830-Violet%20space%21",
-            "buy_value": 0.76,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "The shine through darkness",
-            "url": "https://steamcommunity.com/market/listings/753/444410-The%20shine%20through%20darkness",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Holiday Sale 2013 - Dota2",
-            "url": "https://steamcommunity.com/market/listings/753/267420-Holiday%20Sale%202013%20-%20Dota2",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Vermelha",
-            "url": "https://steamcommunity.com/market/listings/753/1030300-Red",
-            "buy_value": 0.28,
-            "sale_value": 0.0,
-            "buyed_value": 0.27,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Wrath of the Lamb",
-            "url": "https://steamcommunity.com/market/listings/753/113200-Wrath%20of%20the%20Lamb",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Alisa (Plano de Fundo de Perfil)",
-            "url": "https://steamcommunity.com/market/listings/753/1421250-Alisa%20%28Profile%20Background%29",
-            "buy_value": 0.4,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Fim de Semana da Distribuidora Wargaming 2023 (Plano de Fundo de Perfil)",
-            "url": "https://steamcommunity.com/market/listings/753/2306810-Wargaming%20Publisher%20Weekend%202023%20%28Profile%20Background%29",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Moon",
-            "url": "https://steamcommunity.com/market/listings/753/208600-Moon",
-            "buy_value": 0.32,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Dumping Blood",
-            "url": "https://steamcommunity.com/market/listings/753/388490-Dumping%20Blood",
-            "buy_value": 7.8,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Astolfo",
-            "url": "https://steamcommunity.com/market/listings/753/622220-Astolfo",
-            "buy_value": 15.8,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Marauder",
-            "url": "https://steamcommunity.com/market/listings/753/782330-Marauder%20%28Foil%20Trading%20Card%29",
-            "buy_value": 11.9,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Scout (Carta Colecionável Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/440-SCOUT%20%28Foil%20Trading%20Card%29",
-            "buy_value": 7.63,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Tachy (Carta Colecionável Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/3489700-Tachy%20%28Foil%20Trading%20Card%29",
-            "buy_value": 19.21,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Gustave (Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/1903340-Gustave%20%28Foil%29",
-            "buy_value": 12.33,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Hécate",
-            "url": "https://steamcommunity.com/market/listings/753/1145350-Hecate%20%28Foil%20Trading%20Card%29",
-            "buy_value": 14.18,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "gold",
-            "url": "https://steamcommunity.com/market/listings/753/617610-gold",
-            "buy_value": 11.99,
+            "name": "Tomato ferstoarn",
+            "url": "https://steamcommunity.com/market/listings/753/499460-Tomato%20ferstoarn",
+            "buy_value": 4.55,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -699,9 +887,9 @@
             "sale_tries": 0
         },
         {
-            "name": "KNUCKLES (Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/2486820-KNUCKLES%20%28Foil%29",
-            "buy_value": 11.14,
+            "name": "Death",
+            "url": "https://steamcommunity.com/market/listings/753/3117820-Death",
+            "buy_value": 11.29,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -709,9 +897,135 @@
             "sale_tries": 0
         },
         {
-            "name": "Microhard Development Environment",
-            "url": "https://steamcommunity.com/market/listings/753/576030-Microhard%20Development%20Environment",
-            "buy_value": 14.63,
+            "name": "Fields by Night",
+            "url": "https://steamcommunity.com/market/listings/753/230820-Fields%20by%20Night",
+            "buy_value": 1.54,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Emily <3 XP",
+            "url": "https://steamcommunity.com/market/listings/753/978460-Emily%20%3C3%20XP",
+            "buy_value": 18.98,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "yonah_second half (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/1113560-yonah_second%20half%20%28Foil%29",
+            "buy_value": 11.97,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Firewatch: Thorofare Dawn",
+            "url": "https://steamcommunity.com/market/listings/753/383870-Firewatch%3A%20Thorofare%20Dawn",
+            "buy_value": 1.01,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Dark Ruins",
+            "url": "https://steamcommunity.com/market/listings/753/276810-Dark%20Ruins",
+            "buy_value": 19.76,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Football Manager 2013",
+            "url": "https://steamcommunity.com/market/listings/753/245070-Football%20Manager%202013",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 3.3,
+            "status": "buying_countdown",
+            "buying_countdown": {
+                "day": 26,
+                "month": 1,
+                "year": 2026,
+                "hour": 5,
+                "minute": 0
+            },
+            "sale_tries": 0
+        },
+        {
+            "name": "Int'l Version",
+            "url": "https://steamcommunity.com/market/listings/753/342890-Int%27l%20Version",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "F1 2013",
+            "url": "https://steamcommunity.com/market/listings/753/223670-F1%202013",
+            "buy_value": 0.31,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Beats Fever",
+            "url": "https://steamcommunity.com/market/listings/753/566780-Beats%20Fever",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Eclipse (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/2206560-Eclipse%20%28Profile%20Background%29",
+            "buy_value": 4.52,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "The shine through darkness",
+            "url": "https://steamcommunity.com/market/listings/753/444410-The%20shine%20through%20darkness",
+            "buy_value": 0.5,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Haruna (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/386970-Haruna%20%28Profile%20Background%29",
+            "buy_value": 0.0,
+            "sale_value": 0.33,
+            "buyed_value": 0.01,
+            "status": "selling",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Violet space!",
+            "url": "https://steamcommunity.com/market/listings/753/683830-Violet%20space%21",
+            "buy_value": 0.83,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -721,7 +1035,33 @@
         {
             "name": "Kaya (Brilhante)",
             "url": "https://steamcommunity.com/market/listings/753/3489700-Kaya%20%28Foil%29",
-            "buy_value": 9.35,
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 9.35,
+            "status": "buying_countdown",
+            "buying_countdown": {
+                "day": 26,
+                "month": 1,
+                "year": 2026,
+                "hour": 5,
+                "minute": 0
+            },
+            "sale_tries": 0
+        },
+        {
+            "name": "New beginning",
+            "url": "https://steamcommunity.com/market/listings/753/400740-New%20beginning",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Unusual cloudy sky",
+            "url": "https://steamcommunity.com/market/listings/753/806140-Unusual%20cloudy%20sky",
+            "buy_value": 5.01,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -729,9 +1069,115 @@
             "sale_tries": 0
         },
         {
-            "name": "Old song",
-            "url": "https://steamcommunity.com/market/listings/753/400740-Old%20song",
-            "buy_value": 9.41,
+            "name": "Ancient Land",
+            "url": "https://steamcommunity.com/market/listings/753/223870-Ancient%20Land",
+            "buy_value": 5.54,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Dumping Blood",
+            "url": "https://steamcommunity.com/market/listings/753/388490-Dumping%20Blood",
+            "buy_value": 8.23,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Ellie – Floresta",
+            "url": "https://steamcommunity.com/market/listings/753/2531310-Ellie%20Forest",
+            "buy_value": 3.5,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Dusk town",
+            "url": "https://steamcommunity.com/market/listings/753/927890-Dusk%20town",
+            "buy_value": 5.11,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "gold",
+            "url": "https://steamcommunity.com/market/listings/753/617610-gold",
+            "buy_value": 13.14,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Polina (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/1421250-Polina%20%28Profile%20Background%29",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "A Reference (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/797410-A%20Reference%20%28Foil%29",
+            "buy_value": 6.5,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Glitch Sansui-zu (Estático)",
+            "url": "https://steamcommunity.com/market/listings/753/1465680-Glitch%20Sansui-zu%20%28still%29",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 1.02,
+            "status": "buying_countdown",
+            "buying_countdown": {
+                "day": 22,
+                "month": 1,
+                "year": 2026,
+                "hour": 5,
+                "minute": 0
+            },
+            "sale_tries": 0
+        },
+        {
+            "name": "Hollow",
+            "url": "https://steamcommunity.com/market/listings/753/48000-Hollow",
+            "buy_value": 0.47,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "buying",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Shakra (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/1030300-Shakra%20%28Foil%29",
+            "buy_value": 0.0,
+            "sale_value": 0.0,
+            "buyed_value": 0.0,
+            "status": "waiting_buy_oportunity",
+            "buying_countdown": {},
+            "sale_tries": 0
+        },
+        {
+            "name": "Binary",
+            "url": "https://steamcommunity.com/market/listings/753/383690-Binary",
+            "buy_value": 5.54,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
@@ -741,36 +1187,6 @@
         {
             "name": "A2 (Carta Colecionável Brilhante)",
             "url": "https://steamcommunity.com/market/listings/753/524220-A2%20%28Foil%20Trading%20Card%29",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Sherma (Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/1030300-Sherma%20%28Foil%29",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Trobbio (Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/1030300-Trobbio%20%28Foil%29",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Shakra (Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/1030300-Shakra%20%28Foil%29",
             "buy_value": 0.0,
             "sale_value": 0.0,
             "buyed_value": 0.0,
@@ -789,102 +1205,12 @@
             "sale_tries": 0
         },
         {
-            "name": "Grindle (Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/1030300-Grindle%20%28Foil%29",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Broken Shell (Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/367520-Broken%20Shell%20%28Foil%29",
-            "buy_value": 4.77,
+            "name": "Pentagrams",
+            "url": "https://steamcommunity.com/market/listings/753/227100-Pentagrams",
+            "buy_value": 1.49,
             "sale_value": 0.0,
             "buyed_value": 0.0,
             "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Hornet (Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/367520-Hornet%20%28Foil%29",
-            "buy_value": 4.77,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "A Reference (Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/797410-A%20Reference%20%28Foil%29",
-            "buy_value": 6.5,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Dusk town",
-            "url": "https://steamcommunity.com/market/listings/753/927890-Dusk%20town",
-            "buy_value": 5.03,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Night Forest",
-            "url": "https://steamcommunity.com/market/listings/753/573210-Night%20Forest",
-            "buy_value": 4.86,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "buying",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Another llaB (Plano de Fundo de Perfil)",
-            "url": "https://steamcommunity.com/market/listings/753/601220-Another%20llaB%20%28Profile%20Background%29",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Path in the Woods",
-            "url": "https://steamcommunity.com/market/listings/753/307050-Path%20in%20the%20Woods",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "The Stacks",
-            "url": "https://steamcommunity.com/market/listings/753/746850-The%20Stacks",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
-            "buying_countdown": {},
-            "sale_tries": 0
-        },
-        {
-            "name": "Sunset",
-            "url": "https://steamcommunity.com/market/listings/753/645090-Sunset",
-            "buy_value": 0.0,
-            "sale_value": 0.0,
-            "buyed_value": 0.0,
-            "status": "waiting_buy_oportunity",
             "buying_countdown": {},
             "sale_tries": 0
         }
