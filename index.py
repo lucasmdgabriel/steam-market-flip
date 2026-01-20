@@ -1,12 +1,14 @@
-import pyautogui
-import pyperclip
-import json
-import time
-from datetime import datetime
-from decimal import Decimal
-from scripts.items import get_item_data, check_item_market_data
-from scripts.buy import buy_action, sell_action
-from scripts.cancel import cancel_action_buy, cancel_action_sell
+# import pyautogui
+# import pyperclip
+# import json
+# import time
+# from datetime import datetime
+# from decimal import Decimal
+# from scripts.items import get_item_data, check_item_market_data
+# from scripts.buy import buy_action, sell_action
+# from scripts.cancel import cancel_action_buy, cancel_action_sell
+
+exit()
 
 now = datetime.now()
 year   = now.year
