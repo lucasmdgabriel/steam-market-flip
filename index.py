@@ -91,12 +91,14 @@ def check_countdown(buying_countdown):
     
 new_items = []
 index = -1
+first_item = True
 for item in items:
     index += 1
 
     item_str = get_item_data(item)
 
-    item_market_data = check_item_market_data(item_str)
+    item_market_data = check_item_market_data(item_str, first_item)
+    first_item = False
 
     print("===================")
     print(f" = {item["name"]} = ")

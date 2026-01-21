@@ -3,7 +3,7 @@ import pyperclip
 import time
 import re
 
-def get_item_data(item):
+def get_item_data(item, first_item):
     # Clicar na url
     pyautogui.moveTo(1497, 53)
     pyautogui.click()
@@ -14,7 +14,10 @@ def get_item_data(item):
     time.sleep(0.1)
 
     pyautogui.press("enter")
-    time.sleep(2.5)
+    time.sleep(3)
+
+    if first_item == True:
+        time.sleep(3)
 
     # Obter dados do item
     pyautogui.hotkey("ctrl", "a")
