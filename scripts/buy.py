@@ -95,30 +95,39 @@ def buy_action(value, steam_wallet, buy_limit, total_buying):
 def sell_action(value, name):
     time.sleep(0.25)
 
-    # CLICAR EM VENDER
-    pyautogui.moveTo(1160, 180)
+    # Clicar na url
+    pyautogui.moveTo(1497, 53)
+    pyautogui.click()
+    time.sleep(0.05)
+
+    # Abre inventário
+    pyperclip.copy("https://steamcommunity.com/id/boanashi/inventory")
+    pyautogui.hotkey("ctrl", "v")
+    time.sleep(0.1)
+
+    pyautogui.press("enter")
+    time.sleep(2.5)
+
+    # CLIQUE CAIXA DE TEXTO
+    pyautogui.moveTo(756, 631)
     pyautogui.click()
     time.sleep(2)
-
-    # TEXTO DE TITULO
-    pyautogui.moveTo(755, 510)
-    pyautogui.click()
-    time.sleep(0.2)
 
     pyperclip.copy(name)
     pyautogui.hotkey("ctrl", "v")
 
     # CLICAR NO ITEM
-    pyautogui.moveTo(565, 595)
+    pyautogui.moveTo(572, 717)
     pyautogui.click()
     time.sleep(0.2)
 
     pyautogui.scroll(-1500 - random.randrange(500))
+    time.sleep(0.2)
 
     # CLICAR EM VENDER
-    pyautogui.moveTo(1090, 970)
+    pyautogui.moveTo(1091, 895)
     pyautogui.click()
-    time.sleep(0.5)
+    time.sleep(0.8)
 
     pyautogui.press('tab')
     time.sleep(0.5)
@@ -132,12 +141,12 @@ def sell_action(value, name):
     time.sleep(0.5)
 
     # CONFIRMAR COMPRA
-    pyautogui.moveTo(1300, 830)
+    pyautogui.moveTo(1293, 807)
     pyautogui.click()
     time.sleep(0.5)
 
     # CONFIRMAR COMPRA (2)
-    pyautogui.moveTo(1330, 720)
+    pyautogui.moveTo(1342, 676)
     pyautogui.click()
     time.sleep(0.5)
 
