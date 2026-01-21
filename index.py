@@ -30,7 +30,7 @@ with open('data.json', 'r', encoding='utf-8') as f:
 items = data["items"]
 buy_and_sell = data["buy_and_sell"]
 
-# random.shuffle(items)
+random.shuffle(items)
 
 for i in range(len(items)):
     items[i]["index"] = i
@@ -229,8 +229,6 @@ for item in items:
     combined = new_items + items[index+1:]
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump({"items": combined, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
-
-    exit()
 
 end = datetime.now()
 tempo_execucao = end - now
