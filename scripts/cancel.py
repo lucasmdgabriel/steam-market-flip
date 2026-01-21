@@ -42,10 +42,12 @@ def cancel_action_sell():
                 "assets/Button_remove_off2.png",
             )
         except pyautogui.ImageNotFoundException:
-            pyautogui.moveTo(1104, 602)
+            pyautogui.moveTo(1121, 602)
             print("Erro ao encontrar remofe_off 2")
     
     if pos_cancel != None:
         pyautogui.click(pos_cancel)
+    else:
+        pyautogui.click()
     
     time.sleep(1.75)

@@ -148,6 +148,6 @@ def sell_action(value, name):
     # CONFIRMAR COMPRA (2)
     pyautogui.moveTo(1342, 676)
     pyautogui.click()
-    time.sleep(0.5)
+    time.sleep(1.2)
 
     return True
