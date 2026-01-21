@@ -20,14 +20,20 @@ def buy_action(value, steam_wallet, buy_limit, total_buying):
     pyautogui.click()
     time.sleep(0.25)
 
-    find_pos = False
-    while find_pos == False:
-        find_pos = True
+    pos_cada = None
+    
+    try:
+        pos_cada = pyautogui.locateOnScreen("assets/Word_cada.png")
+    except pyautogui.ImageNotFoundException:
+        input("Erro ao encontrar pos_cada ")
+
+    if pos_cada == None:
         try:
-            pos_cada = pyautogui.locateOnScreen("assets/Word_cada.png")
+            pos_cada = pyautogui.locateOnScreen("assets/Word_cada2.png")
         except pyautogui.ImageNotFoundException:
-            input("Erro ao encontra rpos_cada")
-            find_pos = True
+            input("Erro ao encontrar pos_cada 2 ")
+
+
     max_value = Decimal("0.0")
     value -= Decimal("0.01")
 
@@ -51,15 +57,19 @@ def buy_action(value, steam_wallet, buy_limit, total_buying):
         pyautogui.hotkey("ctrl", "c")
         max_value = pyperclip.paste().replace(",", ".")
 
+    pos_aceito = None
+    try:
+        pos_aceito = pyautogui.locateOnScreen("assets/Word_aceito.png")
+    except pyautogui.ImageNotFoundException:
+        input("Erro ao encontrar pos_aceito ")
 
-    find_pos = False
-    while find_pos == False:
-        find_pos = True
+    if pos_aceito == None:
         try:
-            pos_aceito = pyautogui.locateOnScreen("assets/Button.png")
+            pos_aceito = pyautogui.locateOnScreen("assets/Word_aceito2.png")
         except pyautogui.ImageNotFoundException:
-            input("Erro ao encontra pos_aceito")
-            find_pos = True
+            input("Erro ao encontrar pos_aceito 2 ")
+
+            
     # CONCORDAR COM TERMOS
     pyautogui.moveTo(pos_aceito.left - 13, pos_aceito.top + 5)
     pyautogui.click()

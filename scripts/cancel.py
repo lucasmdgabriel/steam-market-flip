@@ -11,7 +11,7 @@ def cancel_action_buy(value, total_buying):
         return total_buying
 
     pyautogui.click(pos_cancel)
-    time.sleep(1)
+    time.sleep(2.5)
 
     return total_buying - float(value)
 
@@ -24,7 +24,7 @@ def cancel_action_sell():
         return
 
     pyautogui.click(pos_cancel)
-    time.sleep(0.50)
+    time.sleep(2.50)
 
     # CONFIRMAR CANCELAMENTO
     try:
@@ -33,9 +33,9 @@ def cancel_action_sell():
         )
     except pyautogui.ImageNotFoundException:
         pyautogui.moveTo(1104, 602)
-        print("aff")
+        print("Erro ao encontrar remofe_off")
         exit()
         
     pyautogui.click(pos_cancel)
     
-    time.sleep(0.75)
+    time.sleep(1.75)

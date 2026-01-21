@@ -32,6 +32,9 @@ buy_and_sell = data["buy_and_sell"]
 
 random.shuffle(items)
 
+for i in range(len(items)):
+    items[i]["index"] = i
+
 total_buying = 0
 for item in items:
     if item["status"] == "buying":
@@ -94,6 +97,9 @@ for item in items:
     item_str = get_item_data(item)
 
     item_market_data = check_item_market_data(item_str)
+
+    print("===================")
+    print(f" = {item["name"]} = ")
 
     print(f"item_market_data: {item_market_data}")
     print(f"item: {item}")
