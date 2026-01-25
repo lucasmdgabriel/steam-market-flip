@@ -11,6 +11,16 @@ wallet_value = 100
 
 date_time = datetime.datetime.now()
 
+driver = webdriver.Chrome()
+# URL de login da Steam
+login_url = "https://store.steampowered.com/login/?redir=&redir_ssl=1"
+driver.get(login_url)
+
+wait = WebDriverWait(driver, 300)
+
+
+
+
 def aguardar_pagina(driver): # CORRIGIR: ATUALIZAR NOME
     WebDriverWait(driver, 10).until(
         lambda d: d.execute_script("return document.readyState") == "complete"
@@ -24,6 +34,16 @@ def cancel_item_buy(): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
 
 def item_buy(value, quant): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
     print(value, quant)
+
+    buy_button = wait.until(
+        EC.element_to_be_clickable(
+            (By.XPATH, "//button[.//span[contains(text(), 'Comprar...')]]")
+        )
+    )
+
+    buy_button.click()
+
+    exit()
     return
 
 def check_is_profitable(offer_value, order_value):
@@ -51,25 +71,18 @@ def check_is_profitable(offer_value, order_value):
 
     return is_profitable, offer_value, order_value
 
-driver = webdriver.Chrome()
-# # URL de login da Steam
-# login_url = "https://store.steampowered.com/login/?redir=&redir_ssl=1"
-# driver.get(login_url)
 
-# wait = WebDriverWait(driver, 300)
 
-# try:
-#     # Espera a URL mudar
-#     wait.until(EC.url_changes(login_url))
+try:
+    # Espera a URL mudar
+    wait.until(EC.url_changes(login_url))
     
-#     print("Sucesso! Você está logado.")
-#     print(f"Página atual: {driver.current_url}")
+    print("Sucesso! Você está logado.")
+    print(f"Página atual: {driver.current_url}")
 
-# except Exception as e:
-#     print(f"Tempo de login esgotado: {e}")
-#     exit()
-
-# driver.find_element("xpath", "//button[text()='Criar conta']").click()
+except Exception as e:
+    print(f"Tempo de login esgotado: {e}")
+    exit()
 
 items = [
     {
@@ -107,10 +120,23 @@ while index < len(items):
         print("")
         print(f"=== {item_name} [{index}] ===")
 
-        collected_offer_value = 17.88 # CORRIGIR: COLETAR
-        collected_order_value = 9.72 # CORRIGIR: COLETAR
-        collected_quant_buying = 3 # CORRIGIR: COLETAR
-        
+        driver.get(item_url)
+        aguardar_pagina(driver)
+
+        # ENCONTRAR VALORES DE ENCOMENDA E OFERTAS
+        sell_price_data = wait.until(
+            lambda d: d.find_elements(By.CLASS_NAME, "market_commodity_orders_header_promote")
+        )
+        collected_offer_value = float(sell_price_data[1].text.replace("R$ ", "").replace(",", "."))
+        collected_order_value = float(sell_price_data[3].text.replace("R$ ", "").replace(",", "."))
+
+        # ENCONTRAR VALORES DE COMPRA DO USUÁRIO
+        buy_user_price_data = wait.until(
+            lambda d: d.find_elements(By.CLASS_NAME, "market_listing_price")
+        )
+        collected_price_buying = float(buy_user_price_data[0].text.strip().replace("R$ ", "").replace(",", "."))
+        collected_quant_buying = int(buy_user_price_data[1].text.strip())
+
     else:
         iteration += 1
     last_index = index
@@ -176,22 +202,12 @@ while index < len(items):
         else:
             print(f"-- Comprando item por R${order_value}")
             item_buy(order_value, quant_to_buy)
-
-        
-
-
-
-
+            
     index += 1
 
 
 
-    # driver.get("https://steamcommunity.com/market/listings/753/282010-Splat")
-    # aguardar_pagina(driver)
-
 exit()
-
-
 # ENCONTRAR VALORES DE COMPRA
 buy_price_quant = driver.find_elements(By.CLASS_NAME, "market_listing_price")
 
