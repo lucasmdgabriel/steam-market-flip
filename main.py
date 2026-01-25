@@ -60,7 +60,7 @@ def check_is_in_countdown(it_countdown):
     return on_countdown
     
 
-def cancel_item_buy(): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
+def cancel_item_buy():
     # Clica em Cancelar
     cancel_button = wait.until(
         EC.element_to_be_clickable(
@@ -70,6 +70,9 @@ def cancel_item_buy(): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
     cancel_button.click()
 
     time.sleep(1)
+
+def cancel_item_sell():
+    ""
 
 def item_buy(value, quant):
     value = str(value).replace(".", ",")
@@ -236,16 +239,10 @@ items = [
         "buying_data": {},
         "sell_data": [
             {
-                "buy_price": 0.15,
-                "sell_price": 0.0,
-                "status": "countdown",
-                "countdown": {
-                    "day": 25,
-                    "month": 1,
-                    "year": 2026,
-                    "hour": 5,
-                    "minute": 0
-                }
+                "buy_price": 0.01,
+                "sell_price": 0.33,
+                "status": "selling",
+                "countdown": {}
             }
         ]
     }
@@ -296,6 +293,26 @@ while index < len(items):
             collected_quant_buying = int(
                 buy_user_price_data[1].text.strip()
             )
+
+        print(collected_price_buying, collected_quant_buying)
+
+        # ENCONTRAR VALORES DE VENDA DO USUÁRIO
+        collected_price_selling = 0.0
+        try:
+            sale_price_element = driver.find_element(By.XPATH, "//span[@title='Este é o valor pago pelo comprador.']")
+            
+            collected_price_selling = float(
+                sale_price_element.text
+                .replace("R$", "")
+                .replace(".", "")
+                .replace(",", ".")
+                .strip()
+            )
+            print(f"Preço de venda: {collected_price_selling}")
+        except:
+            ""
+
+        print(collected_price_selling)
 
 
     else:
@@ -391,7 +408,30 @@ while index < len(items):
                 sell_data[0]["countdown"] = {}
                 sell_data[0]["status"] = "waiting_to_sell"
 
-        if first_sell_data["status"] == "waiting_to_sell":
+        if first_sell_data["status"] == "selling":
+            print(f"V{iteration}: Checando item sendo vendido.")
+
+            print(f"-- Valor que estou vendendo de acordo com os dados do item: R${first_sell_data["sell_price"]}")
+            print(f"-- Valor que estou vendendo de acordo com os dados da página Steam: R${collected_price_selling}")
+
+            if first_sell_data["sell_price"] != collected_price_selling:
+                # CORRIGIR: SALVAR DADOS DE ITENS VENDIDOS
+                print("- Item vendido! ***")
+                sell_data.pop(0)
+
+                if len(sell_data) > 0:
+                    first_sell_data = sell_data[0]
+                else:
+                    first_sell_data = None
+
+            elif collected_price_selling != offer_value:
+                # CORRIGIR: AJUSTAR COMPRA PARA O NOVO VALOR CORRETO
+                print(f"- Estou vendendo à R${collected_price_selling}, mas o mercado à R${collected_offer_value}. Corrigindo...")
+
+                sell_data[0]["status"] = "waiting_to_sell"
+                sell_data[0]["sell_price"] = 0.0
+
+        if first_sell_data != None and first_sell_data["status"] == "waiting_to_sell":
             print(f"V{iteration}: Checando possibilidade de venda de item.")
 
         print(first_sell_data)
