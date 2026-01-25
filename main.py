@@ -6,6 +6,9 @@ import time
 import random
 import datetime
 
+# VALORES INICIAIS
+wallet_value = 100
+
 date_time = datetime.datetime.now()
 
 def aguardar_pagina(driver): # CORRIGIR: ATUALIZAR NOME
@@ -16,6 +19,12 @@ def aguardar_pagina(driver): # CORRIGIR: ATUALIZAR NOME
 def check_is_in_countdown(): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
     return random.randrange(2) == 0
 
+def cancel_item_buy(): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
+    return
+
+def item_buy(value, quant): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
+    print(value, quant)
+    return
 
 def check_is_profitable(offer_value, order_value):
     offer_value -= 0.01
@@ -30,13 +39,13 @@ def check_is_profitable(offer_value, order_value):
 
     billing = round(offer_value - tax, 2)
 
-    print(f"Valor de compra: R${order_value}")
-    print(f"Valor de venda: R${offer_value} (recebe R${billing})")
+    print(f"-- Valor de compra: R${order_value}")
+    print(f"-- Valor de venda: R${offer_value} (recebe R${billing})")
 
     profit = round(billing - order_value, 2)
     profit_relative = round(profit/order_value, 2)
 
-    print(f"Lucro: {profit} ({profit_relative*100}%)")
+    print(f"-- Lucro: {profit} ({round(profit_relative*100, 2)}%)")
 
     is_profitable = profit > 0.1 and profit_relative >= 0.1
 
@@ -70,8 +79,16 @@ items = [
         "buy_status": "buying",
         "buying_data": {
             "quant": 5,
-            "price": 6.86
+            "price": 1.87
         },
+        "sell_data": []
+    },
+    {
+        "name": "Broken Shell (Brilhante)",
+        "url": "https://steamcommunity.com/market/listings/753/367520-Broken%20Shell%20%28Foil%29",
+        "max_items": 3,
+        "buy_status": "waiting_to_buy",
+        "buying_data": {},
         "sell_data": []
     }
 ]
@@ -87,19 +104,22 @@ while index < len(items):
     if index != last_index:
         iteration = 0
     
-        print("============================================================")
-        print(f"= {item_name} [{index}] =")
+        print("")
+        print(f"=== {item_name} [{index}] ===")
+
+        collected_offer_value = 17.88 # CORRIGIR: COLETAR
+        collected_order_value = 9.72 # CORRIGIR: COLETAR
+        collected_quant_buying = 3 # CORRIGIR: COLETAR
         
     else:
         iteration += 1
     last_index = index
 
-    collected_offer_value = 17.88 # CORRIGIR: COLETAR
-    collected_order_value = 6.87 # CORRIGIR: COLETAR
-    collected_quant_buying = 3 # CORRIGIR: COLETAR
+    if iteration > 0: # apenas separa
+        print("=")
 
     if buy_status == "buying":
-        print(f"{iteration}. Comprando*")
+        print(f"{iteration}. Comprando *")
         buying_data = items[index]["buying_data"]
         is_profitable, offer_value, order_value = check_is_profitable(collected_offer_value, collected_order_value)
 
@@ -123,10 +143,45 @@ while index < len(items):
 
                 items[index]["sell_data"].append(new_sell_data_item)
 
+        # CANCELA COMPRA DE ITEM PARA RECOMPRAR
+        if buying_data["price"] != collected_order_value:
+            print("- Cancelando compra. Valor mudou.")
+            cancel_item_buy()
+            
+            items[index]["buy_status"] = "waiting_to_buy"
+            items[index]["buying_data"] = {}
+
+            index -= 1
+
+    if buy_status == "waiting_to_buy":
+        print(f"{iteration}. Checando itens disponíveis para compra *")
+
+        max_items = items[index]["max_items"]
+        num_items_to_sell = len(items[index]["sell_data"])
+
+        quant_to_buy = max_items - num_items_to_sell
+
+        if quant_to_buy < 0: quant_to_buy = 0
+
+        print(f"-- Limite de itens: {max_items}")
+        print(f"-- Itens sendo vendidos: {num_items_to_sell}")
+        print(f"- Desejando comprar {quant_to_buy} item(ns).")
+
+        is_profitable, offer_value, order_value = check_is_profitable(collected_offer_value, collected_order_value)
+
+        if is_profitable == False:
+            print(f"-- Lucro não é suficiente. Ignorando compra.")
+        elif wallet_value < order_value:
+            print(f"-- Dinheiro disponível na carteira (R${wallet_value}) menor do que o valor do item (R${order_value}). Ignorando.")
+        else:
+            print(f"-- Comprando item por R${order_value}")
+            item_buy(order_value, quant_to_buy)
+
         
 
 
-    print(buying_data)
+
+
     index += 1
 
 
