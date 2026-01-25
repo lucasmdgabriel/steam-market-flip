@@ -26,11 +26,50 @@ def aguardar_pagina(driver): # CORRIGIR: ATUALIZAR NOME
         lambda d: d.execute_script("return document.readyState") == "complete"
     )
 
-def check_is_in_countdown(): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
-    return random.randrange(2) == 0
+def check_is_in_countdown(it_countdown):
+    finish_countdown_str = f"{it_countdown["day"]}/{it_countdown["month"]}/{it_countdown["year"]}, {it_countdown["hour"]}:{it_countdown["minute"]}"
+
+    on_countdown = False
+    if it_countdown["year"] > date_time.year:
+        on_countdown = True
+    elif it_countdown["year"] < date_time.year:
+        on_countdown = False
+    elif it_countdown["month"] > date_time.month:
+        on_countdown = True
+    elif it_countdown["month"] < date_time.month:
+        on_countdown = False
+    elif it_countdown["day"] > date_time.day:
+        on_countdown = True
+    elif it_countdown["day"] < date_time.day:
+        on_countdown = False
+    elif it_countdown["hour"] > date_time.hour:
+        on_countdown = True
+    elif it_countdown["hour"] < date_time.hour:
+        on_countdown = False
+    elif it_countdown["minute"] > date_time.minute:
+        on_countdown = True
+    elif it_countdown["minute"] < date_time.minute:
+        on_countdown = False
+    # Ultimo caso é quando o countdown acabou no minuto atual, mantém o valor falso lá de cima
+
+    if on_countdown:
+        print(f"-- Item ainda em countdown. Finaliza em: {finish_countdown_str}")
+    else:
+        print(f"-- Acabou o countdown do item. Finalizado em: {finish_countdown_str}")
+
+    return on_countdown
+    
 
 def cancel_item_buy(): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
-    return
+    # Clica em Cancelar
+    cancel_button = wait.until(
+        EC.element_to_be_clickable(
+            (By.CSS_SELECTOR, ".item_market_action_button")
+        )
+    )
+    cancel_button.click()
+
+    time.sleep(1)
 
 def item_buy(value, quant):
     value = str(value).replace(".", ",")
@@ -43,6 +82,8 @@ def item_buy(value, quant):
         )
     )
     buy_button.click()
+    
+    time.sleep(1.2)
 
     # Modifica valor de compra
     input_price = wait.until(
@@ -65,6 +106,8 @@ def item_buy(value, quant):
     input_quant.clear()
     input_quant.send_keys(str(quant))
 
+    # CORRIGIR: AQUELE PROBLEMA DE QUE AS VEZES O ITEM BAIXA 1 OU 2 CENTAVOS
+
     # Aceita os termos
     accept_terms = wait.until(
         EC.presence_of_element_located(
@@ -77,6 +120,7 @@ def item_buy(value, quant):
         arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
     """, accept_terms)
 
+    time.sleep(1.2)
 
     # Encomenda itens
     finish_buy = wait.until(
@@ -147,8 +191,8 @@ items = [
         "max_items": 3,
         "buy_status": "buying",
         "buying_data": {
-            "quant": 0,
-            "price": 1.87
+            "quant": 5,
+            "price": 9.74
         },
         "sell_data": []
     },
@@ -159,6 +203,51 @@ items = [
         "buy_status": "waiting_to_buy",
         "buying_data": {},
         "sell_data": []
+    },
+    {
+        "name": "Stellar Vista",
+        "url": "https://steamcommunity.com/market/listings/753/360600-Stellar%20Vista",
+        "max_items": 3,
+        "buy_status": "buying",
+        "buying_data": {
+            "quant": 2,
+            "price": 6.64
+        },
+        "sell_data": [
+            {
+                "buy_price": 6.15,
+                "sell_price": 0.0,
+                "status": "countdown",
+                "countdown": {
+                    "day": 31,
+                    "month": 1,
+                    "year": 2026,
+                    "hour": 5,
+                    "minute": 0
+                }
+            }
+        ]
+    },
+    {
+        "name": "Haruna (Plano de Fundo de Perfil)",
+        "url": "https://steamcommunity.com/market/listings/753/386970-Haruna%20%28Profile%20Background%29",
+        "max_items": 1,
+        "buy_status": "waiting_to_buy",
+        "buying_data": {},
+        "sell_data": [
+            {
+                "buy_price": 0.15,
+                "sell_price": 0.0,
+                "status": "countdown",
+                "countdown": {
+                    "day": 25,
+                    "month": 1,
+                    "year": 2026,
+                    "hour": 5,
+                    "minute": 0
+                }
+            }
+        ]
     }
 ]
 
@@ -169,6 +258,7 @@ while index < len(items):
     item_name = items[index]["name"]
     item_url = items[index]["url"]
     buy_status = items[index]["buy_status"]
+    sell_data = items[index]["sell_data"]
 
     if index != last_index:
         iteration = 0
@@ -210,13 +300,14 @@ while index < len(items):
 
     else:
         iteration += 1
+        
     last_index = index
 
     if iteration > 0: # apenas separa
         print("=")
 
     if buy_status == "buying":
-        print(f"{iteration}. Comprando *")
+        print(f"C{iteration}. Comprando *")
         buying_data = items[index]["buying_data"]
         is_profitable, offer_value, order_value = check_is_profitable(collected_offer_value, collected_order_value)
 
@@ -251,7 +342,7 @@ while index < len(items):
             index -= 1
 
     if buy_status == "waiting_to_buy":
-        print(f"{iteration}. Checando itens disponíveis para compra *")
+        print(f"C{iteration}. Checando itens disponíveis para compra *")
 
         max_items = items[index]["max_items"]
         num_items_to_sell = len(items[index]["sell_data"])
@@ -275,8 +366,41 @@ while index < len(items):
         else:
             print(f"-- Comprando item por R${order_value}")
             item_buy(order_value, quant_to_buy)
+
+    if iteration == 0 and len(sell_data) > 0:
+        first_sell_data = sell_data[0]
+
+        {
+            "buy_price": 6.15,
+            "sell_price": 0.0,
+            "status": "countdown",
+            "countdown": {
+                "day": 31,
+                "month": 1,
+                "year": 2026,
+                "hour": 5,
+                "minute": 0
+            }
+        }
+
+        if first_sell_data["status"] == "countdown":
+            print(f"V{iteration}: Chegando se item ainda está em countdown.")
+            on_countdown = check_is_in_countdown(first_sell_data["countdown"])
+
+            if on_countdown == False:
+                sell_data[0]["countdown"] = {}
+                sell_data[0]["status"] = "waiting_to_sell"
+
+        if first_sell_data["status"] == "waiting_to_sell":
+            print(f"V{iteration}: Checando possibilidade de venda de item.")
+
+        print(first_sell_data)
+
+
             
     index += 1
+
+
 
 
 
