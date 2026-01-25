@@ -72,7 +72,23 @@ def cancel_item_buy():
     time.sleep(1)
 
 def cancel_item_sell():
-    ""
+    # Clica em Remover
+    remove_button = wait.until(
+        EC.element_to_be_clickable(
+            (By.CSS_SELECTOR, ".item_market_action_button_contents")
+        )
+    )
+    remove_button.click()
+
+    time.sleep(0.8)
+
+    # Usando o ID (mais rápido e garantido)
+    confirm_remove_button = wait.until(
+        EC.element_to_be_clickable((By.ID, "market_removelisting_dialog_accept"))
+    )
+    confirm_remove_button.click()
+
+    time.sleep(1)
 
 def item_buy(value, quant):
     value = str(value).replace(".", ",")
@@ -414,9 +430,9 @@ while index < len(items):
             print(f"-- Valor que estou vendendo de acordo com os dados do item: R${first_sell_data["sell_price"]}")
             print(f"-- Valor que estou vendendo de acordo com os dados da página Steam: R${collected_price_selling}")
 
-            if first_sell_data["sell_price"] != collected_price_selling:
-                # CORRIGIR: SALVAR DADOS DE ITENS VENDIDOS
-                print("- Item vendido! ***")
+            if collected_price_selling == 0.0:
+                # CORRIGIR: SALVAR DADOS DE ITENS VENDIDOS PARA ESTATÍSTICA
+                print(f"- Item vendido por {first_sell_data["sell_price"]}! ***")
                 sell_data.pop(0)
 
                 if len(sell_data) > 0:
@@ -425,11 +441,12 @@ while index < len(items):
                     first_sell_data = None
 
             elif collected_price_selling != offer_value:
-                # CORRIGIR: AJUSTAR COMPRA PARA O NOVO VALOR CORRETO
                 print(f"- Estou vendendo à R${collected_price_selling}, mas o mercado à R${collected_offer_value}. Corrigindo...")
 
                 sell_data[0]["status"] = "waiting_to_sell"
                 sell_data[0]["sell_price"] = 0.0
+
+                cancel_item_sell()
 
         if first_sell_data != None and first_sell_data["status"] == "waiting_to_sell":
             print(f"V{iteration}: Checando possibilidade de venda de item.")
