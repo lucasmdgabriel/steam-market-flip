@@ -36,11 +36,19 @@ for i in range(len(items)):
     items[i]["index"] = i
 
 total_buying = 0
+item_data = {
+    "buying_countdown": 0
+}
+
 for item in items:
     if item["status"] == "buying":
         total_buying += item["buy_value"]
+    elif item["status"] == "buying_countdown":
+        item_data["buying_countdown"] += 1
+
 print(f"Compras totais: {total_buying}")
 print(f"Número de itens: {len(items)}")
+print(f"Items em buying countdown: {item_data["buying_countdown"]}")
 input("")
 
 # Minimizar VS Code
