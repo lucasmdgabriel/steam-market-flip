@@ -32,19 +32,75 @@ def check_is_in_countdown(): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
 def cancel_item_buy(): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
     return
 
-def item_buy(value, quant): # CORRIGIR: IMPLEMENTAR LÓGICA DA FUNÇÃO
-    print(value, quant)
+def item_buy(value, quant):
+    value = str(value).replace(".", ",")
+    print(value, quant) 
 
+    # Clica em Comprar...
     buy_button = wait.until(
         EC.element_to_be_clickable(
-            (By.XPATH, "//button[.//span[contains(text(), 'Comprar...')]]")
+            (By.CSS_SELECTOR, ".market_commodity_buy_button")
+        )
+    )
+    buy_button.click()
+
+    # Modifica valor de compra
+    input_price = wait.until(
+        EC.element_to_be_clickable(
+            (By.ID, "market_buy_commodity_input_price")
+        )
+    )
+    driver.execute_script("""
+        arguments[0].value = arguments[1];
+        arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
+        arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
+    """, input_price, value)
+
+    # Modifica quantidade à comprar
+    input_quant = wait.until(
+        EC.element_to_be_clickable(
+            (By.ID, "market_buy_commodity_input_quantity")
+        )
+    )
+    input_quant.clear()
+    input_quant.send_keys(str(quant))
+
+    # Aceita os termos
+    accept_terms = wait.until(
+        EC.presence_of_element_located(
+            (By.ID, "market_buyorder_dialog_accept_ssa")
         )
     )
 
-    buy_button.click()
+    driver.execute_script("""
+        arguments[0].checked = true;
+        arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
+    """, accept_terms)
 
-    exit()
-    return
+
+    # Encomenda itens
+    finish_buy = wait.until(
+        EC.element_to_be_clickable(
+            (By.ID, "market_buyorder_dialog_purchase")
+        )
+    )
+    finish_buy.click()
+
+    time.sleep(2)
+
+    # Esperando confirmação da compra
+    wait.until(
+        EC.invisibility_of_element_located(
+            (By.CSS_SELECTOR, ".market_confirmation_container.market_dialog_content_darker")
+        )
+    )
+
+    # Esperando finalização da compra
+    wait.until(
+        lambda d: d.find_element(
+            By.ID, "market_buy_commodity_status"
+        ).text.strip() != "Buscando anúncios do item no preço desejado..."
+    )
 
 def check_is_profitable(offer_value, order_value):
     offer_value -= 0.01
@@ -91,7 +147,7 @@ items = [
         "max_items": 3,
         "buy_status": "buying",
         "buying_data": {
-            "quant": 5,
+            "quant": 0,
             "price": 1.87
         },
         "sell_data": []
@@ -131,11 +187,26 @@ while index < len(items):
         collected_order_value = float(sell_price_data[3].text.replace("R$ ", "").replace(",", "."))
 
         # ENCONTRAR VALORES DE COMPRA DO USUÁRIO
-        buy_user_price_data = wait.until(
-            lambda d: d.find_elements(By.CLASS_NAME, "market_listing_price")
+        collected_price_buying = 0.0
+        collected_quant_buying = 0
+
+        buy_user_price_data = driver.find_elements(
+            By.CLASS_NAME, "market_listing_price"
         )
-        collected_price_buying = float(buy_user_price_data[0].text.strip().replace("R$ ", "").replace(",", "."))
-        collected_quant_buying = int(buy_user_price_data[1].text.strip())
+
+        if len(buy_user_price_data) >= 2:
+            collected_price_buying = float(
+                buy_user_price_data[0].text
+                    .replace("R$", "")
+                    .replace(".", "")
+                    .replace(",", ".")
+                    .strip()
+            )
+
+            collected_quant_buying = int(
+                buy_user_price_data[1].text.strip()
+            )
+
 
     else:
         iteration += 1
@@ -195,7 +266,9 @@ while index < len(items):
 
         is_profitable, offer_value, order_value = check_is_profitable(collected_offer_value, collected_order_value)
 
-        if is_profitable == False:
+        if quant_to_buy <= 0:
+            print(f"-- Nenhum item para comprar. Ignorando compra.")
+        elif is_profitable == False:
             print(f"-- Lucro não é suficiente. Ignorando compra.")
         elif wallet_value < order_value:
             print(f"-- Dinheiro disponível na carteira (R${wallet_value}) menor do que o valor do item (R${order_value}). Ignorando.")
