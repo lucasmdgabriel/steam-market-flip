@@ -22,6 +22,24 @@
             ]
         },
         {
+            "name": "Vermelha",
+            "url": "https://steamcommunity.com/market/listings/753/1030300-Red",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 0.31
+            },
+            "sell_data": [
+                {
+                    "buy_price": 0.3,
+                    "sell_price": 0.0,
+                    "status": "waiting_to_sell",
+                    "countdown": {}
+                }
+            ]
+        },
+        {
             "name": "Death",
             "url": "https://steamcommunity.com/market/listings/753/3117820-Death",
             "max_items": 3,
@@ -38,6 +56,30 @@
                     "countdown": {
                         "day": 29,
                         "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                },
+                {
+                    "buy_price": 14.66,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 2,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                },
+                {
+                    "buy_price": 14.66,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 2,
+                        "month": 2,
                         "year": 2026,
                         "hour": 5,
                         "minute": 0
@@ -118,7 +160,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 1,
-                "price": 6.71
+                "price": 6.76
             },
             "sell_data": [
                 {
@@ -180,38 +222,7 @@
                 "quant": 2,
                 "price": 0.89
             },
-            "sell_data": [
-                {
-                    "buy_price": 0.91,
-                    "sell_price": 0.62,
-                    "status": "selling",
-                    "countdown": {
-                        "day": 1,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
-                }
-            ]
-        },
-        {
-            "name": "Vermelha",
-            "url": "https://steamcommunity.com/market/listings/753/1030300-Red",
-            "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 0.31
-            },
-            "sell_data": [
-                {
-                    "buy_price": 0.3,
-                    "sell_price": 0.0,
-                    "status": "waiting_to_sell",
-                    "countdown": {}
-                }
-            ]
+            "sell_data": []
         },
         {
             "name": "Emily <3 XP",
@@ -782,6 +793,19 @@
             "sell_price": 1.66,
             "tax": 0.24899999999999997,
             "profit": 0.6009999999999999
+        },
+        {
+            "name": "Glitch Sansui-zu (Estático)",
+            "url": "https://steamcommunity.com/market/listings/753/1465680-Glitch%20Sansui-zu%20%28still%29",
+            "date": {
+                "day": 26,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 0.91,
+            "sell_price": 0.62,
+            "tax": 0.1,
+            "profit": -0.39
         }
     ]
 }

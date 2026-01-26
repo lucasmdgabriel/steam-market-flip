@@ -142,6 +142,8 @@ def item_buy(value, quant):
 
         repeating = True
 
+        time.sleep(1)
+
     # Aceita os termos
     accept_terms = wait.until(
         EC.presence_of_element_located(
@@ -179,6 +181,8 @@ def item_buy(value, quant):
             By.ID, "market_buy_commodity_status"
         ).text.strip() != "Buscando anúncios do item no preço desejado..."
     )
+
+    return real_value
 
 def item_sell(item_name, item_url, value):
     value = str(value).replace(".", ",")
@@ -459,7 +463,7 @@ while index < len(items):
             print(f"-- Buy limit atingido. Ignorando.")
         else:
             print(f"-- Comprando item por R${order_value}")
-            item_buy(order_value, quant_to_buy)
+            order_value = item_buy(order_value, quant_to_buy)
 
             items[index]["buy_status"] = "buying"
             items[index]["buying_data"] = {
@@ -550,6 +554,8 @@ while index < len(items):
 
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump({"items": items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
+
+    input("")
 
     time.sleep(5)
 
