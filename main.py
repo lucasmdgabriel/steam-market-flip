@@ -69,7 +69,7 @@ def cancel_item_buy():
     )
     cancel_button.click()
 
-    time.sleep(1)
+    time.sleep(1) # TO.DO SLEEP NO CÓDIGO SER VARIÁVEL
 
 def cancel_item_sell():
     # Clica em Remover

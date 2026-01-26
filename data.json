@@ -17,7 +17,14 @@
             "max_items": 1,
             "buy_status": "waiting_to_buy",
             "buying_data": {},
-            "sell_data": []
+            "sell_data": [
+                {
+                    "buy_price": 0.01,
+                    "sell_price": 0.33,
+                    "status": "selling",
+                    "countdown": {}
+                }
+            ]
         },
         {
             "name": "Splat",
@@ -238,6 +245,462 @@
                     }
                 }
             ]
+        },
+        {
+            "name": "Violet space!",
+            "url": "https://steamcommunity.com/market/listings/753/683830-Violet%20space%21",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 0.83,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 27,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Minimal 1",
+            "url": "https://steamcommunity.com/market/listings/753/628580-Minimal%201",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 3.2
+            },
+            "sell_data": [
+                {
+                    "buy_price": 3.29,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 31,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Darkness (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/602910-Darkness%20%28Profile%20Background%29",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 4.63
+            },
+            "sell_data": [
+                {
+                    "buy_price": 4.62,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 1,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Night Forest",
+            "url": "https://steamcommunity.com/market/listings/753/573210-Night%20Forest",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 5.11
+            },
+            "sell_data": [
+                {
+                    "buy_price": 5.36,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 31,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Slingshot",
+            "url": "https://steamcommunity.com/market/listings/753/542340-Slingshot",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 2.74
+            },
+            "sell_data": [
+                {
+                    "buy_price": 2.87,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 30,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Nebula Y (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/504400-Nebula%20Y%20%28Profile%20Background%29",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 6.26
+            },
+            "sell_data": [
+                {
+                    "buy_price": 7.67,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 29,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Orbit",
+            "url": "https://steamcommunity.com/market/listings/753/469890-Orbit",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 3.89
+            },
+            "sell_data": [
+                {
+                    "buy_price": 2.85,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 30,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Guzhou",
+            "url": "https://steamcommunity.com/market/listings/753/455000-Guzhou",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 1.76
+            },
+            "sell_data": [
+                {
+                    "buy_price": 1.73,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 28,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "The shine through darkness",
+            "url": "https://steamcommunity.com/market/listings/753/444410-The%20shine%20through%20darkness",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 0.5,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 27,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Old song",
+            "url": "https://steamcommunity.com/market/listings/753/400740-Old%20song",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 9.46,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 26,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Ancients of Fasaria Common Wings",
+            "url": "https://steamcommunity.com/market/listings/753/339860-Ancients%20of%20Fasaria%20Common%20Wings",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 4.44
+            },
+            "sell_data": [
+                {
+                    "buy_price": 4.33,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 30,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Holiday Lights",
+            "url": "https://steamcommunity.com/market/listings/753/335590-Holiday%20Lights",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 2.45
+            },
+            "sell_data": [
+                {
+                    "buy_price": 2.53,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 28,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Shovelware Queens",
+            "url": "https://steamcommunity.com/market/listings/753/292630-Shovelware%20Queens",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 5.94,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 29,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Storytime (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/237850-Storytime%20%28Profile%20Background%29",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 7.25
+            },
+            "sell_data": [
+                {
+                    "buy_price": 7.07,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 29,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Fields by Night",
+            "url": "https://steamcommunity.com/market/listings/753/230820-Fields%20by%20Night",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 2.39
+            },
+            "sell_data": [
+                {
+                    "buy_price": 1.54,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 28,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Hollow",
+            "url": "https://steamcommunity.com/market/listings/753/48000-Hollow",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 0.45
+            },
+            "sell_data": [
+                {
+                    "buy_price": 0.47,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 28,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Kaya (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/3489700-Kaya%20%28Foil%29",
+            "max_items": 1,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 9.32,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 28,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Gustave (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/1903340-Gustave%20%28Foil%29",
+            "max_items": 1,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 12.33,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 26,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Void",
+            "url": "https://steamcommunity.com/market/listings/753/562260-Void",
+            "max_items": 1,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 1.72,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 27,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Football Manager 2013",
+            "url": "https://steamcommunity.com/market/listings/753/245070-Football%20Manager%202013",
+            "max_items": 1,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 3.16,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 26,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
         }
     ],
     "buy_and_sell": [
@@ -304,19 +767,6 @@
             "sell_price": 1.66,
             "tax": 0.24899999999999997,
             "profit": 0.6009999999999999
-        },
-        {
-            "name": "Haruna (Plano de Fundo de Perfil)",
-            "url": "https://steamcommunity.com/market/listings/753/386970-Haruna%20%28Profile%20Background%29",
-            "date": {
-                "day": 26,
-                "month": 1,
-                "year": 2026
-            },
-            "buy_price": 0.01,
-            "sell_price": 0.33,
-            "tax": 0.1,
-            "profit": 0.22
         }
     ]
 }
