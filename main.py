@@ -8,9 +8,9 @@ import random
 import datetime
 
 # VALORES INICIAIS
-wallet_value = 91.65
+wallet_value = input("Carteira: ")
 buy_limit = wallet_value * 100
-user = "boanashi"
+user = input("Usuário: ")
 
 date_time = datetime.datetime.now()
 
