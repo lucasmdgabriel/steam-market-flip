@@ -394,7 +394,7 @@ while index < len(items):
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {
-                        "day": date_time.day,
+                        "day": date_time.day + 7,
                         "month": date_time.month,
                         "year": date_time.year,
                         "hour": 5,
