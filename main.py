@@ -379,8 +379,13 @@ while index < len(items):
         buying_data = items[index]["buying_data"]
         is_profitable, offer_value, order_value = check_is_profitable(collected_offer_value, collected_order_value)
 
+        print(buying_data["quant"])
+        print(collected_quant_buying)
+
         if buying_data["quant"] > collected_quant_buying:
             diff = buying_data["quant"] - collected_quant_buying
+
+            print("- Adicionando {diff} itens a lista de vendas.")
 
             # ADICIONA ITENS A LISTA DE VENDA
             for _ in range(diff):
@@ -400,7 +405,7 @@ while index < len(items):
                 items[index]["sell_data"].append(new_sell_data_item)
 
         # CANCELA COMPRA DE ITEM PARA RECOMPRAR
-        if buying_data["price"] != collected_order_value:
+        if buying_data["price"] != collected_order_value and collected_quant_buying > 0:
             print("- Cancelando compra. Valor mudou.")
             cancel_item_buy()
             
