@@ -17,21 +17,17 @@
             "max_items": 1,
             "buy_status": "waiting_to_buy",
             "buying_data": {},
-            "sell_data": [
-                {
-                    "buy_price": 0.01,
-                    "sell_price": 0.33,
-                    "status": "selling",
-                    "countdown": {}
-                }
-            ]
+            "sell_data": []
         },
         {
             "name": "Splat",
             "url": "https://steamcommunity.com/market/listings/753/282010-Splat",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 9.81
+            },
             "sell_data": []
         },
         {
@@ -46,8 +42,11 @@
             "name": "Stellar Vista",
             "url": "https://steamcommunity.com/market/listings/753/360600-Stellar%20Vista",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 1,
+                "price": 6.65
+            },
             "sell_data": [
                 {
                     "buy_price": 6.15,
@@ -79,8 +78,11 @@
             "name": "Death",
             "url": "https://steamcommunity.com/market/listings/753/3117820-Death",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 14.66
+            },
             "sell_data": [
                 {
                     "buy_price": 12.69,
@@ -100,8 +102,11 @@
             "name": "Flower",
             "url": "https://steamcommunity.com/market/listings/753/2475490-Flower",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 3.48
+            },
             "sell_data": [
                 {
                     "buy_price": 3.49,
@@ -121,8 +126,11 @@
             "name": "Glitch Sansui-zu (Estático)",
             "url": "https://steamcommunity.com/market/listings/753/1465680-Glitch%20Sansui-zu%20%28still%29",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 0.89
+            },
             "sell_data": [
                 {
                     "buy_price": 0.91,
@@ -131,6 +139,99 @@
                     "countdown": {
                         "day": 1,
                         "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Vermelha",
+            "url": "https://steamcommunity.com/market/listings/753/1030300-Red",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 0.29
+            },
+            "sell_data": [
+                {
+                    "buy_price": 0.3,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 26,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Emily <3 XP",
+            "url": "https://steamcommunity.com/market/listings/753/978460-Emily%20%3C3%20XP",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 17.74
+            },
+            "sell_data": [
+                {
+                    "buy_price": 18.98,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 27,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Unusual cloudy sky",
+            "url": "https://steamcommunity.com/market/listings/753/806140-Unusual%20cloudy%20sky",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 3.35
+            },
+            "sell_data": [
+                {
+                    "buy_price": 5.01,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 27,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Helix Metro Hub",
+            "url": "https://steamcommunity.com/market/listings/753/746850-Helix%20Metro%20Hub",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 7.84,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 30,
+                        "month": 1,
                         "year": 2026,
                         "hour": 5,
                         "minute": 0
@@ -203,6 +304,19 @@
             "sell_price": 1.66,
             "tax": 0.24899999999999997,
             "profit": 0.6009999999999999
+        },
+        {
+            "name": "Haruna (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/386970-Haruna%20%28Profile%20Background%29",
+            "date": {
+                "day": 26,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 0.01,
+            "sell_price": 0.33,
+            "tax": 0.1,
+            "profit": 0.22
         }
     ]
 }

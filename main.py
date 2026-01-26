@@ -8,7 +8,8 @@ import random
 import datetime
 
 # VALORES INICIAIS
-wallet_value = 100
+wallet_value = 91.65
+buy_limit = wallet_value * 100
 user = "boanashi"
 
 date_time = datetime.datetime.now()
@@ -19,9 +20,6 @@ login_url = "https://store.steampowered.com/login/?redir=&redir_ssl=1"
 driver.get(login_url)
 
 wait = WebDriverWait(driver, 300)
-
-
-
 
 def aguardar_pagina(driver): # CORRIGIR: ATUALIZAR NOME
     WebDriverWait(driver, 10).until(
@@ -269,6 +267,18 @@ def check_is_profitable(offer_value, order_value):
 
     return is_profitable, offer_value, order_value
 
+def calculate_total_buying(items):
+    total_buying = 0.0
+
+    for item in items:
+        buy_data = item["buying_data"]
+
+        if buy_data != {}:
+            total_buying += (buy_data["quant"] * buy_data["price"])
+
+    return round(total_buying, 2)
+
+
 
 
 try:
@@ -286,6 +296,8 @@ with open('data.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 items = data["items"]
 buy_and_sell = data["buy_and_sell"]
+
+print(f"Total buying inicial: {calculate_total_buying(items)}")
 
 index = 0
 last_index = -1
@@ -405,7 +417,8 @@ while index < len(items):
 
         quant_to_buy = max_items - num_items_to_sell
 
-        if quant_to_buy < 0: quant_to_buy = 0
+        if quant_to_buy < 0:
+            quant_to_buy = 0
 
         print(f"-- Limite de itens: {max_items}")
         print(f"-- Itens sendo vendidos: {num_items_to_sell}")
@@ -419,6 +432,8 @@ while index < len(items):
             print(f"-- Lucro não é suficiente. Ignorando compra.")
         elif wallet_value < order_value:
             print(f"-- Dinheiro disponível na carteira (R${wallet_value}) menor do que o valor do item (R${order_value}). Ignorando.")
+        elif (calculate_total_buying(items) + (order_value * quant_to_buy)) > buy_limit:
+            print(f"-- Buy limit atingido. Ignorando.")
         else:
             print(f"-- Comprando item por R${order_value}")
             item_buy(order_value, quant_to_buy)
@@ -512,6 +527,8 @@ while index < len(items):
 
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump({"items": items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
+
+    time.sleep(5)
 
 
 print("")
