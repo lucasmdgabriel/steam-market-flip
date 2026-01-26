@@ -8,6 +8,7 @@ import datetime
 
 # VALORES INICIAIS
 wallet_value = 100
+user = "boanashi"
 
 date_time = datetime.datetime.now()
 
@@ -88,11 +89,11 @@ def cancel_item_sell():
     )
     confirm_remove_button.click()
 
-    time.sleep(1)
+    time.sleep(5)
 
 def item_buy(value, quant):
     value = str(value).replace(".", ",")
-    print(value, quant) 
+    print(value, quant)
 
     # Clica em Comprar...
     buy_button = wait.until(
@@ -165,6 +166,82 @@ def item_buy(value, quant):
         ).text.strip() != "Buscando anúncios do item no preço desejado..."
     )
 
+def item_sell(item_name, value):
+    value = str(value).replace(".", ",")
+    print(value)
+
+    driver.get(f"https://steamcommunity.com/id/{user}/inventory")
+    aguardar_pagina(driver)
+
+    # Busca apenas elementos que possuem a classe 'item' e um ID que começa com números
+
+    wait = WebDriverWait(driver, 10)
+
+    filter_box = wait.until(EC.element_to_be_clickable((By.ID, "filter_control")))
+    filter_box.clear()
+    filter_box.send_keys(item_name)
+
+    time.sleep(0.5)
+    
+    # Pega todos os itens e filtra o que está visível de fato
+    all_items = driver.find_elements(By.CSS_SELECTOR, ".itemHolder .item")
+    target_item = next((item for item in all_items if item.is_displayed()), None)
+
+    if target_item:
+        # Clica no link interno que é o alvo real do evento da Steam
+        link = target_item.find_element(By.CSS_SELECTOR, ".inventory_item_link")
+        driver.execute_script("arguments[0].click();", link)
+    else:
+        print("Nenhum item visível após o filtro.")
+
+    # Clicar em vender
+    wait = WebDriverWait(driver, 10)
+    botao_vender = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Vender')]")))
+    botao_vender.click()
+
+    time.sleep(1)
+
+    # Modifica o valor de venda
+    input_quant = wait.until(
+        EC.element_to_be_clickable(
+            (By.ID, "market_sell_buyercurrency_input")
+        )
+    )
+    input_quant.clear()
+    input_quant.send_keys(value)
+
+    time.sleep(0.5)
+
+    # Aceita os termos
+    accept_terms = wait.until(
+        EC.presence_of_element_located(
+            (By.ID, "market_sell_dialog_accept_ssa")
+        )
+    )
+
+    driver.execute_script("""
+        arguments[0].checked = true;
+        arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
+    """, accept_terms)
+    time.sleep(1.2)
+
+    # Vende itens
+    sell_button = wait.until(
+        EC.element_to_be_clickable(
+            (By.ID, "market_sell_dialog_accept")
+        )
+    )
+    sell_button.click()
+    time.sleep(0.8)
+
+    # Confirma venda
+    wait.until(EC.element_to_be_clickable((By.XPATH, "//a[span[text()='OK']]")))
+
+    ok_button = driver.find_element(By.XPATH, "//a[span[text()='OK']]")
+    driver.execute_script("arguments[0].click();", ok_button)
+
+    time.sleep(5)
+
 def check_is_profitable(offer_value, order_value):
     offer_value -= 0.01
     order_value += 0.01
@@ -205,13 +282,28 @@ except Exception as e:
 
 items = [
     {
+        "name": "Haruna (Plano de Fundo de Perfil)",
+        "url": "https://steamcommunity.com/market/listings/753/386970-Haruna%20%28Profile%20Background%29",
+        "max_items": 1,
+        "buy_status": "waiting_to_buy",
+        "buying_data": {},
+        "sell_data": [
+            {
+                "buy_price": 0.01,
+                "sell_price": 0.33,
+                "status": "selling",
+                "countdown": {}
+            }
+        ]
+    },
+    {
         "name": "Splat",
         "url": "https://steamcommunity.com/market/listings/753/282010-Splat",
         "max_items": 3,
         "buy_status": "buying",
         "buying_data": {
-            "quant": 5,
-            "price": 9.74
+            "quant": 3,
+            "price": 9.81
         },
         "sell_data": []
     },
@@ -230,7 +322,7 @@ items = [
         "buy_status": "buying",
         "buying_data": {
             "quant": 2,
-            "price": 6.64
+            "price": 6.65
         },
         "sell_data": [
             {
@@ -244,21 +336,18 @@ items = [
                     "hour": 5,
                     "minute": 0
                 }
-            }
-        ]
-    },
-    {
-        "name": "Haruna (Plano de Fundo de Perfil)",
-        "url": "https://steamcommunity.com/market/listings/753/386970-Haruna%20%28Profile%20Background%29",
-        "max_items": 1,
-        "buy_status": "waiting_to_buy",
-        "buying_data": {},
-        "sell_data": [
+            },
             {
-                "buy_price": 0.01,
-                "sell_price": 0.33,
-                "status": "selling",
-                "countdown": {}
+                "buy_price": 6.64,
+                "sell_price": 0.0,
+                "status": "countdown",
+                "countdown": {
+                    "day": 1,
+                    "month": 2,
+                    "year": 2026,
+                    "hour": 5,
+                    "minute": 0
+                }
             }
         ]
     }
@@ -426,21 +515,20 @@ while index < len(items):
 
         if first_sell_data["status"] == "selling":
             print(f"V{iteration}: Checando item sendo vendido.")
-
-            print(f"-- Valor que estou vendendo de acordo com os dados do item: R${first_sell_data["sell_price"]}")
             print(f"-- Valor que estou vendendo de acordo com os dados da página Steam: R${collected_price_selling}")
 
             if collected_price_selling == 0.0:
                 # CORRIGIR: SALVAR DADOS DE ITENS VENDIDOS PARA ESTATÍSTICA
-                print(f"- Item vendido por {first_sell_data["sell_price"]}! ***")
-                sell_data.pop(0)
+                print(f"*** Item vendido por {first_sell_data["sell_price"]}! ***")
+                items[index]["sell_data"].pop(0)
+                sell_data = items[index]["sell_data"]
 
                 if len(sell_data) > 0:
                     first_sell_data = sell_data[0]
                 else:
                     first_sell_data = None
 
-            elif collected_price_selling != offer_value:
+            elif collected_price_selling != collected_offer_value:
                 print(f"- Estou vendendo à R${collected_price_selling}, mas o mercado à R${collected_offer_value}. Corrigindo...")
 
                 sell_data[0]["status"] = "waiting_to_sell"
@@ -449,7 +537,12 @@ while index < len(items):
                 cancel_item_sell()
 
         if first_sell_data != None and first_sell_data["status"] == "waiting_to_sell":
-            print(f"V{iteration}: Checando possibilidade de venda de item.")
+            print(f"- V{iteration}: Iniciando venda de item.")
+
+            item_sell(item_name, offer_value)
+
+            items[index]["sell_data"][0]["status"] = "selling"
+            items[index]["sell_data"][0]["sell_price"] = offer_value
 
         print(first_sell_data)
 
