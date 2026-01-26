@@ -21,10 +21,34 @@ driver.get(login_url)
 
 wait = WebDriverWait(driver, 300)
 
-def aguardar_pagina(driver): # CORRIGIR: ATUALIZAR NOME
-    WebDriverWait(driver, 10).until(
-        lambda d: d.execute_script("return document.readyState") == "complete"
-    )
+def aguardar_pagina(driver, tentativas=5):  # CORRIGIR: ATUALIZAR NOME
+    for tentativa in range(tentativas):
+
+        try:
+            WebDriverWait(driver, 12).until(
+                lambda d: (
+                    d.find_elements(By.CLASS_NAME, "market_listing_row") or
+                    d.find_elements(By.CLASS_NAME, "market_listing_table_message")
+                )
+            )
+
+            erros = driver.find_elements(By.CLASS_NAME, "market_listing_table_message")
+            if any("erro ao carregar" in e.text.lower() for e in erros):
+                print(f"Steam falhou ao carregar. Retry {tentativa+1}/{tentativas}")
+                time.sleep(random.uniform(4, 8))
+                driver.refresh()
+                continue
+
+            print("Página carregada com anúncios")
+            return True
+
+        except:
+            print(f"⏳ Timeout carregando. Retry {tentativa+1}/{tentativas}")
+            time.sleep(random.uniform(4, 8))
+            driver.refresh()
+
+    print("Steam não carregou após várias tentativas")
+    return False
 
 def check_is_in_countdown(it_countdown):
     finish_countdown_str = f"{it_countdown["day"]}/{it_countdown["month"]}/{it_countdown["year"]}, {it_countdown["hour"]}:{it_countdown["minute"]}"
@@ -555,8 +579,6 @@ while index < len(items):
 
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump({"items": items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
-
-    input("")
 
     time.sleep(5)
 
