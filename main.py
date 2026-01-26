@@ -1,3 +1,4 @@
+import json
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -280,78 +281,10 @@ except Exception as e:
     print(f"Tempo de login esgotado: {e}")
     exit()
 
-items = [
-    {
-        "name": "Haruna (Plano de Fundo de Perfil)",
-        "url": "https://steamcommunity.com/market/listings/753/386970-Haruna%20%28Profile%20Background%29",
-        "max_items": 1,
-        "buy_status": "waiting_to_buy",
-        "buying_data": {},
-        "sell_data": [
-            {
-                "buy_price": 0.01,
-                "sell_price": 0.33,
-                "status": "selling",
-                "countdown": {}
-            }
-        ]
-    },
-    {
-        "name": "Splat",
-        "url": "https://steamcommunity.com/market/listings/753/282010-Splat",
-        "max_items": 3,
-        "buy_status": "buying",
-        "buying_data": {
-            "quant": 3,
-            "price": 9.81
-        },
-        "sell_data": []
-    },
-    {
-        "name": "Broken Shell (Brilhante)",
-        "url": "https://steamcommunity.com/market/listings/753/367520-Broken%20Shell%20%28Foil%29",
-        "max_items": 3,
-        "buy_status": "waiting_to_buy",
-        "buying_data": {},
-        "sell_data": []
-    },
-    {
-        "name": "Stellar Vista",
-        "url": "https://steamcommunity.com/market/listings/753/360600-Stellar%20Vista",
-        "max_items": 3,
-        "buy_status": "buying",
-        "buying_data": {
-            "quant": 2,
-            "price": 6.65
-        },
-        "sell_data": [
-            {
-                "buy_price": 6.15,
-                "sell_price": 0.0,
-                "status": "countdown",
-                "countdown": {
-                    "day": 31,
-                    "month": 1,
-                    "year": 2026,
-                    "hour": 5,
-                    "minute": 0
-                }
-            },
-            {
-                "buy_price": 6.64,
-                "sell_price": 0.0,
-                "status": "countdown",
-                "countdown": {
-                    "day": 1,
-                    "month": 2,
-                    "year": 2026,
-                    "hour": 5,
-                    "minute": 0
-                }
-            }
-        ]
-    }
-]
+with open('data.json', 'r', encoding='utf-8') as f:
+    data = json.load(f)
+items = data["items"]
+buy_and_sell = data["buy_and_sell"]
 
 index = 0
 last_index = -1
@@ -489,6 +422,12 @@ while index < len(items):
             print(f"-- Comprando item por R${order_value}")
             item_buy(order_value, quant_to_buy)
 
+            items[index]["buy_status"] = "buying"
+            items[index]["buying_data"] = {
+                "quant": quant_to_buy,
+                "price": order_value
+            }
+
     if iteration == 0 and len(sell_data) > 0:
         first_sell_data = sell_data[0]
 
@@ -544,26 +483,14 @@ while index < len(items):
             items[index]["sell_data"][0]["status"] = "selling"
             items[index]["sell_data"][0]["sell_price"] = offer_value
 
-        print(first_sell_data)
 
 
             
     index += 1
 
+    with open("data.json", "w", encoding="utf-8") as f:
+        json.dump({"items": items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
 
 
 
-
-exit()
-# ENCONTRAR VALORES DE COMPRA
-buy_price_quant = driver.find_elements(By.CLASS_NAME, "market_listing_price")
-
-buy_price = buy_price_quant[0].text.strip().replace("R$ ", "")
-buy_quant = buy_price_quant[1].text.strip()
-
-print(f"Preço: {buy_price}")
-print(f"Quantidade: {buy_quant}")
-
-
-input("Pressione Enter para fechar...")
-driver.quit()
+print("finalizado.")
