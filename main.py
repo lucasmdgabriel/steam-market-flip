@@ -103,28 +103,44 @@ def item_buy(value, quant):
     
     time.sleep(1.2)
 
-    # Modifica valor de compra
-    input_price = wait.until(
-        EC.element_to_be_clickable(
-            (By.ID, "market_buy_commodity_input_price")
-        )
-    )
-    driver.execute_script("""
-        arguments[0].value = arguments[1];
-        arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
-        arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
-    """, input_price, value)
+    real_value = 0.0
+    repeating = False
+    while real_value != float(value.replace(",", ".")) * quant:
+        if repeating == True:
+            value = float(value.replace(",", "."))
+            value = round(value + 0.01, 2)
+            value = str(value).replace(".", ",")
 
-    # Modifica quantidade à comprar
-    input_quant = wait.until(
-        EC.element_to_be_clickable(
-            (By.ID, "market_buy_commodity_input_quantity")
+        # Modifica valor de compra
+        input_price = wait.until(
+            EC.element_to_be_clickable(
+                (By.ID, "market_buy_commodity_input_price")
+            )
         )
-    )
-    input_quant.clear()
-    input_quant.send_keys(str(quant))
+        driver.execute_script("""
+            arguments[0].value = arguments[1];
+            arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
+            arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
+        """, input_price, value)
 
-    # CORRIGIR: AQUELE PROBLEMA DE QUE AS VEZES O ITEM BAIXA 1 OU 2 CENTAVOS
+        # Modifica quantidade à comprar
+        input_quant = wait.until(
+            EC.element_to_be_clickable(
+                (By.ID, "market_buy_commodity_input_quantity")
+            )
+        )
+        input_quant.clear()
+        input_quant.send_keys(str(quant))
+
+
+        element = driver.find_element(By.ID, "market_buy_commodity_order_total")
+        valor_texto = element.text.strip()
+
+        real_value = float(
+            valor_texto.replace("R$ ", "").replace(",", ".")
+        )
+
+        repeating = True
 
     # Aceita os termos
     accept_terms = wait.until(
@@ -387,6 +403,8 @@ while index < len(items):
 
             print("- Adicionando {diff} itens a lista de vendas.")
 
+            new_countdown_date = date_time + datetime.timedelta(days=7)
+
             # ADICIONA ITENS A LISTA DE VENDA
             for _ in range(diff):
                 new_sell_data_item = {
@@ -394,9 +412,9 @@ while index < len(items):
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {
-                        "day": date_time.day + 7,
-                        "month": date_time.month,
-                        "year": date_time.year,
+                        "day": new_countdown_date.day,
+                        "month": new_countdown_date.month,
+                        "year": new_countdown_date.year,
                         "hour": 5,
                         "minute": 0
                     }
