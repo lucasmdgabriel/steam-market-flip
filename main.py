@@ -349,7 +349,8 @@ while index < len(items):
         collected_quant_buying = 0
 
         buy_user_price_data = driver.find_elements(
-            By.CLASS_NAME, "market_listing_price"
+            By.XPATH,
+            "//span[contains(@class,'market_listing_price') and not(.//span[@title='Este é o valor pago pelo comprador.'])]"
         )
 
         if len(buy_user_price_data) >= 2:
