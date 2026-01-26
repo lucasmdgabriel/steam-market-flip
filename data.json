@@ -4,8 +4,11 @@
             "name": "Orbit",
             "url": "https://steamcommunity.com/market/listings/753/469890-Orbit",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 3.91
+            },
             "sell_data": [
                 {
                     "buy_price": 2.85,

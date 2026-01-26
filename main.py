@@ -182,7 +182,7 @@ def item_buy(value, quant):
         ).text.strip() != "Buscando anúncios do item no preço desejado..."
     )
 
-    return real_value
+    return float(value.replace(",", "."))
 
 def item_sell(item_name, item_url, value):
     value = str(value).replace(".", ",")
