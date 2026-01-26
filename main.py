@@ -166,7 +166,7 @@ def item_buy(value, quant):
         ).text.strip() != "Buscando anúncios do item no preço desejado..."
     )
 
-def item_sell(item_name, value):
+def item_sell(item_name, item_url, value):
     value = str(value).replace(".", ",")
 
     driver.get(f"https://steamcommunity.com/id/{user}/inventory")
@@ -240,6 +240,9 @@ def item_sell(item_name, value):
     driver.execute_script("arguments[0].click();", ok_button)
 
     time.sleep(5)
+
+    driver.get(item_url)
+    aguardar_pagina(driver)
 
 def check_is_profitable(offer_value, order_value):
     offer_value -= 0.01
@@ -500,7 +503,7 @@ while index < len(items):
         if first_sell_data != None and first_sell_data["status"] == "waiting_to_sell":
             print(f"- V{iteration}: Iniciando venda de item.")
 
-            item_sell(item_name, offer_value)
+            item_sell(item_name, item_url, offer_value)
 
             items[index]["sell_data"][0]["status"] = "selling"
             items[index]["sell_data"][0]["sell_price"] = offer_value

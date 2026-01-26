@@ -19,9 +19,9 @@
             "buying_data": {},
             "sell_data": [
                 {
-                    "buy_price": 1.01,
-                    "sell_price": 0,
-                    "status": "waiting_to_sell",
+                    "buy_price": 0.01,
+                    "sell_price": 0.33,
+                    "status": "selling",
                     "countdown": {}
                 }
             ]
@@ -30,11 +30,8 @@
             "name": "Splat",
             "url": "https://steamcommunity.com/market/listings/753/282010-Splat",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 3,
-                "price": 9.81
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": []
         },
         {
@@ -49,11 +46,8 @@
             "name": "Stellar Vista",
             "url": "https://steamcommunity.com/market/listings/753/360600-Stellar%20Vista",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 1,
-                "price": 6.65
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 6.15,
@@ -69,6 +63,69 @@
                 },
                 {
                     "buy_price": 6.64,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 1,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Death",
+            "url": "https://steamcommunity.com/market/listings/753/3117820-Death",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 12.69,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 29,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Flower",
+            "url": "https://steamcommunity.com/market/listings/753/2475490-Flower",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 3.49,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 1,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
+        },
+        {
+            "name": "Glitch Sansui-zu (Estático)",
+            "url": "https://steamcommunity.com/market/listings/753/1465680-Glitch%20Sansui-zu%20%28still%29",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 0.91,
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {

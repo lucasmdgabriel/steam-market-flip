@@ -53,12 +53,10 @@ for new_item in new_items:
     old_items.append({
         "name": pyperclip.paste().replace("\r\n", ""),
         "url": new_item,
-        "buy_value": 0.0,
-        "sale_value": 0.0,
-        "buyed_value": 0.0,
-        "status": "waiting_buy_oportunity",
-        "buying_countdown": {},
-        "sale_tries": 0
+        "max_items": 3,
+        "buy_status": "waiting_to_buy",
+        "buying_data": {},
+        "sell_data": []
     })
 
 with open("data.json", "w", encoding="utf-8") as f:
