@@ -94,7 +94,6 @@ def cancel_item_sell():
 
 def item_buy(value, quant):
     value = str(value).replace(".", ",")
-    print(value, quant)
 
     # Clica em Comprar...
     buy_button = wait.until(
@@ -169,7 +168,6 @@ def item_buy(value, quant):
 
 def item_sell(item_name, value):
     value = str(value).replace(".", ",")
-    print(value)
 
     driver.get(f"https://steamcommunity.com/id/{user}/inventory")
     aguardar_pagina(driver)
@@ -457,8 +455,32 @@ while index < len(items):
             print(f"-- Valor que estou vendendo de acordo com os dados da página Steam: R${collected_price_selling}")
 
             if collected_price_selling == 0.0:
-                # CORRIGIR: SALVAR DADOS DE ITENS VENDIDOS PARA ESTATÍSTICA
                 print(f"*** Item vendido por {first_sell_data["sell_price"]}! ***")
+
+                buy_price_value = first_sell_data["buy_price"]
+                sell_price_value = first_sell_data["sell_price"]
+                tax_value = round(sell_price_value * 0.15, 2)
+
+                if tax_value <= 0.1:
+                    tax_value = 0.1
+                    
+                profit_value = round(sell_price_value - buy_price_value - tax_value, 2)
+
+                buy_and_sell.append({
+                    "name": items[index]["name"],
+                    "url": items[index]["url"],
+                    "date": {
+                        "day": date_time.day,
+                        "month": date_time.month,
+                        "year": date_time.year
+                    },
+                    "buy_price": buy_price_value,
+                    "sell_price": sell_price_value,
+                    "tax": tax_value,
+                    "profit": profit_value
+                    
+                })
+
                 items[index]["sell_data"].pop(0)
                 sell_data = items[index]["sell_data"]
 
@@ -483,14 +505,11 @@ while index < len(items):
             items[index]["sell_data"][0]["status"] = "selling"
             items[index]["sell_data"][0]["sell_price"] = offer_value
 
-
-
-            
     index += 1
 
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump({"items": items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
 
 
-
-print("finalizado.")
+print("")
+print("Finalizado.")
