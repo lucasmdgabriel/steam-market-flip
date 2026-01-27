@@ -21,6 +21,18 @@ driver.get(login_url)
 
 wait = WebDriverWait(driver, 300)
 
+def sleep(value):
+    if isinstance(value, (int, float)) == False:
+        time.sleep(1.0)
+        return
+
+    # Entre 0,02% e 2%
+    percent = (random.randrange(100) + 1)/500 # 0.002, 0.004, 0.006, ..., 0.200
+    delay = value * (1 + percent)
+
+    print(f"---- Aplicando delay de {delay}")
+    time.sleep(delay)
+
 def waiting_page_load(driver, tentativas=5):
     for tentativa in range(tentativas):
 
@@ -35,7 +47,7 @@ def waiting_page_load(driver, tentativas=5):
             erros = driver.find_elements(By.CLASS_NAME, "market_listing_table_message")
             if any("erro ao carregar" in e.text.lower() for e in erros):
                 print(f"Steam falhou ao carregar. Retry {tentativa+1}/{tentativas}")
-                time.sleep(random.uniform(4, 8))
+                sleep(6.0)
                 driver.refresh()
                 continue
 
@@ -44,7 +56,7 @@ def waiting_page_load(driver, tentativas=5):
 
         except:
             print(f"⏳ Timeout carregando. Retry {tentativa+1}/{tentativas}")
-            time.sleep(random.uniform(4, 8))
+            sleep(6.0)
             driver.refresh()
 
     print("Steam não carregou após várias tentativas")
@@ -93,7 +105,7 @@ def cancel_item_buy():
     )
     cancel_button.click()
 
-    time.sleep(1) # TO.DO SLEEP NO CÓDIGO SER VARIÁVEL
+    sleep(1) # TO.DO SLEEP NO CÓDIGO SER VARIÁVEL
 
 def cancel_item_sell():
     # Clica em Remover
@@ -104,7 +116,7 @@ def cancel_item_sell():
     )
     remove_button.click()
 
-    time.sleep(0.8)
+    sleep(0.8)
 
     # Usando o ID (mais rápido e garantido)
     confirm_remove_button = wait.until(
@@ -112,7 +124,7 @@ def cancel_item_sell():
     )
     confirm_remove_button.click()
 
-    time.sleep(5)
+    sleep(5)
 
 def item_buy(value, quant):
     value = str(value).replace(".", ",")
@@ -125,7 +137,7 @@ def item_buy(value, quant):
     )
     buy_button.click()
     
-    time.sleep(1.2)
+    sleep(1.2)
 
     real_value = 0.0
     repeating = False
@@ -166,7 +178,7 @@ def item_buy(value, quant):
 
         repeating = True
 
-        time.sleep(1)
+        sleep(1)
 
     # Aceita os termos
     accept_terms = wait.until(
@@ -180,7 +192,7 @@ def item_buy(value, quant):
         arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
     """, accept_terms)
 
-    time.sleep(1.2)
+    sleep(1.2)
 
     # Encomenda itens
     finish_buy = wait.until(
@@ -190,7 +202,7 @@ def item_buy(value, quant):
     )
     finish_buy.click()
 
-    time.sleep(2)
+    sleep(2)
 
     # Esperando confirmação da compra
     wait.until(
@@ -222,7 +234,7 @@ def item_sell(item_name, item_url, value):
     filter_box.clear()
     filter_box.send_keys(item_name)
 
-    time.sleep(0.5)
+    sleep(0.5)
     
     # Pega todos os itens e filtra o que está visível de fato
     all_items = driver.find_elements(By.CSS_SELECTOR, ".itemHolder .item")
@@ -240,7 +252,7 @@ def item_sell(item_name, item_url, value):
     botao_vender = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Vender')]")))
     botao_vender.click()
 
-    time.sleep(1)
+    sleep(1)
 
     # Modifica o valor de venda
     input_quant = wait.until(
@@ -251,7 +263,7 @@ def item_sell(item_name, item_url, value):
     input_quant.clear()
     input_quant.send_keys(value)
 
-    time.sleep(0.5)
+    sleep(0.5)
 
     # Aceita os termos
     accept_terms = wait.until(
@@ -264,7 +276,7 @@ def item_sell(item_name, item_url, value):
         arguments[0].checked = true;
         arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
     """, accept_terms)
-    time.sleep(1.2)
+    sleep(1.2)
 
     # Vende itens
     sell_button = wait.until(
@@ -273,7 +285,7 @@ def item_sell(item_name, item_url, value):
         )
     )
     sell_button.click()
-    time.sleep(0.8)
+    sleep(0.8)
 
     # Confirma venda
     wait.until(EC.element_to_be_clickable((By.XPATH, "//a[span[text()='OK']]")))
@@ -281,7 +293,7 @@ def item_sell(item_name, item_url, value):
     ok_button = driver.find_element(By.XPATH, "//a[span[text()='OK']]")
     driver.execute_script("arguments[0].click();", ok_button)
 
-    time.sleep(5)
+    sleep(5)
 
     driver.get(item_url)
     waiting_page_load(driver)
@@ -584,7 +596,7 @@ while index < len(items):
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump({"items": items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
 
-    time.sleep(5)
+    sleep(5)
 
 
 print("")
