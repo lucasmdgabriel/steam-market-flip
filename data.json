@@ -1,6 +1,24 @@
 {
     "items": [
         {
+            "name": "Unusual cloudy sky",
+            "url": "https://steamcommunity.com/market/listings/753/806140-Unusual%20cloudy%20sky",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 5.46
+            },
+            "sell_data": [
+                {
+                    "buy_price": 5.01,
+                    "sell_price": 7.99,
+                    "status": "selling",
+                    "countdown": {}
+                }
+            ]
+        },
+        {
             "name": "Death",
             "url": "https://steamcommunity.com/market/listings/753/3117820-Death",
             "max_items": 3,
@@ -46,43 +64,16 @@
             ]
         },
         {
-            "name": "Unusual cloudy sky",
-            "url": "https://steamcommunity.com/market/listings/753/806140-Unusual%20cloudy%20sky",
-            "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 3.58
-            },
-            "sell_data": [
-                {
-                    "buy_price": 5.01,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 27,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
-                }
-            ]
-        },
-        {
             "name": "Vermelha",
             "url": "https://steamcommunity.com/market/listings/753/1030300-Red",
-            "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 0.31
-            },
+            "max_items": 0,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 0.3,
-                    "sell_price": 0.62,
-                    "status": "selling",
+                    "sell_price": 0.0,
+                    "status": "waiting_to_sell",
                     "countdown": {}
                 }
             ]
@@ -128,7 +119,7 @@
             "sell_data": [
                 {
                     "buy_price": 0.01,
-                    "sell_price": 0.33,
+                    "sell_price": 0.27,
                     "status": "selling",
                     "countdown": {}
                 }
@@ -141,7 +132,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 3,
-                "price": 11.09
+                "price": 12.82
             },
             "sell_data": []
         },
@@ -160,7 +151,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 1,
-                "price": 6.76
+                "price": 6.79
             },
             "sell_data": [
                 {
@@ -217,12 +208,22 @@
             "name": "Glitch Sansui-zu (Estático)",
             "url": "https://steamcommunity.com/market/listings/753/1465680-Glitch%20Sansui-zu%20%28still%29",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 0.89
-            },
-            "sell_data": []
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 0.89,
+                    "sell_price": 29.9,
+                    "status": "selling",
+                    "countdown": {
+                        "day": 3,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
         },
         {
             "name": "Emily <3 XP",
@@ -231,20 +232,14 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 2,
-                "price": 17.85
+                "price": 17.89
             },
             "sell_data": [
                 {
                     "buy_price": 18.98,
                     "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 27,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
+                    "status": "waiting_to_sell",
+                    "countdown": {}
                 }
             ]
         },
@@ -273,20 +268,17 @@
             "name": "Violet space!",
             "url": "https://steamcommunity.com/market/listings/753/683830-Violet%20space%21",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 0.75
+            },
             "sell_data": [
                 {
                     "buy_price": 0.83,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 27,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
+                    "sell_price": 1.23,
+                    "status": "selling",
+                    "countdown": {}
                 }
             ]
         },
@@ -294,11 +286,8 @@
             "name": "Minimal 1",
             "url": "https://steamcommunity.com/market/listings/753/628580-Minimal%201",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 3.23
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 3.29,
@@ -320,8 +309,8 @@
             "max_items": 3,
             "buy_status": "buying",
             "buying_data": {
-                "quant": 2,
-                "price": 4.63
+                "quant": 1,
+                "price": 4.67
             },
             "sell_data": [
                 {
@@ -347,30 +336,6 @@
                         "hour": 5,
                         "minute": 0
                     }
-                },
-                {
-                    "buy_price": 4.63,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 2,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
-                },
-                {
-                    "buy_price": 4.63,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 2,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
                 }
             ]
         },
@@ -378,11 +343,8 @@
             "name": "Night Forest",
             "url": "https://steamcommunity.com/market/listings/753/573210-Night%20Forest",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 5.11
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 5.36,
@@ -474,20 +436,17 @@
             "name": "The shine through darkness",
             "url": "https://steamcommunity.com/market/listings/753/444410-The%20shine%20through%20darkness",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 0.54
+            },
             "sell_data": [
                 {
                     "buy_price": 0.5,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 27,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
+                    "sell_price": 0.94,
+                    "status": "selling",
+                    "countdown": {}
                 }
             ]
         },
@@ -506,7 +465,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 2,
-                "price": 4.56
+                "price": 4.67
             },
             "sell_data": [
                 {
@@ -544,6 +503,18 @@
                         "hour": 5,
                         "minute": 0
                     }
+                },
+                {
+                    "buy_price": 2.53,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 3,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
                 }
             ]
         },
@@ -575,7 +546,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 2,
-                "price": 7.28
+                "price": 7.38
             },
             "sell_data": [
                 {
@@ -596,11 +567,8 @@
             "name": "Fields by Night",
             "url": "https://steamcommunity.com/market/listings/753/230820-Fields%20by%20Night",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 2.39
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 1.54,
@@ -609,30 +577,6 @@
                     "countdown": {
                         "day": 28,
                         "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
-                },
-                {
-                    "buy_price": 2.39,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 2,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
-                },
-                {
-                    "buy_price": 2.39,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 2,
-                        "month": 2,
                         "year": 2026,
                         "hour": 5,
                         "minute": 0
@@ -670,8 +614,8 @@
             "max_items": 3,
             "buy_status": "buying",
             "buying_data": {
-                "quant": 2,
-                "price": 0.45
+                "quant": 1,
+                "price": 0.47
             },
             "sell_data": [
                 {
@@ -681,30 +625,6 @@
                     "countdown": {
                         "day": 28,
                         "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
-                },
-                {
-                    "buy_price": 0.45,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 2,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
-                },
-                {
-                    "buy_price": 0.45,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 2,
-                        "month": 2,
                         "year": 2026,
                         "hour": 5,
                         "minute": 0
@@ -751,14 +671,7 @@
             "max_items": 1,
             "buy_status": "waiting_to_buy",
             "buying_data": {},
-            "sell_data": [
-                {
-                    "buy_price": 12.33,
-                    "sell_price": 15.83,
-                    "status": "selling",
-                    "countdown": {}
-                }
-            ]
+            "sell_data": []
         },
         {
             "name": "Void",
@@ -769,15 +682,9 @@
             "sell_data": [
                 {
                     "buy_price": 1.72,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 27,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
+                    "sell_price": 2.06,
+                    "status": "selling",
+                    "countdown": {}
                 }
             ]
         },
@@ -790,7 +697,7 @@
             "sell_data": [
                 {
                     "buy_price": 3.16,
-                    "sell_price": 3.57,
+                    "sell_price": 3.14,
                     "status": "selling",
                     "countdown": {}
                 }
@@ -863,19 +770,6 @@
             "profit": 0.6009999999999999
         },
         {
-            "name": "Glitch Sansui-zu (Estático)",
-            "url": "https://steamcommunity.com/market/listings/753/1465680-Glitch%20Sansui-zu%20%28still%29",
-            "date": {
-                "day": 26,
-                "month": 1,
-                "year": 2026
-            },
-            "buy_price": 0.91,
-            "sell_price": 0.62,
-            "tax": 0.1,
-            "profit": -0.39
-        },
-        {
             "name": "Old song",
             "url": "https://steamcommunity.com/market/listings/753/400740-Old%20song",
             "date": {
@@ -887,6 +781,19 @@
             "sell_price": 12.15,
             "tax": 1.82,
             "profit": 0.87
+        },
+        {
+            "name": "Gustave (Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/1903340-Gustave%20%28Foil%29",
+            "date": {
+                "day": 27,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 12.33,
+            "sell_price": 15.83,
+            "tax": 2.37,
+            "profit": 1.13
         }
     ]
 }

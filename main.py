@@ -2,13 +2,14 @@ import json
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 import time
 import random
 import datetime
 
 # VALORES INICIAIS
-wallet_value = input("Carteira: ")
+wallet_value = float(input("Carteira: "))
 buy_limit = wallet_value * 100
 user = input("Usuário: ")
 
@@ -30,7 +31,7 @@ def sleep(value):
     percent = (random.randrange(100) + 1)/500 # 0.002, 0.004, 0.006, ..., 0.200
     delay = value * (1 + percent)
 
-    print(f"---- Aplicando delay de {delay}")
+    print(f"--- Aplicando delay de {delay}")
     time.sleep(delay)
 
 def waiting_page_load(driver, tentativas=5):
@@ -55,11 +56,41 @@ def waiting_page_load(driver, tentativas=5):
             return True
 
         except:
-            print(f"⏳ Timeout carregando. Retry {tentativa+1}/{tentativas}")
+            print(f"--- Timeout carregando. Retry {tentativa+1}/{tentativas}")
             sleep(6.0)
             driver.refresh()
 
     print("Steam não carregou após várias tentativas")
+    return False
+
+def waiting_page_load_inventory(driver, tentativas=5):
+    for tentativa in range(tentativas):
+        try:
+            WebDriverWait(driver, 15).until(
+                lambda d: (
+                    d.find_elements(By.ID, "filter_control") or 
+                    d.find_elements(By.ID, "inventory_load_error_ctn") or
+                    d.find_elements(By.CLASS_NAME, "failed_inventory_page")
+                )
+            )
+
+            erros = driver.find_elements(By.ID, "inventory_load_error_ctn")
+            if erros and erros[0].is_displayed():
+                print(f"Erro da Steam: Inventário indisponível. Tentativa {tentativa+1}/{tentativas}")
+                sleep(5)
+                driver.refresh()
+                continue
+
+            if driver.find_elements(By.CLASS_NAME, "itemHolder"):
+                print("Inventário e filtro carregados com sucesso!")
+                return True
+            
+        except Exception as e:
+            print(f"--- Timeout aguardando inventário. Tentativa {tentativa+1}/{tentativas}")
+            sleep(5)
+            driver.refresh()
+
+    print("Falha crítica: O inventário não carregou.")
     return False
 
 def check_is_in_countdown(it_countdown):
@@ -218,20 +249,25 @@ def item_buy(value, quant):
         ).text.strip() != "Buscando anúncios do item no preço desejado..."
     )
 
+    sleep(2.0)
+
     return float(value.replace(",", "."))
 
 def item_sell(item_name, item_url, value):
     value = str(value).replace(".", ",")
 
     driver.get(f"https://steamcommunity.com/id/{user}/inventory")
-    waiting_page_load(driver)
+    waiting_page_load_inventory(driver)
 
     # Busca apenas elementos que possuem a classe 'item' e um ID que começa com números
 
     wait = WebDriverWait(driver, 10)
 
     filter_box = wait.until(EC.element_to_be_clickable((By.ID, "filter_control")))
-    filter_box.clear()
+    # filter_box = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, ".filter_search_box")))
+    # filter_box = wait.until(EC.element_to_be_clickable((By.NAME, "filter")))
+    filter_box.send_keys(Keys.CONTROL + "a")
+    filter_box.send_keys(Keys.BACKSPACE)
     filter_box.send_keys(item_name)
 
     sleep(0.5)
