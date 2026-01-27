@@ -21,7 +21,7 @@ driver.get(login_url)
 
 wait = WebDriverWait(driver, 300)
 
-def aguardar_pagina(driver, tentativas=5):  # CORRIGIR: ATUALIZAR NOME
+def waiting_page_load(driver, tentativas=5):
     for tentativa in range(tentativas):
 
         try:
@@ -212,7 +212,7 @@ def item_sell(item_name, item_url, value):
     value = str(value).replace(".", ",")
 
     driver.get(f"https://steamcommunity.com/id/{user}/inventory")
-    aguardar_pagina(driver)
+    waiting_page_load(driver)
 
     # Busca apenas elementos que possuem a classe 'item' e um ID que começa com números
 
@@ -284,7 +284,7 @@ def item_sell(item_name, item_url, value):
     time.sleep(5)
 
     driver.get(item_url)
-    aguardar_pagina(driver)
+    waiting_page_load(driver)
 
 def check_is_profitable(offer_value, order_value):
     offer_value -= 0.01
@@ -359,7 +359,7 @@ while index < len(items):
         print(f"=== {item_name} [{index}] ===")
 
         driver.get(item_url)
-        aguardar_pagina(driver)
+        waiting_page_load(driver)
 
         # ENCONTRAR VALORES DE ENCOMENDA E OFERTAS
         sell_price_data = wait.until(
@@ -585,8 +585,6 @@ while index < len(items):
         json.dump({"items": items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
 
     time.sleep(5)
-
-    exit()
 
 
 print("")
