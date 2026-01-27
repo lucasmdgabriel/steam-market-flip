@@ -428,6 +428,10 @@ while index < len(items):
         print(collected_quant_buying)
 
         if buying_data["quant"] > collected_quant_buying:
+            if collected_quant_buying <= 0:
+                items[index]["buy_status"] = "waiting_to_buy"
+                items[index]["buying_data"] = {}
+
             diff = buying_data["quant"] - collected_quant_buying
 
             print("- Adicionando {diff} itens a lista de vendas.")
@@ -496,7 +500,7 @@ while index < len(items):
                 "price": order_value
             }
 
-    if iteration == 0 and len(sell_data) > 0:
+    if iteration == 0 and len(sell_data) > 0: # ITENS SENDO VENDIDOS
         first_sell_data = sell_data[0]
 
         {
@@ -581,6 +585,8 @@ while index < len(items):
         json.dump({"items": items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
 
     time.sleep(5)
+
+    exit()
 
 
 print("")
