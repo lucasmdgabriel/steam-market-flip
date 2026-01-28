@@ -9,14 +9,7 @@
                 "quant": 2,
                 "price": 18.11
             },
-            "sell_data": [
-                {
-                    "buy_price": 18.98,
-                    "sell_price": 29.04,
-                    "status": "selling",
-                    "countdown": {}
-                }
-            ]
+            "sell_data": []
         },
         {
             "name": "Unusual cloudy sky",
@@ -272,15 +265,33 @@
             "max_items": 3,
             "buy_status": "buying",
             "buying_data": {
-                "quant": 2,
+                "quant": 1,
                 "price": 0.75
             },
             "sell_data": [
                 {
                     "buy_price": 0.83,
-                    "sell_price": 1.23,
-                    "status": "selling",
-                    "countdown": {}
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 3,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                },
+                {
+                    "buy_price": 0.75,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 4,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
                 }
             ]
         },
@@ -312,7 +323,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 1,
-                "price": 4.67
+                "price": 4.73
             },
             "sell_data": [
                 {
@@ -368,8 +379,8 @@
             "max_items": 3,
             "buy_status": "buying",
             "buying_data": {
-                "quant": 2,
-                "price": 2.76
+                "quant": 1,
+                "price": 2.84
             },
             "sell_data": [
                 {
@@ -379,6 +390,18 @@
                     "countdown": {
                         "day": 30,
                         "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                },
+                {
+                    "buy_price": 2.76,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 4,
+                        "month": 2,
                         "year": 2026,
                         "hour": 5,
                         "minute": 0
@@ -422,15 +445,9 @@
             "sell_data": [
                 {
                     "buy_price": 1.73,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 28,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
+                    "sell_price": 2.65,
+                    "status": "selling",
+                    "countdown": {}
                 }
             ]
         },
@@ -443,14 +460,7 @@
                 "quant": 2,
                 "price": 0.54
             },
-            "sell_data": [
-                {
-                    "buy_price": 0.5,
-                    "sell_price": 0.94,
-                    "status": "selling",
-                    "countdown": {}
-                }
-            ]
+            "sell_data": []
         },
         {
             "name": "Old song",
@@ -481,6 +491,18 @@
                         "hour": 5,
                         "minute": 0
                     }
+                },
+                {
+                    "buy_price": 4.67,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 4,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
                 }
             ]
         },
@@ -490,21 +512,15 @@
             "max_items": 3,
             "buy_status": "buying",
             "buying_data": {
-                "quant": 2,
+                "quant": 1,
                 "price": 2.53
             },
             "sell_data": [
                 {
                     "buy_price": 2.53,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 28,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
+                    "sell_price": 3.49,
+                    "status": "selling",
+                    "countdown": {}
                 },
                 {
                     "buy_price": 2.53,
@@ -548,7 +564,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 2,
-                "price": 7.38
+                "price": 7.41
             },
             "sell_data": [
                 {
@@ -574,15 +590,9 @@
             "sell_data": [
                 {
                     "buy_price": 1.54,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 28,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
+                    "sell_price": 3.62,
+                    "status": "selling",
+                    "countdown": {}
                 },
                 {
                     "buy_price": 2.39,
@@ -614,23 +624,14 @@
             "name": "Hollow",
             "url": "https://steamcommunity.com/market/listings/753/48000-Hollow",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 1,
-                "price": 0.47
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 0.47,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 28,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
+                    "sell_price": 1.97,
+                    "status": "selling",
+                    "countdown": {}
                 },
                 {
                     "buy_price": 0.45,
@@ -638,6 +639,18 @@
                     "status": "countdown",
                     "countdown": {
                         "day": 2,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                },
+                {
+                    "buy_price": 0.47,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 4,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
@@ -655,15 +668,9 @@
             "sell_data": [
                 {
                     "buy_price": 9.32,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 28,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    }
+                    "sell_price": 11.43,
+                    "status": "selling",
+                    "countdown": {}
                 }
             ]
         },
@@ -681,14 +688,7 @@
             "max_items": 1,
             "buy_status": "waiting_to_buy",
             "buying_data": {},
-            "sell_data": [
-                {
-                    "buy_price": 1.72,
-                    "sell_price": 2.06,
-                    "status": "selling",
-                    "countdown": {}
-                }
-            ]
+            "sell_data": []
         },
         {
             "name": "Football Manager 2013",
@@ -699,7 +699,7 @@
             "sell_data": [
                 {
                     "buy_price": 3.16,
-                    "sell_price": 3.14,
+                    "sell_price": 2.94,
                     "status": "selling",
                     "countdown": {}
                 }
@@ -709,8 +709,11 @@
             "name": "F1 2013",
             "url": "https://steamcommunity.com/market/listings/753/223670-F1%202013",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 0.32
+            },
             "sell_data": []
         },
         {
@@ -725,32 +728,44 @@
             "name": "Ellie (Carta Colecionável Brilhante)",
             "url": "https://steamcommunity.com/market/listings/753/2531310-Ellie%20(Foil%20Trading%20Card)",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 11.65
+            },
             "sell_data": []
         },
         {
             "name": "Beats Fever",
             "url": "https://steamcommunity.com/market/listings/753/566780-Beats%20Fever",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 11.42
+            },
             "sell_data": []
         },
         {
             "name": "gold",
             "url": "https://steamcommunity.com/market/listings/753/617610-gold",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 12.6
+            },
             "sell_data": []
         },
         {
             "name": "China",
             "url": "https://steamcommunity.com/market/listings/753/314980-China",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 4.41
+            },
             "sell_data": []
         },
         {
@@ -765,8 +780,11 @@
             "name": "Jade Temple Background",
             "url": "https://steamcommunity.com/market/listings/753/571740-Jade%20Temple%20Background",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 1.27
+            },
             "sell_data": []
         }
     ],
@@ -873,6 +891,45 @@
             "sell_price": 7.99,
             "tax": 1.2,
             "profit": 1.78
+        },
+        {
+            "name": "Emily <3 XP",
+            "url": "https://steamcommunity.com/market/listings/753/978460-Emily%20%3C3%20XP",
+            "date": {
+                "day": 28,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 18.98,
+            "sell_price": 29.04,
+            "tax": 4.36,
+            "profit": 5.7
+        },
+        {
+            "name": "The shine through darkness",
+            "url": "https://steamcommunity.com/market/listings/753/444410-The%20shine%20through%20darkness",
+            "date": {
+                "day": 28,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 0.5,
+            "sell_price": 0.94,
+            "tax": 0.14,
+            "profit": 0.3
+        },
+        {
+            "name": "Void",
+            "url": "https://steamcommunity.com/market/listings/753/562260-Void",
+            "date": {
+                "day": 28,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 1.72,
+            "sell_price": 2.06,
+            "tax": 0.31,
+            "profit": 0.03
         }
     ]
 }

@@ -272,22 +272,37 @@ def item_sell(item_name, item_url, value):
     filter_box.send_keys(item_name)
 
     sleep(0.5)
-    
-    # Pega todos os itens e filtra o que está visível de fato
+
     all_items = driver.find_elements(By.CSS_SELECTOR, ".itemHolder .item")
-    target_item = next((item for item in all_items if item.is_displayed()), None)
+    visible_items = [item for item in all_items if item.is_displayed()]
+    venda_sucesso = False
 
-    if target_item:
-        # Clica no link interno que é o alvo real do evento da Steam
-        link = target_item.find_element(By.CSS_SELECTOR, ".inventory_item_link")
-        driver.execute_script("arguments[0].click();", link)
+    # Itera sobre os itens visíveis e tenta realizar a venda no primeiro disponível
+    for item in visible_items:
+        try:
+            link = item.find_element(By.CSS_SELECTOR, ".inventory_item_link")
+            driver.execute_script("arguments[0].click();", link)
+            sleep(0.5) 
+
+            # Tenta localizar e clicar no botão vender (espera curta para evitar travamentos)
+            wait_venda = WebDriverWait(driver, 3) 
+            botao_vender = wait_venda.until(
+                EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Vender')] | //span[contains(text(), 'Vender')]"))
+            )
+            
+            botao_vender.click()
+            venda_sucesso = True
+            break 
+
+        except Exception:
+            # Se falhar (ex: countdown ou erro no clique), o loop passa automaticamente para o próximo item
+            continue 
+
+    # Feedback final do processo
+    if not venda_sucesso:
+        print("Falha: Nenhum item disponível para venda foi encontrado.")
     else:
-        print("Nenhum item visível após o filtro.")
-
-    # Clicar em vender
-    wait = WebDriverWait(driver, 10)
-    botao_vender = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(), 'Vender')]")))
-    botao_vender.click()
+        print("Sucesso: Item selecionado e botão de venda acionado.")
 
     sleep(1)
 
@@ -392,7 +407,7 @@ buy_and_sell = data["buy_and_sell"]
 
 print(f"Total buying inicial: {calculate_total_buying(items)}")
 
-index = 0
+index = 23
 last_index = -1
 iteration = 0
 while index < len(items):
@@ -634,8 +649,6 @@ while index < len(items):
         json.dump({"items": items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
 
     sleep(5)
-
-    exit()
 
 
 print("")
