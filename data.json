@@ -12,7 +12,7 @@
                     "sell_price": 0.0,
                     "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 0
+                    "sale_tries": 1
                 }
             ]
         },
@@ -20,8 +20,11 @@
             "name": "Unusual cloudy sky",
             "url": "https://steamcommunity.com/market/listings/753/806140-Unusual%20cloudy%20sky",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 5.67
+            },
             "sell_data": [
                 {
                     "buy_price": 5.46,
@@ -95,15 +98,9 @@
             "sell_data": [
                 {
                     "buy_price": 0.3,
-                    "sell_price": 0.0,
-                    "status": "waiting_to_sell",
-                    "countdown": {
-                        "day": 30,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
+                    "sell_price": 0.51,
+                    "status": "selling",
+                    "countdown": {},
                     "sale_tries": 0
                 }
             ]
@@ -140,7 +137,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 3,
-                "price": 1.57
+                "price": 1.61
             },
             "sell_data": []
         },
@@ -178,7 +175,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 1,
-                "price": 6.79
+                "price": 7.01
             },
             "sell_data": [
                 {
@@ -342,11 +339,8 @@
             "name": "Darkness (Plano de Fundo de Perfil)",
             "url": "https://steamcommunity.com/market/listings/753/602910-Darkness%20%28Profile%20Background%29",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 1,
-                "price": 4.83
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 4.62,
@@ -405,7 +399,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 1,
-                "price": 2.84
+                "price": 2.92
             },
             "sell_data": [
                 {
@@ -468,7 +462,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 2,
-                "price": 1.76
+                "price": 1.79
             },
             "sell_data": [
                 {
@@ -503,11 +497,8 @@
             "name": "Ancients of Fasaria Common Wings",
             "url": "https://steamcommunity.com/market/listings/753/339860-Ancients%20of%20Fasaria%20Common%20Wings",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 4.67
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 4.33,
@@ -559,7 +550,7 @@
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {
-                        "day": 3,
+                        "day": 2,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
@@ -598,7 +589,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 2,
-                "price": 7.43
+                "price": 7.45
             },
             "sell_data": [
                 {
@@ -663,7 +654,10 @@
             "url": "https://steamcommunity.com/market/listings/753/48000-Hollow",
             "max_items": 3,
             "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buying_data": {
+                "quant": 1,
+                "price": 0.48
+            },
             "sell_data": [
                 {
                     "buy_price": 0.45,

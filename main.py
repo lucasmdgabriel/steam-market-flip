@@ -647,5 +647,5 @@ while index < len(items):
     sleep(5)
 
 
-print("")
+print("\n\n\n")
 print("Finalizado.")
