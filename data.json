@@ -9,7 +9,14 @@
                 "quant": 2,
                 "price": 18.11
             },
-            "sell_data": []
+            "sell_data": [
+                {
+                    "buy_price": 18.98,
+                    "sell_price": 0.0,
+                    "status": "waiting_to_sell",
+                    "countdown": {}
+                }
+            ]
         },
         {
             "name": "Unusual cloudy sky",
@@ -86,7 +93,20 @@
             "max_items": 0,
             "buy_status": "waiting_to_buy",
             "buying_data": {},
-            "sell_data": []
+            "sell_data": [
+                {
+                    "buy_price": 0.3,
+                    "sell_price": 0.0,
+                    "status": "waiting_to_sell",
+                    "countdown": {
+                        "day": 30,
+                        "month": 1,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
+                }
+            ]
         },
         {
             "name": "Orbit",
@@ -147,14 +167,6 @@
                 "quant": 3,
                 "price": 13.38
             },
-            "sell_data": []
-        },
-        {
-            "name": "Broken Shell (Brilhante)",
-            "url": "https://steamcommunity.com/market/listings/753/367520-Broken%20Shell%20%28Foil%29",
-            "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
             "sell_data": []
         },
         {
@@ -564,7 +576,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 2,
-                "price": 7.41
+                "price": 7.43
             },
             "sell_data": [
                 {
@@ -628,12 +640,6 @@
             "buying_data": {},
             "sell_data": [
                 {
-                    "buy_price": 0.47,
-                    "sell_price": 1.97,
-                    "status": "selling",
-                    "countdown": {}
-                },
-                {
                     "buy_price": 0.45,
                     "sell_price": 0.0,
                     "status": "countdown",
@@ -668,7 +674,7 @@
             "sell_data": [
                 {
                     "buy_price": 9.32,
-                    "sell_price": 11.43,
+                    "sell_price": 10.41,
                     "status": "selling",
                     "countdown": {}
                 }
@@ -699,7 +705,7 @@
             "sell_data": [
                 {
                     "buy_price": 3.16,
-                    "sell_price": 2.94,
+                    "sell_price": 2.92,
                     "status": "selling",
                     "countdown": {}
                 }
@@ -930,6 +936,19 @@
             "sell_price": 2.06,
             "tax": 0.31,
             "profit": 0.03
+        },
+        {
+            "name": "Hollow",
+            "url": "https://steamcommunity.com/market/listings/753/48000-Hollow",
+            "date": {
+                "day": 28,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 0.47,
+            "sell_price": 1.97,
+            "tax": 0.26,
+            "profit": 1.24
         }
     ]
 }

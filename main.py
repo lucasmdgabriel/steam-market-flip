@@ -357,7 +357,7 @@ def check_is_profitable(offer_value, order_value):
     offer_value = round(offer_value, 2)
     order_value = round(order_value, 2)
 
-    tax = offer_value * 0.15
+    tax = offer_value * 0.1304
     if tax < 0.1:
         tax = 0.1
 
@@ -407,7 +407,7 @@ buy_and_sell = data["buy_and_sell"]
 
 print(f"Total buying inicial: {calculate_total_buying(items)}")
 
-index = 23
+index = 0
 last_index = -1
 iteration = 0
 while index < len(items):
@@ -597,7 +597,7 @@ while index < len(items):
 
                 buy_price_value = first_sell_data["buy_price"]
                 sell_price_value = first_sell_data["sell_price"]
-                tax_value = round(sell_price_value * 0.15, 2)
+                tax_value = round(sell_price_value * 0.1304, 2)
 
                 if tax_value <= 0.1:
                     tax_value = 0.1
