@@ -1,20 +1,44 @@
 {
     "items": [
         {
+            "name": "Emily <3 XP",
+            "url": "https://steamcommunity.com/market/listings/753/978460-Emily%20%3C3%20XP",
+            "max_items": 3,
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 18.11
+            },
+            "sell_data": [
+                {
+                    "buy_price": 18.98,
+                    "sell_price": 29.04,
+                    "status": "selling",
+                    "countdown": {}
+                }
+            ]
+        },
+        {
             "name": "Unusual cloudy sky",
             "url": "https://steamcommunity.com/market/listings/753/806140-Unusual%20cloudy%20sky",
             "max_items": 3,
             "buy_status": "buying",
             "buying_data": {
-                "quant": 2,
-                "price": 5.46
+                "quant": 1,
+                "price": 5.55
             },
             "sell_data": [
                 {
-                    "buy_price": 5.01,
-                    "sell_price": 7.99,
-                    "status": "selling",
-                    "countdown": {}
+                    "buy_price": 5.46,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 3,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    }
                 }
             ]
         },
@@ -69,14 +93,7 @@
             "max_items": 0,
             "buy_status": "waiting_to_buy",
             "buying_data": {},
-            "sell_data": [
-                {
-                    "buy_price": 0.3,
-                    "sell_price": 0.0,
-                    "status": "waiting_to_sell",
-                    "countdown": {}
-                }
-            ]
+            "sell_data": []
         },
         {
             "name": "Orbit",
@@ -106,8 +123,11 @@
             "name": "Plane of Skulls",
             "url": "https://steamcommunity.com/market/listings/753/2218750-Plane%20of%20Skulls",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 1.57
+            },
             "sell_data": []
         },
         {
@@ -132,7 +152,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 3,
-                "price": 12.82
+                "price": 13.38
             },
             "sell_data": []
         },
@@ -184,11 +204,8 @@
             "name": "Flower",
             "url": "https://steamcommunity.com/market/listings/753/2475490-Flower",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 3.48
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 3.49,
@@ -208,38 +225,23 @@
             "name": "Glitch Sansui-zu (Estático)",
             "url": "https://steamcommunity.com/market/listings/753/1465680-Glitch%20Sansui-zu%20%28still%29",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 1.12
+            },
             "sell_data": [
                 {
-                    "buy_price": 0.89,
-                    "sell_price": 29.9,
-                    "status": "selling",
+                    "buy_price": 0.91,
+                    "sell_price": 0.0,
+                    "status": "countdown",
                     "countdown": {
-                        "day": 3,
+                        "day": 1,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
                         "minute": 0
                     }
-                }
-            ]
-        },
-        {
-            "name": "Emily <3 XP",
-            "url": "https://steamcommunity.com/market/listings/753/978460-Emily%20%3C3%20XP",
-            "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 17.89
-            },
-            "sell_data": [
-                {
-                    "buy_price": 18.98,
-                    "sell_price": 0.0,
-                    "status": "waiting_to_sell",
-                    "countdown": {}
                 }
             ]
         },
@@ -691,7 +693,7 @@
         {
             "name": "Football Manager 2013",
             "url": "https://steamcommunity.com/market/listings/753/245070-Football%20Manager%202013",
-            "max_items": 1,
+            "max_items": 0,
             "buy_status": "waiting_to_buy",
             "buying_data": {},
             "sell_data": [
@@ -702,6 +704,70 @@
                     "countdown": {}
                 }
             ]
+        },
+        {
+            "name": "F1 2013",
+            "url": "https://steamcommunity.com/market/listings/753/223670-F1%202013",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": []
+        },
+        {
+            "name": "Marauder",
+            "url": "https://steamcommunity.com/market/listings/753/782330-Marauder%20%28Foil%20Trading%20Card%29",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": []
+        },
+        {
+            "name": "Ellie (Carta Colecionável Brilhante)",
+            "url": "https://steamcommunity.com/market/listings/753/2531310-Ellie%20(Foil%20Trading%20Card)",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": []
+        },
+        {
+            "name": "Beats Fever",
+            "url": "https://steamcommunity.com/market/listings/753/566780-Beats%20Fever",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": []
+        },
+        {
+            "name": "gold",
+            "url": "https://steamcommunity.com/market/listings/753/617610-gold",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": []
+        },
+        {
+            "name": "China",
+            "url": "https://steamcommunity.com/market/listings/753/314980-China",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": []
+        },
+        {
+            "name": "Red Sparks",
+            "url": "https://steamcommunity.com/market/listings/753/508900-Red%20Sparks",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": []
+        },
+        {
+            "name": "Jade Temple Background",
+            "url": "https://steamcommunity.com/market/listings/753/571740-Jade%20Temple%20Background",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
+            "sell_data": []
         }
     ],
     "buy_and_sell": [
@@ -794,6 +860,19 @@
             "sell_price": 15.83,
             "tax": 2.37,
             "profit": 1.13
+        },
+        {
+            "name": "Unusual cloudy sky",
+            "url": "https://steamcommunity.com/market/listings/753/806140-Unusual%20cloudy%20sky",
+            "date": {
+                "day": 28,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 5.01,
+            "sell_price": 7.99,
+            "tax": 1.2,
+            "profit": 1.78
         }
     ]
 }

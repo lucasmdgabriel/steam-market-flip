@@ -131,25 +131,26 @@ def cancel_item_buy():
     # Clica em Cancelar
     cancel_button = wait.until(
         EC.element_to_be_clickable(
-            (By.CSS_SELECTOR, ".item_market_action_button")
+            (By.XPATH, "//span[@class='item_market_action_button_contents' and normalize-space()='Cancelar']/ancestor::a")
         )
     )
     cancel_button.click()
 
-    sleep(1) # TO.DO SLEEP NO CÓDIGO SER VARIÁVEL
+    sleep(1)
 
 def cancel_item_sell():
     # Clica em Remover
     remove_button = wait.until(
         EC.element_to_be_clickable(
-            (By.CSS_SELECTOR, ".item_market_action_button_contents")
+            (By.XPATH, "//span[@class='item_market_action_button_contents' and normalize-space()='Remover']/ancestor::a")
         )
     )
     remove_button.click()
 
     sleep(0.8)
 
-    # Usando o ID (mais rápido e garantido)
+
+    # Confirmar remoção
     confirm_remove_button = wait.until(
         EC.element_to_be_clickable((By.ID, "market_removelisting_dialog_accept"))
     )
@@ -633,6 +634,8 @@ while index < len(items):
         json.dump({"items": items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
 
     sleep(5)
+
+    exit()
 
 
 print("")
