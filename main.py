@@ -12,6 +12,7 @@ import datetime
 wallet_value = float(input("Carteira: "))
 buy_limit = wallet_value * 100
 user = input("Usuário: ")
+sales_tries_limit = 10
 
 date_time = datetime.datetime.now()
 
@@ -514,7 +515,8 @@ while index < len(items):
                         "year": new_countdown_date.year,
                         "hour": 5,
                         "minute": 0
-                    }
+                    },
+                    "sale_tries": 0
                 }
 
                 items[index]["sell_data"].append(new_sell_data_item)
@@ -566,19 +568,6 @@ while index < len(items):
 
     if iteration == 0 and len(sell_data) > 0: # ITENS SENDO VENDIDOS
         first_sell_data = sell_data[0]
-
-        {
-            "buy_price": 6.15,
-            "sell_price": 0.0,
-            "status": "countdown",
-            "countdown": {
-                "day": 31,
-                "month": 1,
-                "year": 2026,
-                "hour": 5,
-                "minute": 0
-            }
-        }
 
         if first_sell_data["status"] == "countdown":
             print(f"V{iteration}: Chegando se item ainda está em countdown.")
@@ -636,12 +625,19 @@ while index < len(items):
                 cancel_item_sell()
 
         if first_sell_data != None and first_sell_data["status"] == "waiting_to_sell":
-            print(f"- V{iteration}: Iniciando venda de item.")
+            is_profitable, offer_value, order_value = check_is_profitable(collected_offer_value, first_sell_data["buy_price"])
 
-            item_sell(item_name, item_url, offer_value)
+            if is_profitable == True or first_sell_data["sale_tries"] > sales_tries_limit:
+                print(f"- V{iteration}: Iniciando venda de item.")
 
-            items[index]["sell_data"][0]["status"] = "selling"
-            items[index]["sell_data"][0]["sell_price"] = offer_value
+                item_sell(item_name, item_url, offer_value)
+
+                items[index]["sell_data"][0]["status"] = "selling"
+                items[index]["sell_data"][0]["sell_price"] = offer_value
+            else:
+                print(f"- V{iteration}: Não é interessante vender o item agora. Ignorando")
+                items[index]["sell_data"][0]["sale_tries"] = items[index]["sell_data"][0]["sale_tries"] + 1
+
 
     index += 1
 
