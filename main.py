@@ -10,7 +10,7 @@ import datetime
 
 # VALORES INICIAIS
 wallet_value = float(input("Carteira: "))
-buy_limit = wallet_value * 100
+buy_limit = wallet_value * 10
 user = input("Usuário: ")
 sales_tries_limit = 10
 
@@ -413,7 +413,7 @@ buy_and_sell = data["buy_and_sell"]
 
 print(f"Total buying inicial: {calculate_total_buying(items)}")
 
-index = 220
+index = 200
 last_index = -1
 iteration = 0
 while index < len(items):
@@ -665,7 +665,6 @@ for item in items:
 total_value = round(total_value, 2)
 print(f"Patrimônio: {total_value}")
 
-
 with open('patrimony.json', 'r', encoding='utf-8') as f:
     patrimony = json.load(f)
 
@@ -675,7 +674,7 @@ day_key = str(date_time.day)
 patrimony.setdefault("patrimony", {}) \
          .setdefault(month_key, {})[day_key] = total_value
 
-with open("data.json", "w", encoding="utf-8") as f:
-    json.dump({"patrimony": patrimony}, f, ensure_ascii=False, indent=4)
+with open("patrimony.json", "w", encoding="utf-8") as f:
+    json.dump(patrimony, f, ensure_ascii=False, indent=4)
 
 print("Finalizado.")
