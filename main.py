@@ -23,6 +23,11 @@ driver.get(login_url)
 
 wait = WebDriverWait(driver, 300)
 
+def convert_month(value):
+    if value == 1:
+        return "jan"
+    return "Outro"
+
 def sleep(value):
     if isinstance(value, (int, float)) == False:
         time.sleep(1.0)
@@ -408,7 +413,7 @@ buy_and_sell = data["buy_and_sell"]
 
 print(f"Total buying inicial: {calculate_total_buying(items)}")
 
-index = 0
+index = 220
 last_index = -1
 iteration = 0
 while index < len(items):
@@ -638,6 +643,7 @@ while index < len(items):
 
                 items[index]["sell_data"][0]["status"] = "selling"
                 items[index]["sell_data"][0]["sell_price"] = offer_value
+                items[index]["sell_data"][0]["sale_tries"] = items[index]["sell_data"][0]["sale_tries"] + 1
             else:
                 print(f"- V{iteration}: Não é interessante vender o item agora. Ignorando")
                 items[index]["sell_data"][0]["sale_tries"] = items[index]["sell_data"][0]["sale_tries"] + 1
@@ -650,6 +656,26 @@ while index < len(items):
 
     sleep(5)
 
-
 print("\n\n\n")
+
+total_value = wallet_value
+for item in items:
+    for sell_data in item["sell_data"]:
+        total_value += sell_data["buy_price"]
+total_value = round(total_value, 2)
+print(f"Patrimônio: {total_value}")
+
+
+with open('patrimony.json', 'r', encoding='utf-8') as f:
+    patrimony = json.load(f)
+
+month_key = f"{convert_month(date_time.month)}/{date_time.year}"
+day_key = str(date_time.day)
+
+patrimony.setdefault("patrimony", {}) \
+         .setdefault(month_key, {})[day_key] = total_value
+
+with open("data.json", "w", encoding="utf-8") as f:
+    json.dump({"patrimony": patrimony}, f, ensure_ascii=False, indent=4)
+
 print("Finalizado.")
