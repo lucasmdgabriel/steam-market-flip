@@ -557,7 +557,11 @@ while index < len(items):
         elif (calculate_total_buying(items) + (order_value * quant_to_buy)) > buy_limit:
             print(f"-- Buy limit atingido. Ignorando.")
         else:
-            print(f"-- Comprando item por R${order_value}")
+            while wallet_value < order_value * quant_to_buy:
+                print(f"-- Dinheiro disponível na carteira (R${wallet_value}) menor do que o valor de {quant_to_buy}x (R${order_value}). Reduzindo...")
+                quant_to_buy -= 1
+
+            print(f"-- Comprando item por {quant_to_buy}x R${order_value}")
             order_value = item_buy(order_value, quant_to_buy)
 
             items[index]["buy_status"] = "buying"

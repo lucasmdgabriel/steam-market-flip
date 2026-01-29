@@ -12,7 +12,7 @@
                     "sell_price": 0.0,
                     "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 1
+                    "sale_tries": 2
                 }
             ]
         },
@@ -95,15 +95,7 @@
             "max_items": 0,
             "buy_status": "waiting_to_buy",
             "buying_data": {},
-            "sell_data": [
-                {
-                    "buy_price": 0.3,
-                    "sell_price": 0.51,
-                    "status": "selling",
-                    "countdown": {},
-                    "sale_tries": 0
-                }
-            ]
+            "sell_data": []
         },
         {
             "name": "Orbit",
@@ -175,7 +167,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 1,
-                "price": 7.01
+                "price": 7.04
             },
             "sell_data": [
                 {
@@ -250,6 +242,19 @@
                         "minute": 0
                     },
                     "sale_tries": 0
+                },
+                {
+                    "buy_price": 1.12,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 4,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
+                    "sale_tries": 0
                 }
             ]
         },
@@ -282,7 +287,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 1,
-                "price": 0.75
+                "price": 0.79
             },
             "sell_data": [
                 {
@@ -317,8 +322,11 @@
             "name": "Minimal 1",
             "url": "https://steamcommunity.com/market/listings/753/628580-Minimal%201",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 3.16
+            },
             "sell_data": [
                 {
                     "buy_price": 3.29,
@@ -399,7 +407,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 1,
-                "price": 2.92
+                "price": 2.77
             },
             "sell_data": [
                 {
@@ -437,7 +445,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 2,
-                "price": 6.26
+                "price": 6.28
             },
             "sell_data": [
                 {
@@ -467,7 +475,7 @@
             "sell_data": [
                 {
                     "buy_price": 1.73,
-                    "sell_price": 2.65,
+                    "sell_price": 2.61,
                     "status": "selling",
                     "countdown": {},
                     "sale_tries": 0
@@ -532,17 +540,20 @@
             "name": "Holiday Lights",
             "url": "https://steamcommunity.com/market/listings/753/335590-Holiday%20Lights",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 1,
-                "price": 2.53
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 2.53,
-                    "sell_price": 3.49,
-                    "status": "selling",
-                    "countdown": {},
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 2,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
                     "sale_tries": 0
                 },
                 {
@@ -550,7 +561,7 @@
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {
-                        "day": 2,
+                        "day": 4,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
@@ -589,7 +600,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 2,
-                "price": 7.45
+                "price": 7.48
             },
             "sell_data": [
                 {
@@ -616,7 +627,7 @@
             "sell_data": [
                 {
                     "buy_price": 1.54,
-                    "sell_price": 3.62,
+                    "sell_price": 3.57,
                     "status": "selling",
                     "countdown": {},
                     "sale_tries": 0
@@ -653,7 +664,7 @@
             "name": "Hollow",
             "url": "https://steamcommunity.com/market/listings/753/48000-Hollow",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
+            "buy_status": "buying",
             "buying_data": {
                 "quant": 1,
                 "price": 0.48
@@ -696,10 +707,10 @@
             "sell_data": [
                 {
                     "buy_price": 9.32,
-                    "sell_price": 10.41,
-                    "status": "selling",
+                    "sell_price": 0.0,
+                    "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 0
+                    "sale_tries": 1
                 }
             ]
         },
@@ -725,15 +736,7 @@
             "max_items": 0,
             "buy_status": "waiting_to_buy",
             "buying_data": {},
-            "sell_data": [
-                {
-                    "buy_price": 3.16,
-                    "sell_price": 2.92,
-                    "status": "selling",
-                    "countdown": {},
-                    "sale_tries": 0
-                }
-            ]
+            "sell_data": []
         },
         {
             "name": "F1 2013",
@@ -750,8 +753,11 @@
             "name": "Marauder",
             "url": "https://steamcommunity.com/market/listings/753/782330-Marauder%20%28Foil%20Trading%20Card%29",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 13.54
+            },
             "sell_data": []
         },
         {
@@ -761,7 +767,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 3,
-                "price": 11.65
+                "price": 11.69
             },
             "sell_data": []
         },
@@ -772,7 +778,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 3,
-                "price": 11.42
+                "price": 11.46
             },
             "sell_data": []
         },
@@ -813,7 +819,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 3,
-                "price": 1.27
+                "price": 1.39
             },
             "sell_data": []
         },
@@ -821,8 +827,11 @@
             "name": "Universe (Plano de Fundo de Perfil)",
             "url": "https://steamcommunity.com/market/listings/753/2160470-Universe%20%28Profile%20Background%29",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 2.81
+            },
             "sell_data": []
         },
         {
@@ -837,96 +846,132 @@
             "name": "Can't Quit Now",
             "url": "https://steamcommunity.com/market/listings/753/396530-Can%27t%20Quit%20Now",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 25.72
+            },
             "sell_data": []
         },
         {
             "name": "Fog",
             "url": "https://steamcommunity.com/market/listings/753/607440-Fog",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 1.56
+            },
             "sell_data": []
         },
         {
             "name": "Alisa (Plano de Fundo de Perfil)",
             "url": "https://steamcommunity.com/market/listings/753/1421250-Alisa%20%28Profile%20Background%29",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 0.44
+            },
             "sell_data": []
         },
         {
             "name": "Gran Original",
             "url": "https://steamcommunity.com/market/listings/753/3021100-Original%20Gran",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 3.36
+            },
             "sell_data": []
         },
         {
             "name": "Blood Stain",
             "url": "https://steamcommunity.com/market/listings/753/491620-Blood%20Stain",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 7.37
+            },
             "sell_data": []
         },
         {
             "name": "Hécate",
             "url": "https://steamcommunity.com/market/listings/753/1145350-Hecate%20%28Foil%20Trading%20Card%29",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 14.79
+            },
             "sell_data": []
         },
         {
             "name": "Yui (Carta Colecionável)",
             "url": "https://steamcommunity.com/market/listings/753/367020-Yui%20%28Trading%20Card%29",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 4.06
+            },
             "sell_data": []
         },
         {
             "name": "Twilight Forest",
             "url": "https://steamcommunity.com/market/listings/753/359940-Twilight%20Forest",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 9.91
+            },
             "sell_data": []
         },
         {
             "name": "Castle Dimitrescu",
             "url": "https://steamcommunity.com/market/listings/753/1196590-Castle%20Dimitrescu",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 2.47
+            },
             "sell_data": []
         },
         {
             "name": "Black Hole (Plano de Fundo de Perfil)",
             "url": "https://steamcommunity.com/market/listings/753/2206560-Black%20Hole%20%28Profile%20Background%29",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 4.91
+            },
             "sell_data": []
         },
         {
             "name": "Harrison's Room",
             "url": "https://steamcommunity.com/market/listings/753/364390-Harrison%27s%20Room",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 3.38
+            },
             "sell_data": []
         },
         {
             "name": "Main Hall",
             "url": "https://steamcommunity.com/market/listings/753/304240-Main%20Hall",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 3.06
+            },
             "sell_data": []
         }
     ],
@@ -1098,6 +1143,45 @@
             "sell_price": 20.51,
             "tax": 2.67,
             "profit": -1.14
+        },
+        {
+            "name": "Vermelha",
+            "url": "https://steamcommunity.com/market/listings/753/1030300-Red",
+            "date": {
+                "day": 28,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 0.3,
+            "sell_price": 0.51,
+            "tax": 0.1,
+            "profit": 0.11
+        },
+        {
+            "name": "Holiday Lights",
+            "url": "https://steamcommunity.com/market/listings/753/335590-Holiday%20Lights",
+            "date": {
+                "day": 28,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 2.53,
+            "sell_price": 3.49,
+            "tax": 0.46,
+            "profit": 0.5
+        },
+        {
+            "name": "Football Manager 2013",
+            "url": "https://steamcommunity.com/market/listings/753/245070-Football%20Manager%202013",
+            "date": {
+                "day": 28,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 3.16,
+            "sell_price": 2.92,
+            "tax": 0.38,
+            "profit": -0.62
         }
     ]
 }
