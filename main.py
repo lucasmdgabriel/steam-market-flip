@@ -12,7 +12,7 @@ import datetime
 wallet_value = float(input("Carteira: "))
 buy_limit = wallet_value * 10
 user = input("Usuário: ")
-sales_tries_limit = 10
+sales_tries_limit = 40
 
 date_time = datetime.datetime.now()
 
@@ -413,7 +413,7 @@ buy_and_sell = data["buy_and_sell"]
 
 print(f"Total buying inicial: {calculate_total_buying(items)}")
 
-index = 200
+index = 0
 last_index = -1
 iteration = 0
 while index < len(items):
@@ -460,8 +460,6 @@ while index < len(items):
                 buy_user_price_data[1].text.strip()
             )
 
-        print(collected_price_buying, collected_quant_buying)
-
         # ENCONTRAR VALORES DE VENDA DO USUÁRIO
         collected_price_selling = 0.0
         try:
@@ -478,8 +476,6 @@ while index < len(items):
         except:
             ""
 
-        print(collected_price_selling)
-
 
     else:
         iteration += 1
@@ -493,9 +489,6 @@ while index < len(items):
         print(f"C{iteration}. Comprando *")
         buying_data = items[index]["buying_data"]
         is_profitable, offer_value, order_value = check_is_profitable(collected_offer_value, collected_order_value)
-
-        print(buying_data["quant"])
-        print(collected_quant_buying)
 
         if buying_data["quant"] > collected_quant_buying:
             if collected_quant_buying <= 0:
