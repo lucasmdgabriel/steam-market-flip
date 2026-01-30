@@ -109,16 +109,10 @@
             "sell_data": [
                 {
                     "buy_price": 2.85,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 30,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
+                    "sell_price": 3.91,
+                    "status": "selling",
+                    "countdown": {},
+                    "sale_tries": 1
                 },
                 {
                     "buy_price": 3.91,
@@ -171,6 +165,19 @@
                         "minute": 0
                     },
                     "sale_tries": 0
+                },
+                {
+                    "buy_price": 3.91,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 6,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
+                    "sale_tries": 0
                 }
             ]
         },
@@ -190,6 +197,19 @@
                     "status": "countdown",
                     "countdown": {
                         "day": 5,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
+                    "sale_tries": 0
+                },
+                {
+                    "buy_price": 1.61,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 6,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
@@ -399,15 +419,9 @@
                 {
                     "buy_price": 7.84,
                     "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 30,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
+                    "status": "waiting_to_sell",
+                    "countdown": {},
+                    "sale_tries": 1
                 }
             ]
         },
@@ -511,11 +525,8 @@
             "name": "Darkness (Plano de Fundo de Perfil)",
             "url": "https://steamcommunity.com/market/listings/753/602910-Darkness%20%28Profile%20Background%29",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 1,
-                "price": 4.86
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 4.62,
@@ -542,6 +553,19 @@
                         "minute": 0
                     },
                     "sale_tries": 0
+                },
+                {
+                    "buy_price": 4.86,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 6,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
+                    "sale_tries": 0
                 }
             ]
         },
@@ -549,11 +573,8 @@
             "name": "Night Forest",
             "url": "https://steamcommunity.com/market/listings/753/573210-Night%20Forest",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 3.47
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 5.36,
@@ -583,15 +604,9 @@
                 {
                     "buy_price": 2.87,
                     "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 30,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 1
+                    "status": "waiting_to_sell",
+                    "countdown": {},
+                    "sale_tries": 2
                 },
                 {
                     "buy_price": 2.76,
@@ -623,7 +638,7 @@
                     "sell_price": 0.0,
                     "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 2
+                    "sale_tries": 3
                 }
             ]
         },
@@ -631,11 +646,8 @@
             "name": "Guzhou",
             "url": "https://steamcommunity.com/market/listings/753/455000-Guzhou",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 1.79
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 1.73,
@@ -661,11 +673,8 @@
             "name": "Old song",
             "url": "https://steamcommunity.com/market/listings/753/400740-Old%20song",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 3,
-                "price": 9.44
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": []
         },
         {
@@ -677,16 +686,10 @@
             "sell_data": [
                 {
                     "buy_price": 4.33,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 30,
-                        "month": 1,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
+                    "sell_price": 5.63,
+                    "status": "selling",
+                    "countdown": {},
+                    "sale_tries": 1
                 },
                 {
                     "buy_price": 4.67,
@@ -787,22 +790,16 @@
             "name": "Storytime (Plano de Fundo de Perfil)",
             "url": "https://steamcommunity.com/market/listings/753/237850-Storytime%20%28Profile%20Background%29",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 3,
-                "price": 7.66
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": []
         },
         {
             "name": "Fields by Night",
             "url": "https://steamcommunity.com/market/listings/753/230820-Fields%20by%20Night",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 1,
-                "price": 1.31
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 2.39,
@@ -965,7 +962,21 @@
                 "quant": 3,
                 "price": 11.46
             },
-            "sell_data": []
+            "sell_data": [
+                {
+                    "buy_price": 11.46,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 6,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
+                    "sale_tries": 0
+                }
+            ]
         },
         {
             "name": "gold",
@@ -1009,11 +1020,8 @@
             "name": "Universe (Plano de Fundo de Perfil)",
             "url": "https://steamcommunity.com/market/listings/753/2160470-Universe%20%28Profile%20Background%29",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 3,
-                "price": 3.13
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": []
         },
         {
@@ -1080,11 +1088,8 @@
             "name": "Hécate",
             "url": "https://steamcommunity.com/market/listings/753/1145350-Hecate%20%28Foil%20Trading%20Card%29",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 14.89
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": []
         },
         {

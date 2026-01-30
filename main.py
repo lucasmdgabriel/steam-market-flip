@@ -26,6 +26,8 @@ wait = WebDriverWait(driver, 300)
 def convert_month(value):
     if value == 1:
         return "jan"
+    elif value == 2:
+        return "fev"
     return "Outro"
 
 def sleep(value):
