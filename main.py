@@ -10,6 +10,7 @@ import datetime
 
 # VALORES INICIAIS
 wallet_value = float(input("Carteira: "))
+wallet_pendent = float(input("Pendente: "))
 buy_limit = wallet_value * 10
 user = input("Usuário: ")
 sales_tries_limit = 40
@@ -653,7 +654,7 @@ while index < len(items):
 
 print("\n\n\n")
 
-total_value = wallet_value
+total_value = wallet_value + wallet_pendent
 for item in items:
     for sell_data in item["sell_data"]:
         total_value += sell_data["buy_price"]
