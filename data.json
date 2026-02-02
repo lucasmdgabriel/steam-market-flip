@@ -4,8 +4,11 @@
             "name": "Death",
             "url": "https://steamcommunity.com/market/listings/753/3117820-Death",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 1,
+                "price": 11.89
+            },
             "sell_data": [
                 {
                     "buy_price": 14.66,
@@ -38,19 +41,16 @@
         {
             "name": "Emily <3 XP",
             "url": "https://steamcommunity.com/market/listings/753/978460-Emily%20%3C3%20XP",
-            "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 1,
-                "price": 18.49
-            },
+            "max_items": 2,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 18.98,
                     "sell_price": 0.0,
                     "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 5
+                    "sale_tries": 9
                 },
                 {
                     "buy_price": 18.45,
@@ -64,6 +64,19 @@
                         "minute": 0
                     },
                     "sale_tries": 0
+                },
+                {
+                    "buy_price": 18.49,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 7,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
+                    "sale_tries": 0
                 }
             ]
         },
@@ -71,8 +84,11 @@
             "name": "Unusual cloudy sky",
             "url": "https://steamcommunity.com/market/listings/753/806140-Unusual%20cloudy%20sky",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 4.64
+            },
             "sell_data": [
                 {
                     "buy_price": 5.46,
@@ -116,84 +132,6 @@
                         "minute": 0
                     },
                     "sale_tries": 0
-                },
-                {
-                    "buy_price": 3.91,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 5,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 3.91,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 5,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 3.91,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 6,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 3.91,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 6,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 3.91,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 7,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 3.91,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 7,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
                 }
             ]
         },
@@ -210,45 +148,6 @@
                     "status": "countdown",
                     "countdown": {
                         "day": 5,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 1.61,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 6,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 1.61,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 6,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 1.61,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 7,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
@@ -289,8 +188,11 @@
             "name": "Stellar Vista",
             "url": "https://steamcommunity.com/market/listings/753/360600-Stellar%20Vista",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 1,
+                "price": 5.35
+            },
             "sell_data": [
                 {
                     "buy_price": 6.15,
@@ -298,19 +200,6 @@
                     "status": "selling",
                     "countdown": {},
                     "sale_tries": 1
-                },
-                {
-                    "buy_price": 6.64,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 1,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
                 },
                 {
                     "buy_price": 7.09,
@@ -331,21 +220,18 @@
             "name": "Flower",
             "url": "https://steamcommunity.com/market/listings/753/2475490-Flower",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 3.59
+            },
             "sell_data": [
                 {
                     "buy_price": 3.49,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 1,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
+                    "sell_price": 6.06,
+                    "status": "selling",
+                    "countdown": {},
+                    "sale_tries": 1
                 }
             ]
         },
@@ -358,16 +244,10 @@
             "sell_data": [
                 {
                     "buy_price": 0.91,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 1,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 1
+                    "sell_price": 1.4,
+                    "status": "selling",
+                    "countdown": {},
+                    "sale_tries": 2
                 },
                 {
                     "buy_price": 1.12,
@@ -375,45 +255,6 @@
                     "status": "countdown",
                     "countdown": {
                         "day": 4,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 1.12,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 5,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 1.12,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 5,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 1.12,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 5,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
@@ -435,7 +276,7 @@
                     "sell_price": 0.0,
                     "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 1
+                    "sale_tries": 5
                 }
             ]
         },
@@ -495,13 +336,6 @@
             "buying_data": {},
             "sell_data": [
                 {
-                    "buy_price": 3.29,
-                    "sell_price": 4.65,
-                    "status": "selling",
-                    "countdown": {},
-                    "sale_tries": 1
-                },
-                {
                     "buy_price": 3.39,
                     "sell_price": 0.0,
                     "status": "countdown",
@@ -537,11 +371,11 @@
             "buying_data": {},
             "sell_data": [
                 {
-                    "buy_price": 4.62,
+                    "buy_price": 4.63,
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {
-                        "day": 1,
+                        "day": 2,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
@@ -550,11 +384,11 @@
                     "sale_tries": 0
                 },
                 {
-                    "buy_price": 4.63,
+                    "buy_price": 4.83,
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {
-                        "day": 2,
+                        "day": 4,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
@@ -581,15 +415,18 @@
             "name": "Night Forest",
             "url": "https://steamcommunity.com/market/listings/753/573210-Night%20Forest",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 4.08
+            },
             "sell_data": [
                 {
                     "buy_price": 5.36,
                     "sell_price": 0.0,
                     "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 1
+                    "sale_tries": 5
                 }
             ]
         },
@@ -605,7 +442,7 @@
                     "sell_price": 0.0,
                     "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 4
+                    "sale_tries": 8
                 },
                 {
                     "buy_price": 2.76,
@@ -639,15 +476,18 @@
             "name": "Nebula Y (Plano de Fundo de Perfil)",
             "url": "https://steamcommunity.com/market/listings/753/504400-Nebula%20Y%20%28Profile%20Background%29",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 6.29
+            },
             "sell_data": [
                 {
                     "buy_price": 7.67,
                     "sell_price": 0.0,
                     "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 3
+                    "sale_tries": 7
                 }
             ]
         },
@@ -655,8 +495,11 @@
             "name": "Guzhou",
             "url": "https://steamcommunity.com/market/listings/753/455000-Guzhou",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 1.86
+            },
             "sell_data": []
         },
         {
@@ -679,8 +522,11 @@
             "name": "Ancients of Fasaria Common Wings",
             "url": "https://steamcommunity.com/market/listings/753/339860-Ancients%20of%20Fasaria%20Common%20Wings",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 4.43
+            },
             "sell_data": [
                 {
                     "buy_price": 4.67,
@@ -701,18 +547,22 @@
             "name": "Holiday Lights",
             "url": "https://steamcommunity.com/market/listings/753/335590-Holiday%20Lights",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 1,
-                "price": 2.45
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
+                {
+                    "buy_price": 2.53,
+                    "sell_price": 0.0,
+                    "status": "waiting_to_sell",
+                    "countdown": {},
+                    "sale_tries": 1
+                },
                 {
                     "buy_price": 2.53,
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {
-                        "day": 2,
+                        "day": 4,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
@@ -721,11 +571,11 @@
                     "sale_tries": 0
                 },
                 {
-                    "buy_price": 2.53,
+                    "buy_price": 2.45,
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {
-                        "day": 4,
+                        "day": 8,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
@@ -742,26 +592,6 @@
             "buy_status": "waiting_to_buy",
             "buying_data": {},
             "sell_data": [
-                {
-                    "buy_price": 5.94,
-                    "sell_price": 9.02,
-                    "status": "selling",
-                    "countdown": {},
-                    "sale_tries": 3
-                },
-                {
-                    "buy_price": 6.03,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 5,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
                 {
                     "buy_price": 6.03,
                     "sell_price": 0.0,
@@ -794,29 +624,10 @@
             "sell_data": [
                 {
                     "buy_price": 2.39,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 2,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 2.39,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 2,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
+                    "sell_price": 3.58,
+                    "status": "selling",
+                    "countdown": {},
+                    "sale_tries": 1
                 }
             ]
         },
@@ -829,10 +640,17 @@
             "sell_data": [
                 {
                     "buy_price": 0.45,
+                    "sell_price": 0.71,
+                    "status": "selling",
+                    "countdown": {},
+                    "sale_tries": 1
+                },
+                {
+                    "buy_price": 0.47,
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {
-                        "day": 2,
+                        "day": 3,
                         "month": 2,
                         "year": 2026,
                         "hour": 5,
@@ -880,7 +698,7 @@
                     "sell_price": 0.0,
                     "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 5
+                    "sale_tries": 9
                 }
             ]
         },
@@ -896,8 +714,11 @@
             "name": "Void",
             "url": "https://steamcommunity.com/market/listings/753/562260-Void",
             "max_items": 1,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 1,
+                "price": 1.72
+            },
             "sell_data": []
         },
         {
@@ -925,47 +746,20 @@
             "max_items": 3,
             "buy_status": "buying",
             "buying_data": {
-                "quant": 3,
-                "price": 13.62
+                "quant": 1,
+                "price": 13.64
             },
             "sell_data": []
         },
         {
             "name": "Ellie (Carta Colecionável Brilhante)",
             "url": "https://steamcommunity.com/market/listings/753/2531310-Ellie%20(Foil%20Trading%20Card)",
-            "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 3,
-                "price": 11.69
-            },
-            "sell_data": []
-        },
-        {
-            "name": "Beats Fever",
-            "url": "https://steamcommunity.com/market/listings/753/566780-Beats%20Fever",
-            "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 3,
-                "price": 11.46
-            },
+            "max_items": 2,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
-                    "buy_price": 11.46,
-                    "sell_price": 0.0,
-                    "status": "countdown",
-                    "countdown": {
-                        "day": 6,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 0
-                },
-                {
-                    "buy_price": 11.46,
+                    "buy_price": 11.69,
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {
@@ -980,22 +774,47 @@
             ]
         },
         {
-            "name": "gold",
-            "url": "https://steamcommunity.com/market/listings/753/617610-gold",
+            "name": "Beats Fever",
+            "url": "https://steamcommunity.com/market/listings/753/566780-Beats%20Fever",
             "max_items": 3,
             "buy_status": "buying",
             "buying_data": {
-                "quant": 3,
-                "price": 12.67
+                "quant": 2,
+                "price": 11.46
             },
+            "sell_data": [
+                {
+                    "buy_price": 11.46,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 5,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
+                    "sale_tries": 0
+                }
+            ]
+        },
+        {
+            "name": "gold",
+            "url": "https://steamcommunity.com/market/listings/753/617610-gold",
+            "max_items": 3,
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": []
         },
         {
             "name": "China",
             "url": "https://steamcommunity.com/market/listings/753/314980-China",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 3.85
+            },
             "sell_data": []
         },
         {
@@ -1010,12 +829,35 @@
             "name": "Jade Temple Background",
             "url": "https://steamcommunity.com/market/listings/753/571740-Jade%20Temple%20Background",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 3,
-                "price": 1.39
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
+                {
+                    "buy_price": 1.39,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 6,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
+                    "sale_tries": 0
+                },
+                {
+                    "buy_price": 1.39,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 7,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
+                    "sale_tries": 0
+                },
                 {
                     "buy_price": 1.39,
                     "sell_price": 0.0,
@@ -1035,8 +877,11 @@
             "name": "Universe (Plano de Fundo de Perfil)",
             "url": "https://steamcommunity.com/market/listings/753/2160470-Universe%20%28Profile%20Background%29",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 3.4
+            },
             "sell_data": []
         },
         {
@@ -1059,8 +904,11 @@
             "name": "Fog",
             "url": "https://steamcommunity.com/market/listings/753/607440-Fog",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 1.64
+            },
             "sell_data": [
                 {
                     "buy_price": 1.58,
@@ -1145,28 +993,55 @@
             "max_items": 3,
             "buy_status": "buying",
             "buying_data": {
-                "quant": 3,
+                "quant": 1,
                 "price": 4.91
             },
-            "sell_data": []
+            "sell_data": [
+                {
+                    "buy_price": 4.87,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 7,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
+                    "sale_tries": 0
+                },
+                {
+                    "buy_price": 4.91,
+                    "sell_price": 0.0,
+                    "status": "countdown",
+                    "countdown": {
+                        "day": 9,
+                        "month": 2,
+                        "year": 2026,
+                        "hour": 5,
+                        "minute": 0
+                    },
+                    "sale_tries": 0
+                }
+            ]
         },
         {
             "name": "Harrison's Room",
             "url": "https://steamcommunity.com/market/listings/753/364390-Harrison%27s%20Room",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 3,
-                "price": 3.49
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": []
         },
         {
             "name": "Main Hall",
             "url": "https://steamcommunity.com/market/listings/753/304240-Main%20Hall",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 3.31
+            },
             "sell_data": []
         }
     ],
@@ -1429,6 +1304,58 @@
             "sell_price": 5.63,
             "tax": 0.73,
             "profit": 0.57
+        },
+        {
+            "name": "Stellar Vista",
+            "url": "https://steamcommunity.com/market/listings/753/360600-Stellar%20Vista",
+            "date": {
+                "day": 31,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 6.15,
+            "sell_price": 10.36,
+            "tax": 1.35,
+            "profit": 2.86
+        },
+        {
+            "name": "Minimal 1",
+            "url": "https://steamcommunity.com/market/listings/753/628580-Minimal%201",
+            "date": {
+                "day": 31,
+                "month": 1,
+                "year": 2026
+            },
+            "buy_price": 3.29,
+            "sell_price": 4.65,
+            "tax": 0.61,
+            "profit": 0.75
+        },
+        {
+            "name": "Shovelware Queens",
+            "url": "https://steamcommunity.com/market/listings/753/292630-Shovelware%20Queens",
+            "date": {
+                "day": 1,
+                "month": 2,
+                "year": 2026
+            },
+            "buy_price": 5.94,
+            "sell_price": 8.92,
+            "tax": 1.16,
+            "profit": 1.82
+        },
+        {
+            "name": "Darkness (Plano de Fundo de Perfil)",
+            "url": "https://steamcommunity.com/market/listings/753/602910-Darkness%20%28Profile%20Background%29",
+            "date": {
+                "day": 2,
+                "month": 2,
+                "year": 2026
+            },
+            "buy_price": 4.62,
+            "sell_price": 6.78,
+            "tax": 0.88,
+            "profit": 1.28
         }
     ]
 }

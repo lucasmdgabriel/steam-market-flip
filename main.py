@@ -13,7 +13,7 @@ wallet_value = float(input("Carteira: "))
 wallet_pendent = float(input("Pendente: "))
 buy_limit = wallet_value * 10
 user = input("Usuário: ")
-sales_tries_limit = 40
+sales_tries_limit = 12
 
 date_time = datetime.datetime.now()
 
@@ -148,6 +148,9 @@ def cancel_item_buy():
     sleep(1)
 
 def cancel_item_sell():
+    driver.refresh()
+    sleep(3)
+
     # Clica em Remover
     remove_button = wait.until(
         EC.element_to_be_clickable(
@@ -497,6 +500,8 @@ while index < len(items):
             if collected_quant_buying <= 0:
                 items[index]["buy_status"] = "waiting_to_buy"
                 items[index]["buying_data"] = {}
+            else:
+                items[index]["buying_data"]["quant"] = collected_quant_buying
 
             diff = buying_data["quant"] - collected_quant_buying
 
