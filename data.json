@@ -11,13 +11,6 @@
             },
             "sell_data": [
                 {
-                    "buy_price": 14.66,
-                    "sell_price": 19.13,
-                    "status": "selling",
-                    "countdown": {},
-                    "sale_tries": 1
-                },
-                {
                     "buy_price": 11.89,
                     "sell_price": 0.0,
                     "status": "countdown",
@@ -36,22 +29,12 @@
             "name": "Emily <3 XP",
             "url": "https://steamcommunity.com/market/listings/753/978460-Emily%20%3C3%20XP",
             "max_items": 2,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 1,
+                "price": 18.37
+            },
             "sell_data": [
-                {
-                    "buy_price": 18.45,
-                    "sell_price": 7.3,
-                    "status": "selling",
-                    "countdown": {
-                        "day": 5,
-                        "month": 2,
-                        "year": 2026,
-                        "hour": 5,
-                        "minute": 0
-                    },
-                    "sale_tries": 1
-                },
                 {
                     "buy_price": 18.49,
                     "sell_price": 0.0,
@@ -74,17 +57,9 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 2,
-                "price": 5.34
+                "price": 5.37
             },
-            "sell_data": [
-                {
-                    "buy_price": 5.46,
-                    "sell_price": 0.0,
-                    "status": "waiting_to_sell",
-                    "countdown": {},
-                    "sale_tries": 0
-                }
-            ]
+            "sell_data": []
         },
         {
             "name": "Vermelha",
@@ -101,7 +76,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 2,
-                "price": 2.25
+                "price": 2.23
             },
             "sell_data": [
                 {
@@ -208,7 +183,7 @@
             "sell_data": [
                 {
                     "buy_price": 3.49,
-                    "sell_price": 6.08,
+                    "sell_price": 6.02,
                     "status": "selling",
                     "countdown": {},
                     "sale_tries": 0
@@ -249,10 +224,10 @@
             "sell_data": [
                 {
                     "buy_price": 7.84,
-                    "sell_price": 8.4,
+                    "sell_price": 8.09,
                     "status": "selling",
                     "countdown": {},
-                    "sale_tries": 377
+                    "sale_tries": 0
                 }
             ]
         },
@@ -268,7 +243,7 @@
                     "sell_price": 0.0,
                     "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 1
+                    "sale_tries": 2
                 },
                 {
                     "buy_price": 0.75,
@@ -337,8 +312,11 @@
             "name": "Darkness (Plano de Fundo de Perfil)",
             "url": "https://steamcommunity.com/market/listings/753/602910-Darkness%20%28Profile%20Background%29",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 1,
+                "price": 4.26
+            },
             "sell_data": [
                 {
                     "buy_price": 4.83,
@@ -351,7 +329,7 @@
                         "hour": 5,
                         "minute": 0
                     },
-                    "sale_tries": 1
+                    "sale_tries": 2
                 },
                 {
                     "buy_price": 4.86,
@@ -372,11 +350,8 @@
             "name": "Night Forest",
             "url": "https://steamcommunity.com/market/listings/753/573210-Night%20Forest",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 4.92
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 5.36,
@@ -396,10 +371,10 @@
             "sell_data": [
                 {
                     "buy_price": 2.87,
-                    "sell_price": 3.14,
-                    "status": "selling",
+                    "sell_price": 0.0,
+                    "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 0
+                    "sale_tries": 1
                 },
                 {
                     "buy_price": 2.76,
@@ -441,10 +416,10 @@
             "sell_data": [
                 {
                     "buy_price": 7.67,
-                    "sell_price": 8.4,
-                    "status": "selling",
+                    "sell_price": 0.0,
+                    "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 0
+                    "sale_tries": 1
                 }
             ]
         },
@@ -515,7 +490,7 @@
                     "sell_price": 0.0,
                     "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 3
+                    "sale_tries": 4
                 },
                 {
                     "buy_price": 2.53,
@@ -593,7 +568,7 @@
             "sell_data": [
                 {
                     "buy_price": 2.39,
-                    "sell_price": 3.58,
+                    "sell_price": 3.52,
                     "status": "selling",
                     "countdown": {},
                     "sale_tries": 1
@@ -609,7 +584,7 @@
             "sell_data": [
                 {
                     "buy_price": 0.47,
-                    "sell_price": 1.08,
+                    "sell_price": 0.84,
                     "status": "selling",
                     "countdown": {},
                     "sale_tries": 0
@@ -651,10 +626,10 @@
             "sell_data": [
                 {
                     "buy_price": 9.32,
-                    "sell_price": 10.38,
-                    "status": "selling",
+                    "sell_price": 0.0,
+                    "status": "waiting_to_sell",
                     "countdown": {},
-                    "sale_tries": 0
+                    "sale_tries": 1
                 }
             ]
         },
@@ -744,8 +719,11 @@
             "name": "Beats Fever",
             "url": "https://steamcommunity.com/market/listings/753/566780-Beats%20Fever",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 2,
+                "price": 11.33
+            },
             "sell_data": [
                 {
                     "buy_price": 11.46,
@@ -766,8 +744,11 @@
             "name": "gold",
             "url": "https://steamcommunity.com/market/listings/753/617610-gold",
             "max_items": 3,
-            "buy_status": "waiting_to_buy",
-            "buying_data": {},
+            "buy_status": "buying",
+            "buying_data": {
+                "quant": 3,
+                "price": 12.36
+            },
             "sell_data": []
         },
         {
@@ -862,8 +843,8 @@
             "max_items": 3,
             "buy_status": "buying",
             "buying_data": {
-                "quant": 1,
-                "price": 28.18
+                "quant": 2,
+                "price": 28.24
             },
             "sell_data": []
         },
@@ -961,7 +942,7 @@
             "max_items": 3,
             "buy_status": "buying",
             "buying_data": {
-                "quant": 3,
+                "quant": 1,
                 "price": 2.5
             },
             "sell_data": []
@@ -1019,7 +1000,7 @@
             "buy_status": "buying",
             "buying_data": {
                 "quant": 3,
-                "price": 3.39
+                "price": 3.41
             },
             "sell_data": []
         }
@@ -1431,6 +1412,48 @@
             "tax": 0.88,
             "net_revenue": 5.87,
             "profit": 4.99
+        },
+        {
+            "name": "Death",
+            "url": "https://steamcommunity.com/market/listings/753/3117820-Death",
+            "date": {
+                "day": 3,
+                "month": 2,
+                "year": 2026
+            },
+            "buy_price": 14.66,
+            "sell_price": 19.13,
+            "tax": 2.49,
+            "net_revenue": 16.64,
+            "profit": 14.15
+        },
+        {
+            "name": "Emily <3 XP",
+            "url": "https://steamcommunity.com/market/listings/753/978460-Emily%20%3C3%20XP",
+            "date": {
+                "day": 3,
+                "month": 2,
+                "year": 2026
+            },
+            "buy_price": 18.45,
+            "sell_price": 7.3,
+            "tax": 0.95,
+            "net_revenue": 6.35,
+            "profit": 5.4
+        },
+        {
+            "name": "Unusual cloudy sky",
+            "url": "https://steamcommunity.com/market/listings/753/806140-Unusual%20cloudy%20sky",
+            "date": {
+                "day": 3,
+                "month": 2,
+                "year": 2026
+            },
+            "buy_price": 5.46,
+            "sell_price": 7.33,
+            "tax": 0.96,
+            "net_revenue": 6.37,
+            "profit": 5.41
         }
     ]
 }
