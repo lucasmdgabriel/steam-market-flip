@@ -43,7 +43,7 @@ for new_item in new_items:
     pyautogui.press("enter")
     time.sleep(2.5)
 
-    pyautogui.moveTo(980, 424)
+    pyautogui.moveTo(978, 392)
     for _ in range(3):
         pyautogui.click()
 

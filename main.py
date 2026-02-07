@@ -423,6 +423,7 @@ index = 0
 last_index = -1
 iteration = 0
 while index < len(items):
+    pass_index = True
     item_name = items[index]["name"]
     item_url = items[index]["url"]
     buy_status = items[index]["buy_status"]
@@ -531,11 +532,11 @@ while index < len(items):
         if buying_data["price"] != collected_order_value and collected_quant_buying > 0:
             print("- Cancelando compra. Valor mudou.")
             cancel_item_buy()
-            
+
             items[index]["buy_status"] = "waiting_to_buy"
             items[index]["buying_data"] = {}
 
-            index -= 1
+            add_index = False
 
     if buy_status == "waiting_to_buy":
         print(f"C{iteration}. Checando itens disponíveis para compra *")
@@ -605,7 +606,7 @@ while index < len(items):
                     tax_value = 0.1
                 
                 net_revenue = round(sell_price_value - tax_value, 2)
-                profit_value = round(net_revenue - tax_value, 2)
+                profit_value = round(net_revenue - buy_price_value, 2)
 
                 buy_and_sell.append({
                     "name": items[index]["name"],
@@ -633,6 +634,8 @@ while index < len(items):
 
             elif collected_price_selling != collected_offer_value:
                 print(f"- Estou vendendo à R${collected_price_selling}, mas o mercado à R${collected_offer_value}. Corrigindo...")
+
+                print(items[index])
 
                 items[index]["sell_data"][0]["status"] = "waiting_to_sell"
                 items[index]["sell_data"][0]["sell_price"] = 0.0
@@ -664,8 +667,9 @@ while index < len(items):
                     print(f"- V{iteration}: Não é interessante vender o item agora. Ignorando")
                     items[index]["sell_data"][0]["sale_tries"] = items[index]["sell_data"][0]["sale_tries"] + 1
 
-
-    index += 1
+    
+    if pass_index:
+        index += 1
 
     with open("data.json", "w", encoding="utf-8") as f:
         json.dump({"items": items, "buy_and_sell": buy_and_sell}, f, ensure_ascii=False, indent=4)
