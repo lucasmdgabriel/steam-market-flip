@@ -23,7 +23,7 @@ for item in buy_and_sell:
 
 total = 0
 for day in days:
-    print(f"{day}: {items_data[day]}")
+    print(f"{day}: {round(items_data[day], 2)}")
     total += items_data[day]
 
 print("")

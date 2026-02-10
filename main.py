@@ -1,4 +1,5 @@
 import json
+import re
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -294,7 +295,28 @@ def item_sell(item_name, item_url, value):
         try:
             link = item.find_element(By.CSS_SELECTOR, ".inventory_item_link")
             driver.execute_script("arguments[0].click();", link)
-            sleep(0.5) 
+            sleep(0.5)
+
+            
+
+            document_data = WebDriverWait(driver, 5).until(
+                lambda d: d.execute_script("""
+                    return document.body.innerText
+                """)
+            )
+
+            match = re.search(r"Exibir filtros avançados\.\.\.\s*(.*?)\s*Steam Community Items", document_data, re.S)
+
+            if match:
+                nome_item_pagina = match.group(1).strip()
+            else:
+                nome_item_pagina = ""
+
+            if item_name.lower() != nome_item_pagina.lower():
+                sleep(0.5)
+                continue
+
+            
 
             # Tenta localizar e clicar no botão vender (espera curta para evitar travamentos)
             wait_venda = WebDriverWait(driver, 3) 
