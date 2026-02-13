@@ -14,7 +14,7 @@ wallet_value = float(input("Carteira: "))
 wallet_pendent = float(input("Pendente: "))
 buy_limit = wallet_value * 10
 user = input("Usuário: ")
-sales_tries_limit = 5
+sales_tries_limit = 1
 
 date_time = datetime.datetime.now()
 
