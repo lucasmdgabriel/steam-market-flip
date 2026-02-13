@@ -22,10 +22,24 @@ for item in buy_and_sell:
         days.append(day)
 
 total = 0
+last_day = ""
+quant_days = 0
+profit_days = 0
 for day in days:
+    day_str = day.split("/")[0]
+
+    if last_day != "" and day_str != "1" and int(last_day) + 1 != int(day_str):
+        quant_days += 1
+
+    quant_days += 1
+    profit_days += 1
+    last_day = str(day_str)
+
     print(f"{day}: {round(items_data[day], 2)}")
     total += items_data[day]
 
 print("")
+print(f"Quantidade de dias: {quant_days}")
+print(f"Dias de lucro: {profit_days}")
 print(f"Lucro total: R${round(total, 2)}")
-print(f"Lucro médio: R${round(total/len(items_data), 2)}")
+print(f"Lucro médio: R${round(total/quant_days, 2)}")

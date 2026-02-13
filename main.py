@@ -437,6 +437,7 @@ except Exception as e:
 with open('data.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
 items = data["items"]
+random.shuffle(items)
 buy_and_sell = data["buy_and_sell"]
 
 print(f"Total buying inicial: {calculate_total_buying(items)}")
@@ -558,7 +559,7 @@ while index < len(items):
             items[index]["buy_status"] = "waiting_to_buy"
             items[index]["buying_data"] = {}
 
-            add_index = False
+            pass_index = False
 
     if buy_status == "waiting_to_buy":
         print(f"C{iteration}. Checando itens disponíveis para compra *")
