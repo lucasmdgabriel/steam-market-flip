@@ -757,14 +757,16 @@
             "url": "https://steamcommunity.com/market/listings/753/978460-Emily%20%3C3%20XP",
             "max_items": 1,
             "buy_status": "waiting_to_buy",
-            "buying_data": {
-                "buy_price": 18.36,
-                "sell_price": 0.0,
-                "status": "waiting_to_sell",
-                "countdown": {},
-                "sale_tries": 5
-            },
-            "sell_data": []
+            "buying_data": {},
+            "sell_data": [
+                {
+                    "buy_price": 18.36,
+                    "sell_price": 0.0,
+                    "status": "waiting_to_sell",
+                    "countdown": {},
+                    "sale_tries": 5
+                }
+            ]
         },
         {
             "name": "Ellie (Carta Colecionável Brilhante)",
@@ -802,11 +804,8 @@
             "name": "sky with clouds",
             "url": "https://steamcommunity.com/market/listings/753/1270010-sky%20with%20clouds",
             "max_items": 3,
-            "buy_status": "buying",
-            "buying_data": {
-                "quant": 2,
-                "price": 2.68
-            },
+            "buy_status": "waiting_to_buy",
+            "buying_data": {},
             "sell_data": [
                 {
                     "buy_price": 2.99,
@@ -822,7 +821,7 @@
                     "sale_tries": 0
                 },
                 {
-                    "buy_price": 2.99,
+                    "buy_price": 2.68,
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {
@@ -835,7 +834,7 @@
                     "sale_tries": 0
                 },
                 {
-                    "buy_price": 2.99,
+                    "buy_price": 2.68,
                     "sell_price": 0.0,
                     "status": "countdown",
                     "countdown": {

@@ -15,6 +15,7 @@ wallet_pendent = float(input("Pendente: "))
 buy_limit = wallet_value * 10
 user = input("Usuário: ")
 sales_tries_limit = 1
+buy_items = False
 
 date_time = datetime.datetime.now()
 
@@ -415,6 +416,9 @@ def calculate_total_buying(items):
     for item in items:
         buy_data = item["buying_data"]
 
+        print(item)
+        print(buy_data)
+
         if buy_data != {}:
             total_buying += (buy_data["quant"] * buy_data["price"])
 
@@ -578,7 +582,9 @@ while index < len(items):
 
         is_profitable, offer_value, order_value = check_is_profitable(collected_offer_value, collected_order_value)
 
-        if quant_to_buy <= 0:
+        if buy_items == False:
+            print(f"Modo de não comprar itens ativado. Ignorando compra.")
+        elif quant_to_buy <= 0:
             print(f"-- Nenhum item para comprar. Ignorando compra.")
         elif is_profitable == False:
             print(f"-- Lucro não é suficiente. Ignorando compra.")
@@ -700,24 +706,5 @@ while index < len(items):
     sleep(5)
 
 print("\n\n\n")
-
-total_value = wallet_value + wallet_pendent
-for item in items:
-    for sell_data in item["sell_data"]:
-        total_value += sell_data["buy_price"]
-total_value = round(total_value, 2)
-print(f"Patrimônio: {total_value}")
-
-with open('patrimony.json', 'r', encoding='utf-8') as f:
-    patrimony = json.load(f)
-
-month_key = f"{convert_month(date_time.month)}/{date_time.year}"
-day_key = str(date_time.day)
-
-patrimony.setdefault("patrimony", {}) \
-         .setdefault(month_key, {})[day_key] = total_value
-
-with open("patrimony.json", "w", encoding="utf-8") as f:
-    json.dump(patrimony, f, ensure_ascii=False, indent=4)
 
 print("Finalizado.")
